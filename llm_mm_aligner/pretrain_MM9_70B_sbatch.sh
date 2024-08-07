@@ -69,10 +69,10 @@ echo Node IP: $head_node_ip
 MM9_CONF_DIR="/fsx_0/user/tranx/experiments/llm_mm_aligner/stage1_mm9"
 
 # JSON_CONFIG=$MM9_CONF_DIR/fbl_pretrain_MM9_70B_Llama31_336px_128nodes_bz32_scratch.json
-# JSON_CONFIG=$MM9_CONF_DIR/fbl_pretrain_MM9_70B_Llama31_336px_128nodes_bz64_resume.json
+JSON_CONFIG=$MM9_CONF_DIR/fbl_pretrain_MM9_70B_MH19_336px_128nodes_bz32_scratch.json
 
-# JSON_CONFIG=$MM9_CONF_DIR/fbl_pretrain_MM9_70B_MH19_336px_128nodes_bz32_scratch.json
-JSON_CONFIG=$MM9_CONF_DIR/fbl_pretrain_MM9_70B_MH19_336px_128nodes_bz64_resume.json
+# JSON_CONFIG=$MM9_CONF_DIR/fbl_pretrain_MM9_70B_Llama31_336px_128nodes_bz64_resume.json
+# JSON_CONFIG=$MM9_CONF_DIR/fbl_pretrain_MM9_70B_MH19_336px_128nodes_bz64_resume.json
 
 
 echo "Using config from: $JSON_CONFIG"

@@ -72,7 +72,7 @@
       "perception_tokenizer_hidden_dropout_p": 0,
       "bf16": true,
       "save_strategy": "steps",
-      "save_steps": 10,
+      "save_steps": 100,
       "evaluation_strategy": "no",
       "eval_steps": 250,
       "metric_for_best_model": "eval_loss",
