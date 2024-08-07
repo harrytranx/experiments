@@ -64,7 +64,18 @@ echo Node IP: $head_node_ip
 # JSON_CONFIG=${ALIGNER_PARENT_DIR}/llm_mm_aligner/experiments/aws_tranx/fbl_pretrain_MM9_70B_Llama31_336px_2nodes.json
 # JSON_CONFIG=${ALIGNER_PARENT_DIR}/llm_mm_aligner/experiments/aws_tranx/fbl_pretrain_MM9_70B_Llama31_336px_2nodes.json
 
-JSON_CONFIG=${ALIGNER_PARENT_DIR}/llm_mm_aligner/experiments/aws_tranx/fbl_pretrain_MM9_70B_Llama31_336px_128nodes_resume.json
+# JSON_CONFIG=${ALIGNER_PARENT_DIR}/llm_mm_aligner/experiments/aws_tranx/fbl_pretrain_MM9_70B_Llama31_336px_128nodes_resume.json
+
+MM9_CONF_DIR="/fsx_0/user/tranx/experiments/llm_mm_aligner/stage1_mm9"
+
+# JSON_CONFIG=$MM9_CONF_DIR/fbl_pretrain_MM9_70B_Llama31_336px_128nodes_bz32_scratch.json
+# JSON_CONFIG=$MM9_CONF_DIR/fbl_pretrain_MM9_70B_Llama31_336px_128nodes_bz64_resume.json
+
+# JSON_CONFIG=$MM9_CONF_DIR/fbl_pretrain_MM9_70B_MH19_336px_128nodes_bz32_scratch.json
+JSON_CONFIG=$MM9_CONF_DIR/fbl_pretrain_MM9_70B_MH19_336px_128nodes_bz64_resume.json
+
+
+echo "Using config from: $JSON_CONFIG"
 
 PYTHONPATH=${PYTHONPATH}:${ALIGNER_PARENT_DIR}:${ALIGNER_DEP_DIR}:${CONDA_PYTHON_PKGS} srun --cpus-per-gpu 24 torchrun \
     --nnodes ${SLURM_NNODES} \
