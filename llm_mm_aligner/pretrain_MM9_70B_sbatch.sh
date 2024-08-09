@@ -14,12 +14,12 @@
 #SBATCH --exclusive
 
 # Activate conda environment
-env_name=aligner_v7
+CONDA_ENV=aligner_v7
 eval "$(conda shell.bash hook)"
-conda activate $env_name 
+conda activate $CONDA_ENV 
 echo Using conda environment: $CONDA_DEFAULT_ENV
-if [ "$CONDA_DEFAULT_ENV" != "$env_name" ]; then
-  echo "Error: CONDA_DEFAULT_ENV is not set to $env_name"
+if [ "$CONDA_DEFAULT_ENV" != "$CONDA_ENV" ]; then
+  echo "Error: CONDA_DEFAULT_ENV is not set to $CONDA_ENV"
   exit 1
 fi
 
@@ -47,9 +47,8 @@ export LD_LIBRARY_PATH=/opt/aws-ofi-nccl/lib/:$LD_LIBRARY_PATH
 export CUDA_DEVICE_MAX_CONNECTIONS=1
 
 # launcher
-CONDA_ENV=aligner_v7
 ALIGNER_PARENT_DIR=/fsx_0/user/tranx
-ALIGNER_DEP_DIR=/fsx_0/user/tranx/llm_mm_aligner/replicated
+ALIGNER_DEP_DIR=$ALIGNER_PARENT_DIR/llm_mm_aligner/replicated
 CONDA_PYTHON_PKGS=${CONDA_PREFIX}/python-packages
 head_node_ip=$(srun --nodes=1 --ntasks=1 hostname --ip-address)
 echo Node IP: $head_node_ip
