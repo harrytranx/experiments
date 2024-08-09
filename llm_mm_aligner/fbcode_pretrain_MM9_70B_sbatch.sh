@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=fb_mm9
-#SBATCH --nodes=32
-#SBATCH --ntasks=32
+#SBATCH --nodes=2
+#SBATCH --ntasks=2
 #SBATCH --gpus-per-task=8
 #SBATCH --cpus-per-task=192
 #SBATCH --mem=0

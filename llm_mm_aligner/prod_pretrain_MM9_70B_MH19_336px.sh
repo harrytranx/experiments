@@ -12,6 +12,7 @@
 #SBATCH --qos=ar-ai-hipri
 #SBATCH --wait-all-nodes=1
 #SBATCH --exclusive
+#SBATCH --exclude=h100-st-p548xlarge-4
 
 # Activate conda environment
 CONDA_ENV=aligner_v7

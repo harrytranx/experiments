@@ -3,10 +3,10 @@
 # ALIGNER_PARENT_DIR=/fsx_0/user/tranx
 # CONDA_ENV=aligner_v7
 # JSON_CONFIG
-# --nodes=32
-# --ntasks=32
-# --job-name=mh19_336
 
+#SBATCH --job-name=mh19_336
+#SBATCH --nodes=32
+#SBATCH --ntasks=32
 #SBATCH --gpus-per-task=8
 #SBATCH --cpus-per-task=192
 #SBATCH --mem=0
@@ -19,7 +19,7 @@
 #SBATCH --exclusive
 
 # Activate conda environment
-# CONDA_ENV=aligner_v7
+CONDA_ENV=aligner_v7
 eval "$(conda shell.bash hook)"
 conda activate $CONDA_ENV 
 echo Using conda environment: $CONDA_DEFAULT_ENV
