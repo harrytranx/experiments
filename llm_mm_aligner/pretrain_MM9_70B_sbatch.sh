@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH --job-name=lm31_336
-#SBATCH --nodes=128
-#SBATCH --ntasks=128
+#SBATCH --job-name=mh19_336
+#SBATCH --nodes=32
+#SBATCH --ntasks=32
 #SBATCH --gpus-per-task=8
 #SBATCH --cpus-per-task=192
 #SBATCH --mem=0
@@ -50,7 +50,7 @@ export CUDA_DEVICE_MAX_CONNECTIONS=1
 CONDA_ENV=aligner_v7
 ALIGNER_PARENT_DIR=/fsx_0/user/tranx
 ALIGNER_DEP_DIR=/fsx_0/user/tranx/llm_mm_aligner/replicated
-CONDA_PYTHON_PKGS=/data/home/tranx/conda/envs/$CONDA_ENV/python-packages
+CONDA_PYTHON_PKGS=${CONDA_PREFIX}/python-packages
 head_node_ip=$(srun --nodes=1 --ntasks=1 hostname --ip-address)
 echo Node IP: $head_node_ip
 
@@ -69,7 +69,13 @@ echo Node IP: $head_node_ip
 MM9_CONF_DIR="/fsx_0/user/tranx/experiments/llm_mm_aligner/stage1_mm9"
 
 # JSON_CONFIG=$MM9_CONF_DIR/fbl_pretrain_MM9_70B_Llama31_336px_128nodes_bz32_scratch.json
-JSON_CONFIG=$MM9_CONF_DIR/fbl_pretrain_MM9_70B_MH19_336px_128nodes_bz32_scratch.json
+# JSON_CONFIG=$MM9_CONF_DIR/fbl_pretrain_MM9_70B_MH19_336px_128nodes_bz48_scratch.json
+# JSON_CONFIG=$MM9_CONF_DIR/fbl_pretrain_MM9_70B_MH19_336px_384nodes_resume.json
+# JSON_CONFIG=$MM9_CONF_DIR/fbl_pretrain_MM9_70B_MH19_336px_256nodes_resume.json
+
+# JSON_CONFIG=$MM9_CONF_DIR/fbl_pretrain_MM9_70B_Llama31_336px_128nodes_bz32_resume.json
+# JSON_CONFIG=$MM9_CONF_DIR/fbl_pretrain_MM9_70B_MH19_336px_128nodes_bz32_resume.json
+JSON_CONFIG=$MM9_CONF_DIR/fbl_pretrain_MM9_70B_Llama31_336px_2nodes.json
 
 # JSON_CONFIG=$MM9_CONF_DIR/fbl_pretrain_MM9_70B_Llama31_336px_128nodes_bz64_resume.json
 # JSON_CONFIG=$MM9_CONF_DIR/fbl_pretrain_MM9_70B_MH19_336px_128nodes_bz64_resume.json
