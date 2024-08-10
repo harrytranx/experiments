@@ -1,9 +1,14 @@
 #!/bin/bash
-# Usage: ./backfill.sh [JOB_ID] [LAUNCH SCRIPT]
-# Example: ./backfill.sh 9311 fbcode_pretrain_MM9_70B_sbatch.sh
+# Usage: nohup ./backfill.sh [JOB_ID] [LAUNCH SCRIPT]
+# Example: nohup ./backfill.sh 9322 fbcode_pretrain_MM9_70B_sbatch.sh &
+# ps aux | grep "backfill.sh"
+# kill <PID>
 
-JOB_ID=$1
-SCRIPT=$2
+# nohup ./backfill.sh prod_pretrain_MM9_70B_Llama3.1_336px.sh 9299 &
+# nohup ./backfill.sh prod_pretrain_MM9_70B_MH19_336px.sh 8351 &
+
+SCRIPT=$1
+JOB_ID=$2
 LOG_FILE="loop_backfill_${SCRIPT}_${JOB_ID}.log"
 
 echo "[$(date)] Starting loop to backfill job $JOB_ID using script: $SCRIPT" | tee -a $LOG_FILE
@@ -25,5 +30,5 @@ do
         echo "[$(date)] Started backfill job: $JOB_ID" | tee -a $LOG_FILE
     fi
 
-    sleep 5
+    sleep 60
 done

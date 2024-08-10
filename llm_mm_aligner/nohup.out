@@ -1,0 +1,327 @@
+[Sat Aug 10 20:28:43 UTC 2024] Starting loop to backfill job 9322 using script: fbcode_pretrain_MM9_70B_sbatch.sh
+Log file: loop_backfill_fbcode_pretrain_MM9_70B_sbatch.sh_9322.log
+[Sat Aug 10 20:28:43 UTC 2024] Job = 9322, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:28:48 UTC 2024] Job = 9322, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:29:02 UTC 2024] Starting loop to backfill job 9322 using script: fbcode_pretrain_MM9_70B_sbatch.sh
+Log file: loop_backfill_fbcode_pretrain_MM9_70B_sbatch.sh_9322.log
+[Sat Aug 10 20:29:02 UTC 2024] Job = 9322, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:29:07 UTC 2024] Job = 9322, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:29:12 UTC 2024] Job = 9322, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:29:17 UTC 2024] Job = 9322, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:29:23 UTC 2024] Job = 9322, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:29:28 UTC 2024] Job = 9322, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:29:33 UTC 2024] Job = 9322, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:29:38 UTC 2024] Job = 9322, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:29:43 UTC 2024] Job = 9322, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:29:48 UTC 2024] Job = 9322, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:29:53 UTC 2024] Job = 9322, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:29:58 UTC 2024] Job = 9322, State = CANCELLED+, Elapsed = 00:00:00
+[Sat Aug 10 20:29:58 UTC 2024] Job = 9322, State = CANCELLED+, Elapsed = 00:00:00
+[Sat Aug 10 20:29:58 UTC 2024] Started backfill job: 9323
+[Sat Aug 10 20:30:04 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:30:09 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:30:14 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:30:19 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:30:24 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:30:29 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:30:34 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:30:39 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:30:45 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:30:50 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:30:55 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:31:00 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:31:05 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:31:10 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:31:15 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:31:20 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:31:26 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:31:31 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:31:36 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:31:41 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:31:46 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:31:51 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:31:56 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:32:01 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:32:07 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:32:12 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:32:17 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:32:22 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:32:27 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:32:32 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:32:37 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:32:42 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:32:48 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:32:53 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:32:58 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:33:03 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:33:08 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:33:13 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:33:18 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:33:23 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:33:29 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:33:34 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:33:39 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:33:44 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:33:49 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:33:54 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:33:59 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:34:05 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:34:10 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:34:15 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:34:20 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:34:25 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:34:30 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:34:35 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:34:40 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:34:46 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:34:51 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:34:56 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:35:01 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:35:06 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:35:11 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:35:16 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:35:21 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:35:26 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:35:32 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:35:37 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:35:42 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:35:47 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:35:52 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:35:57 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:36:02 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:36:07 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:36:13 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:36:18 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:36:23 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:36:28 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:36:33 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:36:38 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:36:43 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:36:48 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:36:54 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:36:59 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:37:04 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:37:09 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:37:14 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:37:19 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:37:24 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:37:29 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:37:35 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:37:40 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:37:45 UTC 2024] Job = 9323, State = PENDING, Elapsed = 00:00:00
+OK
+[Sat Aug 10 20:39:05 UTC 2024] Starting loop to backfill job 9299 using script: prod_pretrain_MM9_70B_Llama3.1_336px.sh
+Log file: loop_backfill_prod_pretrain_MM9_70B_Llama3.1_336px.sh_9299.log
+[Sat Aug 10 20:39:05 UTC 2024] Job = 9299, State = RUNNING, Elapsed = 06:27:05
+OK
+[Sat Aug 10 20:39:10 UTC 2024] Job = 9299, State = RUNNING, Elapsed = 06:27:10
+OK
+[Sat Aug 10 20:39:13 UTC 2024] Starting loop to backfill job 8351 using script: prod_pretrain_MM9_70B_MH19_336px.sh
+Log file: loop_backfill_prod_pretrain_MM9_70B_MH19_336px.sh_8351.log
+[Sat Aug 10 20:39:13 UTC 2024] Job = 8351, State = RUNNING, Elapsed = 1-02:34:22
+OK
+[Sat Aug 10 20:39:15 UTC 2024] Job = 9299, State = RUNNING, Elapsed = 06:27:15
+OK
+[Sat Aug 10 20:39:18 UTC 2024] Job = 8351, State = RUNNING, Elapsed = 1-02:34:27
+OK
+[Sat Aug 10 20:39:21 UTC 2024] Job = 9299, State = RUNNING, Elapsed = 06:27:21
+OK
+[Sat Aug 10 20:39:23 UTC 2024] Job = 8351, State = RUNNING, Elapsed = 1-02:34:32
+OK
+[Sat Aug 10 20:39:26 UTC 2024] Job = 9299, State = RUNNING, Elapsed = 06:27:26
+OK
+[Sat Aug 10 20:39:28 UTC 2024] Job = 8351, State = RUNNING, Elapsed = 1-02:34:37
+OK
+[Sat Aug 10 20:39:31 UTC 2024] Job = 9299, State = RUNNING, Elapsed = 06:27:31
+OK
+[Sat Aug 10 20:39:33 UTC 2024] Job = 8351, State = RUNNING, Elapsed = 1-02:34:42
+OK
+[Sat Aug 10 20:39:36 UTC 2024] Job = 9299, State = RUNNING, Elapsed = 06:27:36
+OK
+[Sat Aug 10 20:39:38 UTC 2024] Job = 8351, State = RUNNING, Elapsed = 1-02:34:47
+OK
+[Sat Aug 10 20:39:41 UTC 2024] Job = 9299, State = RUNNING, Elapsed = 06:27:41
+OK
+[Sat Aug 10 20:39:43 UTC 2024] Job = 8351, State = RUNNING, Elapsed = 1-02:34:52
+OK
+[Sat Aug 10 20:39:46 UTC 2024] Job = 9299, State = RUNNING, Elapsed = 06:27:46
+OK
+[Sat Aug 10 20:39:49 UTC 2024] Job = 8351, State = RUNNING, Elapsed = 1-02:34:58
+OK
+sacct: error: slurm_persist_conn_open_without_init: failed to open persistent connection to host:slurmdbd:6819: Connection refused
+sacct: error: Sending PersistInit msg: Connection refused
+sacct: error: Problem talking to the database: Connection refused
+sacct: error: slurm_persist_conn_open_without_init: failed to open persistent connection to host:slurmdbd:6819: Connection refused
+sacct: error: Sending PersistInit msg: Connection refused
+sacct: error: Problem talking to the database: Connection refused
+[Sat Aug 10 20:39:51 UTC 2024] Job = 9299, State = , Elapsed = 
+OK
+[Sat Aug 10 20:39:54 UTC 2024] Job = 8351, State = RUNNING, Elapsed = 1-02:35:03
+OK
+[Sat Aug 10 20:39:56 UTC 2024] Job = 9299, State = RUNNING, Elapsed = 06:27:56
+OK
+[Sat Aug 10 20:39:59 UTC 2024] Job = 8351, State = RUNNING, Elapsed = 1-02:35:08
+OK
+[Sat Aug 10 20:40:01 UTC 2024] Job = 9299, State = RUNNING, Elapsed = 06:28:01
+OK
+[Sat Aug 10 20:40:04 UTC 2024] Job = 8351, State = RUNNING, Elapsed = 1-02:35:13
+OK
+[Sat Aug 10 20:40:07 UTC 2024] Job = 9299, State = RUNNING, Elapsed = 06:28:07
+OK
+[Sat Aug 10 20:40:09 UTC 2024] Job = 8351, State = RUNNING, Elapsed = 1-02:35:18
+OK
+[Sat Aug 10 20:40:12 UTC 2024] Job = 9299, State = RUNNING, Elapsed = 06:28:12
+OK
+[Sat Aug 10 20:40:14 UTC 2024] Job = 8351, State = RUNNING, Elapsed = 1-02:35:23
+OK
+[Sat Aug 10 20:40:17 UTC 2024] Job = 9299, State = RUNNING, Elapsed = 06:28:17
+OK
+[Sat Aug 10 20:40:19 UTC 2024] Job = 8351, State = RUNNING, Elapsed = 1-02:35:28
+OK
+[Sat Aug 10 20:40:22 UTC 2024] Job = 9299, State = RUNNING, Elapsed = 06:28:22
+OK
+[Sat Aug 10 20:40:24 UTC 2024] Job = 8351, State = RUNNING, Elapsed = 1-02:35:33
+OK
+[Sat Aug 10 20:40:27 UTC 2024] Job = 9299, State = RUNNING, Elapsed = 06:28:27
+OK
+[Sat Aug 10 20:40:30 UTC 2024] Job = 8351, State = RUNNING, Elapsed = 1-02:35:39
+OK
+[Sat Aug 10 20:40:32 UTC 2024] Job = 9299, State = RUNNING, Elapsed = 06:28:32
+OK
+[Sat Aug 10 20:40:35 UTC 2024] Job = 8351, State = RUNNING, Elapsed = 1-02:35:44
+OK
+[Sat Aug 10 20:40:37 UTC 2024] Job = 9299, State = RUNNING, Elapsed = 06:28:37
+OK
+[Sat Aug 10 20:40:40 UTC 2024] Job = 8351, State = RUNNING, Elapsed = 1-02:35:49
+OK
+[Sat Aug 10 20:40:42 UTC 2024] Job = 9299, State = RUNNING, Elapsed = 06:28:42
+OK
+[Sat Aug 10 20:40:45 UTC 2024] Job = 8351, State = RUNNING, Elapsed = 1-02:35:54
+OK
+[Sat Aug 10 20:40:48 UTC 2024] Job = 9299, State = RUNNING, Elapsed = 06:28:48
+OK
+[Sat Aug 10 20:40:50 UTC 2024] Job = 8351, State = RUNNING, Elapsed = 1-02:35:59
+OK
+[Sat Aug 10 20:40:53 UTC 2024] Job = 9299, State = RUNNING, Elapsed = 06:28:53
+OK
+[Sat Aug 10 20:40:55 UTC 2024] Job = 8351, State = RUNNING, Elapsed = 1-02:36:04
+OK
+[Sat Aug 10 20:41:22 UTC 2024] Starting loop to backfill job 9299 using script: prod_pretrain_MM9_70B_Llama3.1_336px.sh
+Log file: loop_backfill_prod_pretrain_MM9_70B_Llama3.1_336px.sh_9299.log
+[Sat Aug 10 20:41:22 UTC 2024] Job = 9299, State = RUNNING, Elapsed = 06:29:22
+OK
+[Sat Aug 10 20:41:33 UTC 2024] Starting loop to backfill job 8351 using script: prod_pretrain_MM9_70B_MH19_336px.sh
+Log file: loop_backfill_prod_pretrain_MM9_70B_MH19_336px.sh_8351.log
+[Sat Aug 10 20:41:33 UTC 2024] Job = 8351, State = RUNNING, Elapsed = 1-02:36:42
+OK
+[Sat Aug 10 20:42:22 UTC 2024] Job = 9299, State = RUNNING, Elapsed = 06:30:22
+OK
+[Sat Aug 10 20:42:33 UTC 2024] Job = 8351, State = RUNNING, Elapsed = 1-02:37:42
+OK
+[Sat Aug 10 20:43:22 UTC 2024] Job = 9299, State = RUNNING, Elapsed = 06:31:22
+OK
+[Sat Aug 10 20:43:34 UTC 2024] Job = 8351, State = RUNNING, Elapsed = 1-02:38:43
+OK
