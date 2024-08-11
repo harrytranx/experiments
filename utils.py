@@ -3,6 +3,7 @@ from typing import Dict, Any, List
 import pandas as pd
 from datetime import datetime
 import os
+import pytz
 
 
 def timestamp_to_str(timestamp: int):
@@ -14,6 +15,16 @@ def timestamp_to_str(timestamp: int):
     dt_str = dt_object.strftime('%Y-%m-%d %H:%M:%S')
 
     return dt_str
+
+
+def get_local_time(zone='America/New_York'):
+    """
+    'America/New_York', 'US/Pacific'
+    """
+
+    timestamp = datetime.now(pytz.timezone(zone))
+
+    return timestamp
 
 
 def read_file_lines(file_path: str):
@@ -152,3 +163,21 @@ def list_expression_to_list(list_expression: str) -> List[int]:
             raise ValueError("Invalid list expression: {item}")
 
     return output
+
+
+def save_plotly_to_html(fig, output_file, width='100%', height=700):
+
+    html_string = fig.to_html(
+        include_plotlyjs=True,  # include the Plotly.js library in the HTML
+        default_width=width,  # set the default width of the plot to 100%
+        default_height=height  # set the default height of the plot to 500 pixels
+    )
+
+    # save the HTML string to a file
+    if not output_file.endswith('.html'):
+        output_file += '.html'
+
+    with open(output_file, 'w') as f:
+        f.write(html_string)
+
+    print(f"Saved figure to {output_file}")
