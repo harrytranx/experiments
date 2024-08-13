@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=eval
+#SBATCH --job-name=eval_test
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --gpus-per-task=8
@@ -11,7 +11,7 @@
 #SBATCH --account=ar-ai-hipri
 #SBATCH --qos=ar-ai-hipri
 
-# EVAL_PLAN=Llama31_336px
+# EVAL_PLAN=Llama31_336px_test
 # JSON_CONFIG=/fsx_0/user/tranx/eval/llm_mm_aligner/experiments/aws_adel/eval_31/eval_vqa.json
 # CHECKPOINT_WATCH_PATH=/fsx_0/checkpoints/tranx/MM9-Pretrain-70B/Llama31_336px_128nodes_bz32_scratch
 # BENCHMARK_NAME=vqa

@@ -12606,3 +12606,2424 @@ OK
 OK
 [Tue Aug 13 01:49:26 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 12:40:59
 OK
+[Tue Aug 13 01:50:11 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:23:08
+OK
+[Tue Aug 13 01:50:39 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 12:42:09
+OK
+[Tue Aug 13 01:51:20 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:24:18
+OK
+[Tue Aug 13 01:51:43 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 12:43:16
+OK
+[Tue Aug 13 01:52:39 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:25:37
+OK
+[Tue Aug 13 01:53:03 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 12:44:24
+OK
+[Tue Aug 13 01:54:02 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:26:55
+OK
+[Tue Aug 13 01:54:12 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 12:45:43
+OK
+[Tue Aug 13 01:55:11 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:28:08
+OK
+[Tue Aug 13 01:55:32 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 12:46:53
+OK
+[Tue Aug 13 01:56:17 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:29:14
+OK
+[Tue Aug 13 01:56:50 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 12:48:18
+OK
+[Tue Aug 13 01:57:28 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:30:24
+OK
+[Tue Aug 13 01:58:01 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 12:49:34
+OK
+[Tue Aug 13 01:58:33 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:31:29
+OK
+[Tue Aug 13 01:59:08 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 12:50:40
+OK
+[Tue Aug 13 01:59:44 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:32:40
+OK
+[Tue Aug 13 02:00:23 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 12:51:52
+OK
+[Tue Aug 13 02:01:01 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:33:56
+OK
+[Tue Aug 13 02:01:37 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 12:53:08
+OK
+[Tue Aug 13 02:02:12 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:35:10
+OK
+[Tue Aug 13 02:02:48 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 12:54:17
+OK
+[Tue Aug 13 02:03:29 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:36:25
+OK
+[Tue Aug 13 02:03:59 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 12:55:31
+OK
+[Tue Aug 13 02:04:39 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:37:34
+OK
+[Tue Aug 13 02:05:05 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 12:56:36
+OK
+[Tue Aug 13 02:05:51 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:38:47
+OK
+[Tue Aug 13 02:06:33 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 12:58:06
+OK
+[Tue Aug 13 02:07:08 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:39:55
+OK
+[Tue Aug 13 02:07:40 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 12:59:11
+OK
+[Tue Aug 13 02:08:30 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:41:28
+OK
+[Tue Aug 13 02:08:54 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:00:27
+OK
+[Tue Aug 13 02:09:44 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:42:40
+OK
+[Tue Aug 13 02:10:05 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:01:38
+OK
+[Tue Aug 13 02:10:55 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:43:53
+OK
+[Tue Aug 13 02:11:14 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:02:46
+OK
+[Tue Aug 13 02:12:09 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:45:06
+OK
+[Tue Aug 13 02:12:23 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:03:54
+OK
+[Tue Aug 13 02:13:18 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:46:15
+OK
+[Tue Aug 13 02:13:40 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:05:10
+OK
+[Tue Aug 13 02:14:37 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:47:35
+OK
+[Tue Aug 13 02:14:49 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:06:20
+OK
+[Tue Aug 13 02:15:46 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:48:40
+OK
+[Tue Aug 13 02:15:54 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:07:26
+OK
+[Tue Aug 13 02:16:52 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:49:45
+OK
+[Tue Aug 13 02:17:08 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:08:35
+OK
+[Tue Aug 13 02:18:04 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:50:59
+OK
+[Tue Aug 13 02:18:25 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:09:49
+OK
+[Tue Aug 13 02:19:16 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:52:14
+OK
+[Tue Aug 13 02:19:39 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:11:12
+OK
+[Tue Aug 13 02:20:35 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:53:32
+OK
+[Tue Aug 13 02:20:58 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:12:26
+OK
+[Tue Aug 13 02:21:45 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:54:38
+OK
+[Tue Aug 13 02:22:11 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:13:42
+OK
+[Tue Aug 13 02:22:59 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:55:56
+OK
+[Tue Aug 13 02:23:23 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:14:53
+OK
+[Tue Aug 13 02:24:11 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:57:05
+OK
+sacct: error: slurm_persist_conn_open_without_init: failed to open persistent connection to host:slurmdbd:6819: Connection refused
+sacct: error: Sending PersistInit msg: Connection refused
+sacct: error: Problem talking to the database: Connection refused
+[Tue Aug 13 02:24:28 UTC 2024] Job = 9398, State = , Elapsed = 13:16:00
+OK
+[Tue Aug 13 02:25:21 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:58:19
+OK
+[Tue Aug 13 02:25:37 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:17:08
+OK
+[Tue Aug 13 02:26:30 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-09:59:27
+OK
+[Tue Aug 13 02:26:43 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:18:15
+OK
+[Tue Aug 13 02:27:38 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:00:35
+OK
+[Tue Aug 13 02:27:55 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:19:24
+OK
+[Tue Aug 13 02:28:58 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:01:55
+OK
+[Tue Aug 13 02:29:15 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:20:47
+OK
+[Tue Aug 13 02:30:10 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:03:07
+OK
+[Tue Aug 13 02:30:24 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:21:54
+OK
+[Tue Aug 13 02:31:18 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:04:14
+OK
+[Tue Aug 13 02:31:33 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:23:05
+OK
+[Tue Aug 13 02:32:26 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:05:22
+OK
+[Tue Aug 13 02:32:56 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:24:26
+OK
+[Tue Aug 13 02:33:46 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:06:42
+OK
+[Tue Aug 13 02:34:01 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:25:34
+OK
+[Tue Aug 13 02:35:02 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:07:59
+OK
+[Tue Aug 13 02:35:16 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:26:48
+OK
+[Tue Aug 13 02:36:13 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:09:08
+OK
+[Tue Aug 13 02:36:27 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:27:58
+OK
+[Tue Aug 13 02:37:21 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:10:18
+OK
+[Tue Aug 13 02:37:37 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:29:09
+OK
+[Tue Aug 13 02:38:36 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:11:30
+OK
+[Tue Aug 13 02:38:49 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:30:20
+OK
+[Tue Aug 13 02:39:47 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:12:43
+OK
+[Tue Aug 13 02:40:05 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:31:36
+OK
+[Tue Aug 13 02:40:56 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:13:52
+OK
+[Tue Aug 13 02:41:16 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:32:48
+OK
+[Tue Aug 13 02:41:59 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:14:57
+OK
+[Tue Aug 13 02:42:23 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:33:54
+OK
+[Tue Aug 13 02:43:15 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:16:13
+OK
+[Tue Aug 13 02:43:37 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:35:09
+OK
+[Tue Aug 13 02:44:20 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:17:18
+OK
+[Tue Aug 13 02:44:46 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:36:18
+OK
+[Tue Aug 13 02:45:30 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:18:27
+OK
+[Tue Aug 13 02:45:57 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:37:24
+OK
+[Tue Aug 13 02:46:38 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:19:35
+OK
+[Tue Aug 13 02:47:10 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:38:41
+OK
+[Tue Aug 13 02:47:59 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:20:44
+OK
+[Tue Aug 13 02:48:19 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:39:52
+OK
+[Tue Aug 13 02:49:05 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:22:01
+OK
+[Tue Aug 13 02:49:25 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:40:57
+OK
+[Tue Aug 13 02:50:12 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:23:09
+OK
+[Tue Aug 13 02:50:35 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:42:08
+OK
+[Tue Aug 13 02:51:32 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:24:27
+OK
+[Tue Aug 13 02:51:46 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:43:19
+OK
+[Tue Aug 13 02:52:42 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:25:37
+OK
+[Tue Aug 13 02:52:58 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:44:31
+OK
+[Tue Aug 13 02:53:50 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:26:47
+OK
+[Tue Aug 13 02:54:10 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:45:42
+OK
+[Tue Aug 13 02:55:01 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:27:57
+OK
+[Tue Aug 13 02:55:16 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:46:48
+OK
+[Tue Aug 13 02:56:08 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:29:05
+OK
+[Tue Aug 13 02:56:24 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:47:56
+OK
+[Tue Aug 13 02:57:17 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:30:13
+OK
+[Tue Aug 13 02:57:34 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:49:07
+OK
+[Tue Aug 13 02:58:35 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:31:28
+OK
+[Tue Aug 13 02:58:46 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:50:19
+OK
+[Tue Aug 13 02:59:52 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:32:48
+OK
+[Tue Aug 13 02:59:56 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:51:25
+OK
+[Tue Aug 13 03:01:01 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:33:54
+OK
+[Tue Aug 13 03:01:02 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:52:34
+OK
+[Tue Aug 13 03:02:10 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:53:42
+OK
+[Tue Aug 13 03:02:11 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:35:08
+OK
+[Tue Aug 13 03:03:17 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:54:49
+OK
+[Tue Aug 13 03:03:18 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:36:15
+OK
+[Tue Aug 13 03:04:24 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:55:57
+OK
+[Tue Aug 13 03:04:37 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:37:29
+OK
+[Tue Aug 13 03:05:36 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:57:07
+OK
+[Tue Aug 13 03:05:44 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:38:41
+OK
+[Tue Aug 13 03:06:44 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:58:15
+OK
+[Tue Aug 13 03:07:00 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:39:49
+OK
+[Tue Aug 13 03:07:54 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 13:59:27
+OK
+[Tue Aug 13 03:08:13 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:41:08
+OK
+[Tue Aug 13 03:09:02 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:00:34
+OK
+[Tue Aug 13 03:09:24 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:42:21
+OK
+[Tue Aug 13 03:10:09 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:01:42
+OK
+[Tue Aug 13 03:10:28 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:43:25
+OK
+[Tue Aug 13 03:11:25 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:02:58
+OK
+[Tue Aug 13 03:11:47 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:44:38
+OK
+[Tue Aug 13 03:12:33 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:04:06
+OK
+[Tue Aug 13 03:12:58 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:45:55
+OK
+[Tue Aug 13 03:13:47 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:05:16
+OK
+[Tue Aug 13 03:14:08 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:47:01
+OK
+[Tue Aug 13 03:14:53 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:06:24
+OK
+[Tue Aug 13 03:15:27 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:48:23
+OK
+[Tue Aug 13 03:16:02 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:07:34
+OK
+[Tue Aug 13 03:16:43 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:49:36
+OK
+[Tue Aug 13 03:17:16 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:08:43
+OK
+[Tue Aug 13 03:18:06 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:50:55
+OK
+[Tue Aug 13 03:18:22 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:09:53
+OK
+[Tue Aug 13 03:19:26 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:52:18
+OK
+[Tue Aug 13 03:19:26 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:10:58
+OK
+[Tue Aug 13 03:20:35 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:53:32
+OK
+[Tue Aug 13 03:20:43 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:12:11
+OK
+[Tue Aug 13 03:21:39 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:54:37
+OK
+[Tue Aug 13 03:22:13 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:13:24
+OK
+[Tue Aug 13 03:22:56 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:55:53
+OK
+[Tue Aug 13 03:23:25 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:14:57
+OK
+[Tue Aug 13 03:24:11 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:57:05
+OK
+[Tue Aug 13 03:24:54 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:16:12
+OK
+[Tue Aug 13 03:25:19 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:58:16
+OK
+[Tue Aug 13 03:26:19 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:17:44
+OK
+[Tue Aug 13 03:26:38 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-10:59:36
+OK
+[Tue Aug 13 03:27:26 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:18:58
+OK
+[Tue Aug 13 03:27:45 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:00:42
+OK
+[Tue Aug 13 03:28:30 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:20:02
+OK
+[Tue Aug 13 03:28:58 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:01:56
+OK
+[Tue Aug 13 03:29:43 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:21:10
+OK
+[Tue Aug 13 03:30:05 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:03:03
+OK
+[Tue Aug 13 03:30:57 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:22:25
+OK
+[Tue Aug 13 03:31:10 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:04:08
+OK
+[Tue Aug 13 03:32:06 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:23:39
+OK
+[Tue Aug 13 03:32:21 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:05:15
+OK
+[Tue Aug 13 03:33:09 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:24:41
+OK
+[Tue Aug 13 03:33:25 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:06:21
+OK
+[Tue Aug 13 03:34:15 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:25:48
+OK
+[Tue Aug 13 03:34:31 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:07:28
+OK
+[Tue Aug 13 03:35:23 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:26:56
+OK
+[Tue Aug 13 03:35:42 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:08:37
+OK
+[Tue Aug 13 03:36:27 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:28:00
+OK
+[Tue Aug 13 03:36:55 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:09:48
+OK
+[Tue Aug 13 03:37:39 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:29:11
+OK
+[Tue Aug 13 03:38:00 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:10:56
+OK
+[Tue Aug 13 03:38:45 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:30:18
+OK
+[Tue Aug 13 03:39:12 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:12:07
+OK
+[Tue Aug 13 03:39:52 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:31:23
+OK
+[Tue Aug 13 03:40:24 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:13:22
+OK
+[Tue Aug 13 03:41:01 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:32:34
+OK
+[Tue Aug 13 03:41:41 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:14:37
+OK
+[Tue Aug 13 03:42:19 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:33:50
+OK
+[Tue Aug 13 03:42:46 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:15:44
+OK
+[Tue Aug 13 03:43:31 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:35:00
+OK
+[Tue Aug 13 03:44:00 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:16:56
+OK
+[Tue Aug 13 03:44:42 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:36:14
+OK
+[Tue Aug 13 03:45:16 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:18:11
+OK
+[Tue Aug 13 03:45:59 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:37:30
+OK
+[Tue Aug 13 03:46:25 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:19:22
+OK
+[Tue Aug 13 03:47:08 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:38:39
+OK
+[Tue Aug 13 03:47:38 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:20:30
+OK
+[Tue Aug 13 03:48:15 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:39:47
+OK
+[Tue Aug 13 03:48:53 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:21:50
+OK
+[Tue Aug 13 03:49:38 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:40:59
+OK
+[Tue Aug 13 03:50:02 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:22:57
+OK
+[Tue Aug 13 03:50:53 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:42:18
+OK
+[Tue Aug 13 03:51:11 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:24:06
+OK
+[Tue Aug 13 03:52:14 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:43:47
+OK
+[Tue Aug 13 03:52:17 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:25:15
+OK
+[Tue Aug 13 03:53:22 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:26:20
+OK
+[Tue Aug 13 03:53:30 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:45:01
+OK
+[Tue Aug 13 03:54:38 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:27:34
+OK
+[Tue Aug 13 03:54:42 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:46:15
+OK
+[Tue Aug 13 03:55:57 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:47:29
+OK
+[Tue Aug 13 03:55:59 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:28:54
+OK
+[Tue Aug 13 03:57:07 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:48:37
+OK
+[Tue Aug 13 03:57:12 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:30:08
+OK
+[Tue Aug 13 03:58:16 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:49:48
+OK
+[Tue Aug 13 03:58:25 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:31:22
+OK
+[Tue Aug 13 03:59:28 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:51:00
+OK
+[Tue Aug 13 03:59:39 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:32:36
+OK
+[Tue Aug 13 04:00:44 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:33:42
+OK
+[Tue Aug 13 04:00:55 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:52:07
+OK
+[Tue Aug 13 04:02:07 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:53:40
+OK
+sacct: error: slurm_persist_conn_open_without_init: failed to open persistent connection to host:slurmdbd:6819: Connection refused
+sacct: error: Sending PersistInit msg: Connection refused
+sacct: error: Problem talking to the database: Connection refused
+[Tue Aug 13 04:02:35 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 
+OK
+[Tue Aug 13 04:03:23 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:54:55
+OK
+[Tue Aug 13 04:03:41 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:36:39
+OK
+[Tue Aug 13 04:04:37 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:56:06
+OK
+[Tue Aug 13 04:04:59 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:37:56
+OK
+[Tue Aug 13 04:05:51 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:57:23
+OK
+[Tue Aug 13 04:06:04 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:39:02
+OK
+[Tue Aug 13 04:07:10 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:58:41
+OK
+[Tue Aug 13 04:07:12 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:40:10
+OK
+[Tue Aug 13 04:08:17 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:41:15
+OK
+[Tue Aug 13 04:08:23 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 14:59:54
+OK
+[Tue Aug 13 04:09:24 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:42:19
+OK
+[Tue Aug 13 04:09:35 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:01:08
+OK
+[Tue Aug 13 04:10:42 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:43:39
+OK
+[Tue Aug 13 04:10:49 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:02:22
+OK
+[Tue Aug 13 04:11:58 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:44:54
+OK
+[Tue Aug 13 04:12:04 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:03:33
+OK
+[Tue Aug 13 04:13:22 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:04:54
+OK
+[Tue Aug 13 04:13:30 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:46:02
+OK
+[Tue Aug 13 04:14:34 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:06:03
+OK
+[Tue Aug 13 04:14:48 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:47:39
+OK
+[Tue Aug 13 04:15:50 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:07:21
+OK
+[Tue Aug 13 04:16:06 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:49:03
+OK
+[Tue Aug 13 04:17:01 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:08:33
+OK
+[Tue Aug 13 04:17:22 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:50:19
+OK
+[Tue Aug 13 04:18:14 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:09:46
+OK
+[Tue Aug 13 04:18:40 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:51:31
+OK
+[Tue Aug 13 04:19:17 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:10:50
+OK
+[Tue Aug 13 04:19:52 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:52:49
+OK
+[Tue Aug 13 04:20:22 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:11:54
+OK
+[Tue Aug 13 04:21:04 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:54:01
+OK
+[Tue Aug 13 04:21:44 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:13:16
+OK
+[Tue Aug 13 04:22:17 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:55:13
+OK
+[Tue Aug 13 04:23:11 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:14:44
+OK
+[Tue Aug 13 04:23:25 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:56:20
+OK
+[Tue Aug 13 04:24:25 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:15:58
+OK
+[Tue Aug 13 04:24:34 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:57:30
+OK
+[Tue Aug 13 04:25:39 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:58:34
+OK
+[Tue Aug 13 04:25:39 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:17:11
+OK
+[Tue Aug 13 04:26:50 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-11:59:47
+OK
+[Tue Aug 13 04:26:50 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:18:22
+OK
+[Tue Aug 13 04:28:07 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:19:34
+OK
+[Tue Aug 13 04:28:15 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:01:09
+OK
+[Tue Aug 13 04:29:30 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:21:02
+OK
+[Tue Aug 13 04:29:42 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:02:36
+OK
+[Tue Aug 13 04:30:39 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:22:10
+OK
+[Tue Aug 13 04:30:53 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:03:50
+OK
+[Tue Aug 13 04:32:00 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:23:33
+OK
+[Tue Aug 13 04:32:15 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:05:11
+OK
+[Tue Aug 13 04:33:13 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:24:45
+OK
+[Tue Aug 13 04:33:25 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:06:21
+OK
+[Tue Aug 13 04:34:30 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:25:58
+OK
+[Tue Aug 13 04:34:47 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:07:35
+OK
+[Tue Aug 13 04:35:40 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:27:11
+OK
+[Tue Aug 13 04:35:57 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:08:53
+OK
+[Tue Aug 13 04:36:44 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:28:16
+OK
+[Tue Aug 13 04:37:16 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:10:12
+OK
+[Tue Aug 13 04:37:58 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:29:28
+OK
+[Tue Aug 13 04:38:27 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:11:24
+OK
+[Tue Aug 13 04:39:11 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:30:43
+OK
+[Tue Aug 13 04:39:38 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:12:36
+OK
+[Tue Aug 13 04:40:21 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:31:52
+OK
+[Tue Aug 13 04:40:45 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:13:43
+OK
+[Tue Aug 13 04:41:35 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:33:08
+OK
+[Tue Aug 13 04:41:59 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:14:55
+OK
+[Tue Aug 13 04:42:46 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:34:18
+OK
+[Tue Aug 13 04:43:08 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:16:06
+OK
+[Tue Aug 13 04:44:07 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:35:38
+OK
+[Tue Aug 13 04:44:20 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:17:17
+OK
+[Tue Aug 13 04:45:16 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:36:48
+OK
+[Tue Aug 13 04:45:35 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:18:31
+OK
+[Tue Aug 13 04:46:34 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:38:07
+OK
+[Tue Aug 13 04:46:47 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:19:45
+OK
+[Tue Aug 13 04:47:49 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:39:17
+OK
+[Tue Aug 13 04:48:05 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:21:03
+OK
+[Tue Aug 13 04:49:01 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:40:29
+OK
+[Tue Aug 13 04:49:21 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:22:18
+OK
+[Tue Aug 13 04:50:10 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:41:42
+OK
+[Tue Aug 13 04:50:32 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:23:27
+OK
+[Tue Aug 13 04:51:25 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:42:57
+OK
+[Tue Aug 13 04:51:45 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:24:42
+OK
+[Tue Aug 13 04:52:37 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:44:08
+OK
+[Tue Aug 13 04:52:58 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:25:56
+OK
+[Tue Aug 13 04:53:49 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:45:22
+OK
+[Tue Aug 13 04:54:09 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:27:05
+OK
+[Tue Aug 13 04:54:59 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:46:29
+OK
+[Tue Aug 13 04:55:24 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:28:20
+OK
+[Tue Aug 13 04:56:07 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:47:38
+OK
+[Tue Aug 13 04:56:52 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:29:45
+OK
+[Tue Aug 13 04:57:16 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:48:48
+OK
+[Tue Aug 13 04:58:03 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:31:00
+OK
+[Tue Aug 13 04:58:30 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:50:02
+OK
+[Tue Aug 13 04:59:12 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:32:09
+OK
+[Tue Aug 13 04:59:42 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:51:15
+OK
+[Tue Aug 13 05:00:21 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:33:18
+OK
+[Tue Aug 13 05:00:57 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:52:28
+OK
+[Tue Aug 13 05:01:28 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:34:26
+OK
+[Tue Aug 13 05:01:58 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:53:31
+OK
+[Tue Aug 13 05:02:45 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:35:42
+OK
+[Tue Aug 13 05:03:11 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:54:44
+OK
+[Tue Aug 13 05:03:55 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:36:49
+OK
+[Tue Aug 13 05:04:16 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:55:48
+OK
+[Tue Aug 13 05:05:04 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:38:01
+OK
+[Tue Aug 13 05:05:23 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:56:56
+OK
+[Tue Aug 13 05:06:23 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:39:08
+OK
+[Tue Aug 13 05:06:31 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:58:02
+OK
+[Tue Aug 13 05:07:37 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:40:30
+OK
+[Tue Aug 13 05:07:43 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 15:59:15
+OK
+[Tue Aug 13 05:08:46 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:41:44
+OK
+[Tue Aug 13 05:08:49 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:00:22
+OK
+[Tue Aug 13 05:10:08 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:42:59
+OK
+[Tue Aug 13 05:10:11 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:01:40
+OK
+[Tue Aug 13 05:11:25 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:44:21
+OK
+[Tue Aug 13 05:11:27 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:02:56
+OK
+[Tue Aug 13 05:12:43 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:04:10
+OK
+[Tue Aug 13 05:12:46 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:45:43
+OK
+[Tue Aug 13 05:14:07 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:47:03
+OK
+[Tue Aug 13 05:14:14 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:05:45
+OK
+[Tue Aug 13 05:15:16 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:48:14
+OK
+[Tue Aug 13 05:15:21 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:06:53
+OK
+[Tue Aug 13 05:16:24 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:49:21
+OK
+[Tue Aug 13 05:16:39 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:08:11
+OK
+[Tue Aug 13 05:17:33 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:50:31
+OK
+[Tue Aug 13 05:17:48 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:09:21
+OK
+[Tue Aug 13 05:18:54 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:51:45
+OK
+[Tue Aug 13 05:19:05 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:10:34
+OK
+[Tue Aug 13 05:19:58 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:52:56
+OK
+[Tue Aug 13 05:20:12 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:11:43
+OK
+[Tue Aug 13 05:21:16 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:54:13
+OK
+[Tue Aug 13 05:21:31 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:13:04
+OK
+[Tue Aug 13 05:22:38 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:55:29
+OK
+[Tue Aug 13 05:22:48 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:14:21
+OK
+[Tue Aug 13 05:23:50 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:56:48
+OK
+[Tue Aug 13 05:24:04 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:15:33
+OK
+[Tue Aug 13 05:24:57 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:57:55
+OK
+[Tue Aug 13 05:25:08 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:16:41
+OK
+[Tue Aug 13 05:26:02 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-12:59:00
+OK
+[Tue Aug 13 05:26:33 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:18:04
+OK
+[Tue Aug 13 05:27:07 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:00:05
+OK
+[Tue Aug 13 05:27:40 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:19:11
+OK
+[Tue Aug 13 05:28:28 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:01:18
+OK
+[Tue Aug 13 05:28:51 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:20:24
+OK
+[Tue Aug 13 05:29:41 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:02:37
+OK
+[Tue Aug 13 05:30:17 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:21:49
+OK
+[Tue Aug 13 05:30:50 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:03:47
+OK
+[Tue Aug 13 05:31:22 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:22:54
+OK
+[Tue Aug 13 05:31:59 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:04:56
+OK
+[Tue Aug 13 05:32:32 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:24:03
+OK
+[Tue Aug 13 05:33:10 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:06:08
+OK
+[Tue Aug 13 05:33:47 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:25:18
+OK
+[Tue Aug 13 05:34:14 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:07:11
+OK
+[Tue Aug 13 05:34:55 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:26:27
+OK
+[Tue Aug 13 05:35:29 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:08:23
+OK
+[Tue Aug 13 05:36:04 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:27:36
+OK
+[Tue Aug 13 05:37:00 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:09:55
+OK
+[Tue Aug 13 05:37:19 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:28:50
+OK
+[Tue Aug 13 05:38:09 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:11:05
+OK
+[Tue Aug 13 05:38:36 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:30:09
+OK
+[Tue Aug 13 05:39:24 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:12:21
+OK
+[Tue Aug 13 05:40:12 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:31:45
+OK
+[Tue Aug 13 05:40:38 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:13:36
+OK
+[Tue Aug 13 05:41:32 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:33:04
+OK
+[Tue Aug 13 05:41:40 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:14:38
+OK
+[Tue Aug 13 05:42:39 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:34:11
+OK
+[Tue Aug 13 05:42:45 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:15:42
+OK
+[Tue Aug 13 05:43:43 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:35:16
+OK
+[Tue Aug 13 05:43:55 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:16:51
+OK
+[Tue Aug 13 05:44:54 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:36:25
+OK
+[Tue Aug 13 05:45:12 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:18:03
+OK
+[Tue Aug 13 05:46:07 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:37:37
+OK
+[Tue Aug 13 05:46:21 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:19:18
+OK
+[Tue Aug 13 05:47:12 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:38:44
+OK
+[Tue Aug 13 05:47:39 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:20:37
+OK
+[Tue Aug 13 05:48:19 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:39:52
+OK
+[Tue Aug 13 05:48:44 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:21:41
+OK
+[Tue Aug 13 05:49:28 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:40:56
+OK
+[Tue Aug 13 05:49:56 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:22:53
+OK
+[Tue Aug 13 05:50:36 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:42:09
+OK
+[Tue Aug 13 05:51:01 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:23:58
+OK
+[Tue Aug 13 05:51:44 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:43:16
+OK
+[Tue Aug 13 05:52:16 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:25:13
+OK
+[Tue Aug 13 05:52:50 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:44:22
+OK
+[Tue Aug 13 05:53:22 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:26:20
+OK
+[Tue Aug 13 05:53:59 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:45:32
+OK
+[Tue Aug 13 05:54:38 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:27:30
+OK
+[Tue Aug 13 05:55:09 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:46:39
+OK
+[Tue Aug 13 05:55:51 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:28:44
+OK
+[Tue Aug 13 05:56:19 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:47:51
+OK
+[Tue Aug 13 05:56:56 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:29:52
+OK
+[Tue Aug 13 05:57:33 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:49:06
+OK
+[Tue Aug 13 05:58:15 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:31:11
+OK
+[Tue Aug 13 05:58:43 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:50:09
+OK
+[Tue Aug 13 05:59:19 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:32:16
+OK
+[Tue Aug 13 05:59:56 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:51:28
+OK
+[Tue Aug 13 06:00:27 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:33:25
+OK
+[Tue Aug 13 06:01:04 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:52:36
+OK
+[Tue Aug 13 06:01:33 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:34:30
+OK
+[Tue Aug 13 06:02:12 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:53:44
+OK
+[Tue Aug 13 06:02:44 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:35:42
+OK
+[Tue Aug 13 06:03:20 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:54:51
+OK
+[Tue Aug 13 06:03:47 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:36:44
+OK
+[Tue Aug 13 06:04:28 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:56:01
+OK
+[Tue Aug 13 06:04:53 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:37:50
+OK
+[Tue Aug 13 06:05:40 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:57:12
+OK
+[Tue Aug 13 06:06:04 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:39:00
+OK
+[Tue Aug 13 06:07:11 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:58:36
+OK
+[Tue Aug 13 06:07:27 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:40:22
+OK
+[Tue Aug 13 06:08:15 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 16:59:48
+OK
+[Tue Aug 13 06:08:37 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:41:35
+OK
+[Tue Aug 13 06:09:38 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:01:09
+OK
+[Tue Aug 13 06:09:57 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:42:53
+OK
+[Tue Aug 13 06:10:53 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:02:26
+OK
+[Tue Aug 13 06:11:08 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:44:06
+OK
+[Tue Aug 13 06:12:06 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:03:38
+OK
+[Tue Aug 13 06:12:30 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:45:27
+OK
+[Tue Aug 13 06:13:14 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:04:45
+OK
+[Tue Aug 13 06:13:37 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:46:33
+OK
+[Tue Aug 13 06:14:31 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:06:00
+OK
+[Tue Aug 13 06:14:46 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:47:44
+OK
+[Tue Aug 13 06:15:44 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:07:17
+OK
+[Tue Aug 13 06:16:18 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:49:14
+OK
+[Tue Aug 13 06:17:04 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:08:36
+OK
+[Tue Aug 13 06:17:36 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:50:33
+OK
+[Tue Aug 13 06:18:12 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:09:41
+OK
+[Tue Aug 13 06:18:46 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:51:44
+OK
+[Tue Aug 13 06:19:36 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:11:06
+OK
+[Tue Aug 13 06:19:56 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:52:53
+OK
+[Tue Aug 13 06:20:54 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:12:25
+OK
+[Tue Aug 13 06:21:12 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:54:03
+OK
+[Tue Aug 13 06:22:08 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:13:38
+OK
+[Tue Aug 13 06:22:17 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:55:12
+OK
+[Tue Aug 13 06:23:24 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:14:53
+OK
+[Tue Aug 13 06:23:41 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:56:31
+OK
+[Tue Aug 13 06:24:38 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:16:09
+OK
+[Tue Aug 13 06:24:57 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:57:51
+OK
+[Tue Aug 13 06:25:47 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:17:19
+OK
+[Tue Aug 13 06:26:01 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-13:58:59
+OK
+[Tue Aug 13 06:27:02 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:18:21
+OK
+[Tue Aug 13 06:27:23 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:00:18
+OK
+[Tue Aug 13 06:28:18 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:19:50
+OK
+[Tue Aug 13 06:28:38 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:01:32
+OK
+[Tue Aug 13 06:29:32 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:21:02
+OK
+[Tue Aug 13 06:29:47 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:02:42
+OK
+[Tue Aug 13 06:30:41 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:22:11
+OK
+[Tue Aug 13 06:31:04 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:03:58
+OK
+[Tue Aug 13 06:31:55 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:23:27
+OK
+[Tue Aug 13 06:32:09 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:05:05
+OK
+[Tue Aug 13 06:33:08 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:24:41
+OK
+[Tue Aug 13 06:33:24 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:06:22
+OK
+[Tue Aug 13 06:34:23 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:25:50
+OK
+[Tue Aug 13 06:34:35 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:07:32
+OK
+[Tue Aug 13 06:35:42 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:27:00
+OK
+[Tue Aug 13 06:35:55 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:08:48
+OK
+[Tue Aug 13 06:36:53 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:28:25
+OK
+[Tue Aug 13 06:37:03 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:10:00
+OK
+[Tue Aug 13 06:37:58 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:29:30
+OK
+[Tue Aug 13 06:38:15 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:11:13
+OK
+[Tue Aug 13 06:39:12 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:30:44
+OK
+[Tue Aug 13 06:39:27 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:12:21
+OK
+[Tue Aug 13 06:40:24 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:31:53
+OK
+[Tue Aug 13 06:40:37 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:13:35
+OK
+[Tue Aug 13 06:41:36 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:33:05
+OK
+[Tue Aug 13 06:42:16 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:15:03
+OK
+[Tue Aug 13 06:42:56 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:34:23
+OK
+[Tue Aug 13 06:43:31 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:16:27
+OK
+[Tue Aug 13 06:44:09 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:35:37
+OK
+[Tue Aug 13 06:44:40 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:17:38
+OK
+[Tue Aug 13 06:45:20 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:36:52
+OK
+[Tue Aug 13 06:46:09 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:19:05
+OK
+[Tue Aug 13 06:46:23 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:37:56
+OK
+[Tue Aug 13 06:47:20 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:20:15
+OK
+[Tue Aug 13 06:47:38 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:39:11
+OK
+[Tue Aug 13 06:48:40 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:21:37
+OK
+[Tue Aug 13 06:48:50 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:40:21
+OK
+[Tue Aug 13 06:49:50 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:22:47
+OK
+[Tue Aug 13 06:50:02 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:41:34
+OK
+[Tue Aug 13 06:50:57 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:23:54
+OK
+[Tue Aug 13 06:51:13 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:42:44
+OK
+[Tue Aug 13 06:52:12 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:25:06
+OK
+[Tue Aug 13 06:52:26 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:43:59
+OK
+[Tue Aug 13 06:53:19 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:26:16
+OK
+[Tue Aug 13 06:53:39 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:45:09
+OK
+[Tue Aug 13 06:54:26 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:27:22
+OK
+[Tue Aug 13 06:54:45 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:46:16
+OK
+[Tue Aug 13 06:55:32 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:28:29
+OK
+[Tue Aug 13 06:55:57 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:47:27
+OK
+[Tue Aug 13 06:56:42 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:29:36
+OK
+[Tue Aug 13 06:57:07 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:48:39
+OK
+[Tue Aug 13 06:57:51 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:30:48
+OK
+[Tue Aug 13 06:58:25 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:49:56
+OK
+[Tue Aug 13 06:59:14 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:32:12
+OK
+[Tue Aug 13 06:59:32 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:51:02
+OK
+[Tue Aug 13 07:00:19 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:33:17
+OK
+[Tue Aug 13 07:00:46 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:52:19
+OK
+[Tue Aug 13 07:01:34 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:34:27
+OK
+[Tue Aug 13 07:01:47 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:53:20
+OK
+[Tue Aug 13 07:02:48 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:35:45
+OK
+[Tue Aug 13 07:02:52 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:54:22
+OK
+[Tue Aug 13 07:03:57 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:36:52
+OK
+[Tue Aug 13 07:04:00 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:55:30
+OK
+[Tue Aug 13 07:05:08 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:38:04
+OK
+[Tue Aug 13 07:05:13 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:56:44
+OK
+[Tue Aug 13 07:06:21 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:57:54
+OK
+[Tue Aug 13 07:06:24 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:39:21
+OK
+[Tue Aug 13 07:07:39 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 17:59:12
+OK
+[Tue Aug 13 07:07:41 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:40:35
+OK
+[Tue Aug 13 07:08:49 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:00:21
+OK
+[Tue Aug 13 07:08:56 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:41:53
+OK
+[Tue Aug 13 07:10:06 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:01:37
+OK
+[Tue Aug 13 07:10:12 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:43:10
+OK
+[Tue Aug 13 07:11:25 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:02:56
+OK
+[Tue Aug 13 07:11:25 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:44:23
+OK
+[Tue Aug 13 07:12:38 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:45:36
+OK
+[Tue Aug 13 07:12:39 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:04:12
+OK
+[Tue Aug 13 07:13:41 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:46:39
+OK
+[Tue Aug 13 07:13:45 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:05:17
+OK
+[Tue Aug 13 07:14:47 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:47:43
+OK
+[Tue Aug 13 07:14:55 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:06:28
+OK
+[Tue Aug 13 07:15:51 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:48:49
+OK
+[Tue Aug 13 07:16:11 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:07:40
+OK
+[Tue Aug 13 07:17:18 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:50:00
+OK
+[Tue Aug 13 07:17:22 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:08:54
+OK
+[Tue Aug 13 07:18:33 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:51:30
+OK
+[Tue Aug 13 07:18:43 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:10:15
+OK
+[Tue Aug 13 07:19:46 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:52:43
+OK
+[Tue Aug 13 07:19:57 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:11:29
+OK
+[Tue Aug 13 07:20:56 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:53:51
+OK
+[Tue Aug 13 07:21:08 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:12:40
+OK
+[Tue Aug 13 07:22:03 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:55:01
+OK
+[Tue Aug 13 07:22:22 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:13:53
+OK
+[Tue Aug 13 07:23:16 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:56:12
+OK
+[Tue Aug 13 07:23:35 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:15:08
+OK
+[Tue Aug 13 07:24:26 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:57:23
+OK
+[Tue Aug 13 07:24:53 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:16:25
+OK
+[Tue Aug 13 07:25:58 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-14:58:46
+OK
+[Tue Aug 13 07:26:00 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:17:29
+OK
+[Tue Aug 13 07:27:05 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:00:02
+OK
+[Tue Aug 13 07:27:08 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:18:40
+OK
+[Tue Aug 13 07:28:15 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:19:42
+OK
+[Tue Aug 13 07:28:20 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:01:18
+OK
+[Tue Aug 13 07:29:32 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:20:59
+OK
+[Tue Aug 13 07:29:35 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:02:30
+OK
+[Tue Aug 13 07:30:49 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:03:45
+OK
+[Tue Aug 13 07:31:10 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:22:41
+OK
+[Tue Aug 13 07:32:13 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:23:46
+OK
+[Tue Aug 13 07:32:19 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:05:06
+OK
+[Tue Aug 13 07:33:35 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:06:33
+OK
+[Tue Aug 13 07:33:38 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:25:09
+OK
+[Tue Aug 13 07:34:48 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:26:18
+OK
+[Tue Aug 13 07:34:53 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:07:49
+OK
+[Tue Aug 13 07:36:08 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:09:05
+OK
+[Tue Aug 13 07:36:09 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:27:39
+OK
+[Tue Aug 13 07:37:15 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:10:12
+OK
+[Tue Aug 13 07:37:23 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:28:53
+OK
+[Tue Aug 13 07:38:25 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:11:23
+OK
+sacct: error: slurm_persist_conn_open_without_init: failed to open persistent connection to host:slurmdbd:6819: Connection refused
+sacct: error: Sending PersistInit msg: Connection refused
+sacct: error: Problem talking to the database: Connection refused
+[Tue Aug 13 07:38:39 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 
+OK
+[Tue Aug 13 07:39:37 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:12:34
+OK
+[Tue Aug 13 07:39:44 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:31:17
+OK
+[Tue Aug 13 07:40:40 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:13:37
+OK
+[Tue Aug 13 07:40:50 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:32:22
+OK
+[Tue Aug 13 07:41:49 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:14:46
+OK
+[Tue Aug 13 07:41:59 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:33:30
+OK
+[Tue Aug 13 07:42:55 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:15:50
+OK
+[Tue Aug 13 07:43:06 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:34:36
+OK
+[Tue Aug 13 07:44:04 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:17:02
+OK
+[Tue Aug 13 07:44:19 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:35:49
+OK
+[Tue Aug 13 07:45:15 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:18:12
+OK
+[Tue Aug 13 07:45:22 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:36:55
+OK
+[Tue Aug 13 07:46:24 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:19:21
+OK
+[Tue Aug 13 07:46:46 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:38:19
+OK
+[Tue Aug 13 07:47:38 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:20:36
+OK
+[Tue Aug 13 07:47:57 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:39:30
+OK
+[Tue Aug 13 07:48:41 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:21:39
+OK
+[Tue Aug 13 07:49:18 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:40:47
+OK
+[Tue Aug 13 07:49:56 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:22:53
+OK
+[Tue Aug 13 07:50:27 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:42:00
+OK
+[Tue Aug 13 07:51:04 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:24:01
+OK
+[Tue Aug 13 07:51:48 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:43:21
+OK
+[Tue Aug 13 07:52:13 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:25:08
+OK
+[Tue Aug 13 07:53:12 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:44:44
+OK
+[Tue Aug 13 07:53:18 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:26:14
+OK
+[Tue Aug 13 07:54:22 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:45:55
+OK
+[Tue Aug 13 07:54:38 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:27:27
+OK
+[Tue Aug 13 07:55:34 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:47:07
+OK
+[Tue Aug 13 07:55:55 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:28:52
+OK
+[Tue Aug 13 07:56:44 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:48:17
+OK
+[Tue Aug 13 07:57:08 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:30:00
+OK
+[Tue Aug 13 07:58:03 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:49:35
+OK
+[Tue Aug 13 07:58:13 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:31:10
+OK
+[Tue Aug 13 07:59:16 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:50:49
+OK
+[Tue Aug 13 07:59:24 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:32:21
+OK
+[Tue Aug 13 08:00:34 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:33:31
+OK
+[Tue Aug 13 08:00:37 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:52:09
+OK
+[Tue Aug 13 08:01:41 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:34:38
+OK
+[Tue Aug 13 08:01:50 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:53:23
+OK
+[Tue Aug 13 08:02:52 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:35:49
+OK
+[Tue Aug 13 08:02:57 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:54:29
+OK
+[Tue Aug 13 08:04:12 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:37:08
+OK
+[Tue Aug 13 08:04:15 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:55:44
+OK
+[Tue Aug 13 08:05:30 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:57:03
+OK
+[Tue Aug 13 08:05:33 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:38:29
+OK
+[Tue Aug 13 08:06:47 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:58:18
+OK
+[Tue Aug 13 08:06:48 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:39:44
+OK
+[Tue Aug 13 08:07:53 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:40:50
+OK
+[Tue Aug 13 08:07:57 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 18:59:30
+OK
+[Tue Aug 13 08:09:14 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:00:44
+OK
+[Tue Aug 13 08:09:15 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:42:09
+OK
+[Tue Aug 13 08:10:23 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:01:55
+OK
+[Tue Aug 13 08:10:38 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:43:34
+OK
+[Tue Aug 13 08:11:35 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:03:06
+OK
+[Tue Aug 13 08:11:51 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:44:48
+OK
+[Tue Aug 13 08:12:40 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:04:12
+OK
+[Tue Aug 13 08:13:11 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:46:03
+OK
+[Tue Aug 13 08:13:48 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:05:21
+OK
+[Tue Aug 13 08:14:20 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:47:15
+OK
+[Tue Aug 13 08:14:57 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:06:28
+OK
+[Tue Aug 13 08:15:37 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:48:32
+OK
+[Tue Aug 13 08:16:13 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:07:39
+OK
+[Tue Aug 13 08:16:50 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:49:47
+OK
+[Tue Aug 13 08:17:21 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:08:49
+OK
+[Tue Aug 13 08:18:10 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:51:00
+OK
+[Tue Aug 13 08:18:30 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:10:02
+OK
+[Tue Aug 13 08:19:21 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:52:14
+OK
+[Tue Aug 13 08:20:30 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:53:28
+OK
+[Tue Aug 13 08:21:13 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:11:21
+OK
+[Tue Aug 13 08:21:41 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:54:38
+OK
+[Tue Aug 13 08:22:19 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:13:51
+OK
+[Tue Aug 13 08:22:49 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:55:45
+OK
+[Tue Aug 13 08:23:32 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:15:05
+OK
+[Tue Aug 13 08:24:03 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:57:00
+OK
+[Tue Aug 13 08:24:41 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:16:09
+OK
+[Tue Aug 13 08:25:16 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:58:13
+OK
+[Tue Aug 13 08:25:51 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:17:23
+OK
+[Tue Aug 13 08:26:25 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-15:59:23
+OK
+[Tue Aug 13 08:27:06 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:18:36
+OK
+[Tue Aug 13 08:27:34 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:00:32
+OK
+[Tue Aug 13 08:28:16 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:19:47
+OK
+[Tue Aug 13 08:28:54 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:01:46
+OK
+[Tue Aug 13 08:29:34 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:21:03
+OK
+[Tue Aug 13 08:30:00 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:02:54
+OK
+[Tue Aug 13 08:30:47 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:22:18
+OK
+[Tue Aug 13 08:31:14 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:04:09
+OK
+[Tue Aug 13 08:31:57 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:23:29
+OK
+[Tue Aug 13 08:32:34 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:05:30
+OK
+[Tue Aug 13 08:33:06 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:24:38
+OK
+[Tue Aug 13 08:34:00 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:06:40
+OK
+[Tue Aug 13 08:34:19 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:25:50
+OK
+[Tue Aug 13 08:35:05 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:08:03
+OK
+[Tue Aug 13 08:35:24 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:26:57
+OK
+[Tue Aug 13 08:36:20 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:09:08
+OK
+[Tue Aug 13 08:36:48 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:28:16
+OK
+[Tue Aug 13 08:37:31 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:10:26
+OK
+[Tue Aug 13 08:37:52 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:29:25
+OK
+[Tue Aug 13 08:38:56 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:11:50
+OK
+[Tue Aug 13 08:39:13 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:30:45
+OK
+[Tue Aug 13 08:40:03 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:13:00
+OK
+[Tue Aug 13 08:40:30 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:32:03
+OK
+[Tue Aug 13 08:41:17 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:14:11
+OK
+[Tue Aug 13 08:41:42 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:33:14
+OK
+[Tue Aug 13 08:42:37 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:15:33
+OK
+[Tue Aug 13 08:42:54 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:34:26
+OK
+[Tue Aug 13 08:43:47 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:16:45
+OK
+[Tue Aug 13 08:44:06 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:35:39
+OK
+[Tue Aug 13 08:45:02 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:17:50
+OK
+[Tue Aug 13 08:45:19 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:36:51
+OK
+[Tue Aug 13 08:46:12 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:19:10
+OK
+[Tue Aug 13 08:46:48 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:38:14
+OK
+[Tue Aug 13 08:47:30 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:20:27
+OK
+[Tue Aug 13 08:48:21 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:39:28
+OK
+[Tue Aug 13 08:48:47 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:21:44
+OK
+[Tue Aug 13 08:49:32 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:41:00
+OK
+[Tue Aug 13 08:50:07 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:23:01
+OK
+[Tue Aug 13 08:50:35 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:42:08
+OK
+[Tue Aug 13 08:51:13 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:24:10
+OK
+[Tue Aug 13 08:51:41 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:43:14
+OK
+[Tue Aug 13 08:52:39 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:25:19
+OK
+[Tue Aug 13 08:52:53 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:44:25
+OK
+[Tue Aug 13 08:53:48 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:26:45
+OK
+[Tue Aug 13 08:54:03 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:45:35
+OK
+[Tue Aug 13 08:54:59 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:27:56
+OK
+[Tue Aug 13 08:55:16 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:46:49
+OK
+[Tue Aug 13 08:56:17 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:29:14
+OK
+[Tue Aug 13 08:56:59 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:48:29
+OK
+[Tue Aug 13 08:57:29 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:30:27
+OK
+[Tue Aug 13 08:58:13 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:49:43
+OK
+[Tue Aug 13 08:58:30 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:31:28
+OK
+[Tue Aug 13 08:59:29 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:50:57
+OK
+[Tue Aug 13 08:59:43 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:32:40
+OK
+[Tue Aug 13 09:00:41 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:52:14
+OK
+[Tue Aug 13 09:00:48 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:33:46
+OK
+[Tue Aug 13 09:02:01 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:53:25
+OK
+[Tue Aug 13 09:02:03 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:34:57
+OK
+[Tue Aug 13 09:03:19 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:54:52
+OK
+[Tue Aug 13 09:03:21 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:36:18
+OK
+[Tue Aug 13 09:04:38 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:37:35
+OK
+[Tue Aug 13 09:04:51 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:56:15
+OK
+[Tue Aug 13 09:05:47 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:38:43
+OK
+[Tue Aug 13 09:06:05 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:57:37
+OK
+[Tue Aug 13 09:06:58 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:39:56
+OK
+[Tue Aug 13 09:07:13 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:58:45
+OK
+[Tue Aug 13 09:08:10 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:41:05
+OK
+[Tue Aug 13 09:08:38 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 19:59:55
+OK
+[Tue Aug 13 09:09:23 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:42:19
+OK
+[Tue Aug 13 09:09:47 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:01:19
+OK
+[Tue Aug 13 09:10:28 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:43:25
+OK
+[Tue Aug 13 09:10:55 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:02:27
+OK
+[Tue Aug 13 09:11:38 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:44:35
+OK
+[Tue Aug 13 09:12:36 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:04:09
+OK
+[Tue Aug 13 09:12:45 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:45:43
+OK
+[Tue Aug 13 09:13:49 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:05:16
+OK
+[Tue Aug 13 09:13:58 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:46:56
+OK
+[Tue Aug 13 09:15:01 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:06:33
+OK
+[Tue Aug 13 09:15:17 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:48:06
+OK
+[Tue Aug 13 09:16:16 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:07:47
+OK
+[Tue Aug 13 09:16:42 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:49:23
+OK
+[Tue Aug 13 09:17:37 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:09:08
+OK
+[Tue Aug 13 09:18:02 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:50:54
+OK
+[Tue Aug 13 09:18:56 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:10:28
+OK
+[Tue Aug 13 09:19:16 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:52:08
+OK
+[Tue Aug 13 09:20:18 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:11:50
+OK
+[Tue Aug 13 09:20:23 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:53:19
+OK
+[Tue Aug 13 09:21:31 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:13:03
+OK
+[Tue Aug 13 09:21:33 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:54:30
+OK
+[Tue Aug 13 09:22:46 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:55:42
+OK
+[Tue Aug 13 09:22:58 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:14:31
+OK
+[Tue Aug 13 09:24:02 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:56:59
+OK
+[Tue Aug 13 09:24:10 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:15:38
+OK
+[Tue Aug 13 09:25:12 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:58:10
+OK
+[Tue Aug 13 09:25:35 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:16:53
+OK
+[Tue Aug 13 09:26:23 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-16:59:21
+OK
+[Tue Aug 13 09:26:49 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:18:22
+OK
+[Tue Aug 13 09:27:29 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:00:24
+OK
+[Tue Aug 13 09:27:53 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:19:26
+OK
+[Tue Aug 13 09:28:42 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:01:38
+OK
+[Tue Aug 13 09:29:04 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:20:32
+OK
+[Tue Aug 13 09:29:51 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:02:43
+OK
+[Tue Aug 13 09:30:22 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:21:54
+OK
+[Tue Aug 13 09:31:02 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:03:58
+OK
+[Tue Aug 13 09:31:37 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:23:09
+OK
+[Tue Aug 13 09:32:17 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:05:10
+OK
+[Tue Aug 13 09:32:54 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:24:27
+OK
+[Tue Aug 13 09:33:25 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:06:22
+OK
+[Tue Aug 13 09:34:03 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:25:28
+OK
+[Tue Aug 13 09:34:42 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:07:39
+OK
+[Tue Aug 13 09:35:12 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:26:44
+OK
+[Tue Aug 13 09:35:53 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:08:51
+OK
+[Tue Aug 13 09:36:25 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:27:55
+OK
+[Tue Aug 13 09:37:04 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:10:01
+OK
+[Tue Aug 13 09:37:39 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:29:12
+OK
+[Tue Aug 13 09:38:16 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:11:13
+OK
+[Tue Aug 13 09:38:50 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:30:23
+OK
+[Tue Aug 13 09:39:23 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:12:21
+OK
+[Tue Aug 13 09:40:04 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:31:33
+OK
+[Tue Aug 13 09:40:50 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:13:47
+OK
+[Tue Aug 13 09:41:24 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:32:52
+OK
+[Tue Aug 13 09:42:01 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:14:59
+OK
+[Tue Aug 13 09:42:38 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:34:11
+OK
+[Tue Aug 13 09:43:09 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:16:07
+OK
+[Tue Aug 13 09:43:47 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:35:17
+OK
+[Tue Aug 13 09:44:21 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:17:11
+OK
+[Tue Aug 13 09:45:17 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:36:49
+OK
+[Tue Aug 13 09:45:25 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:18:23
+OK
+[Tue Aug 13 09:46:38 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:38:10
+OK
+[Tue Aug 13 09:46:38 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:19:34
+OK
+[Tue Aug 13 09:47:49 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:20:46
+OK
+[Tue Aug 13 09:47:55 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:39:23
+OK
+sacct: error: slurm_persist_conn_open_without_init: failed to open persistent connection to host:slurmdbd:6819: Connection refused
+sacct: error: Sending PersistInit msg: Connection refused
+sacct: error: Problem talking to the database: Connection refused
+[Tue Aug 13 09:48:56 UTC 2024] Job = 9375, State = , Elapsed = 1-17:21:52
+OK
+[Tue Aug 13 09:49:06 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:40:37
+OK
+[Tue Aug 13 09:50:07 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:23:03
+OK
+[Tue Aug 13 09:50:15 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:41:47
+OK
+[Tue Aug 13 09:51:21 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:24:19
+OK
+[Tue Aug 13 09:51:35 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:43:06
+OK
+[Tue Aug 13 09:52:48 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:25:41
+OK
+[Tue Aug 13 09:52:50 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:44:23
+OK
+[Tue Aug 13 09:54:02 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:45:32
+OK
+[Tue Aug 13 09:54:16 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:27:09
+OK
+[Tue Aug 13 09:55:09 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:46:42
+OK
+[Tue Aug 13 09:55:24 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:28:21
+OK
+[Tue Aug 13 09:56:19 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:47:51
+OK
+[Tue Aug 13 09:56:40 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:29:37
+OK
+[Tue Aug 13 09:57:26 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:48:58
+OK
+[Tue Aug 13 09:57:45 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:30:42
+OK
+[Tue Aug 13 09:58:38 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:50:10
+OK
+[Tue Aug 13 09:58:56 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:31:49
+OK
+[Tue Aug 13 09:59:54 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:51:25
+OK
+[Tue Aug 13 10:00:08 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:33:04
+OK
+[Tue Aug 13 10:01:12 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:52:40
+OK
+[Tue Aug 13 10:01:20 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:34:16
+OK
+[Tue Aug 13 10:02:24 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:53:54
+OK
+[Tue Aug 13 10:02:32 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:35:26
+OK
+[Tue Aug 13 10:03:36 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:55:08
+OK
+[Tue Aug 13 10:03:41 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:36:35
+OK
+[Tue Aug 13 10:04:44 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:56:17
+OK
+[Tue Aug 13 10:05:02 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:37:59
+OK
+[Tue Aug 13 10:05:48 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:57:20
+OK
+[Tue Aug 13 10:06:15 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:39:12
+OK
+[Tue Aug 13 10:07:06 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:58:35
+OK
+[Tue Aug 13 10:07:34 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:40:31
+OK
+[Tue Aug 13 10:08:25 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 20:59:56
+OK
+[Tue Aug 13 10:08:44 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:41:41
+OK
+[Tue Aug 13 10:09:46 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:01:17
+OK
+[Tue Aug 13 10:09:59 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:42:55
+OK
+[Tue Aug 13 10:10:54 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:02:26
+OK
+[Tue Aug 13 10:11:09 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:44:07
+OK
+[Tue Aug 13 10:12:07 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:03:40
+OK
+[Tue Aug 13 10:12:16 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:45:11
+OK
+[Tue Aug 13 10:13:20 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:04:50
+OK
+[Tue Aug 13 10:13:35 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:46:27
+OK
+[Tue Aug 13 10:14:34 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:06:06
+OK
+[Tue Aug 13 10:14:42 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:47:40
+OK
+[Tue Aug 13 10:15:45 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:07:16
+OK
+[Tue Aug 13 10:15:53 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:48:47
+OK
+[Tue Aug 13 10:16:58 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:08:31
+OK
+[Tue Aug 13 10:17:06 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:50:04
+OK
+[Tue Aug 13 10:18:06 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:09:38
+OK
+[Tue Aug 13 10:18:16 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:51:11
+OK
+[Tue Aug 13 10:19:17 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:10:49
+OK
+[Tue Aug 13 10:19:22 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:52:19
+OK
+[Tue Aug 13 10:20:34 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:12:07
+OK
+[Tue Aug 13 10:20:35 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:53:33
+OK
+[Tue Aug 13 10:21:50 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:13:20
+OK
+[Tue Aug 13 10:21:58 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:54:47
+OK
+[Tue Aug 13 10:22:57 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:14:30
+OK
+[Tue Aug 13 10:23:04 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:56:02
+OK
+[Tue Aug 13 10:24:14 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:57:11
+OK
+[Tue Aug 13 10:24:18 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:15:46
+OK
+[Tue Aug 13 10:25:29 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:58:26
+OK
+[Tue Aug 13 10:25:36 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:17:06
+OK
+[Tue Aug 13 10:26:49 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-17:59:45
+OK
+[Tue Aug 13 10:26:50 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:18:20
+OK
+[Tue Aug 13 10:28:03 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:01:00
+OK
+[Tue Aug 13 10:28:04 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:19:37
+OK
+[Tue Aug 13 10:29:16 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:20:47
+OK
+[Tue Aug 13 10:29:19 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:02:15
+OK
+[Tue Aug 13 10:30:25 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:03:23
+OK
+[Tue Aug 13 10:30:53 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:21:59
+OK
+[Tue Aug 13 10:31:53 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:04:38
+OK
+[Tue Aug 13 10:32:04 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:23:36
+OK
+[Tue Aug 13 10:33:10 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:06:06
+OK
+[Tue Aug 13 10:33:15 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:24:47
+OK
+[Tue Aug 13 10:34:25 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:07:18
+OK
+[Tue Aug 13 10:34:38 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:26:09
+OK
+[Tue Aug 13 10:35:43 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:08:40
+OK
+[Tue Aug 13 10:35:46 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:27:15
+OK
+[Tue Aug 13 10:36:55 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:28:25
+OK
+[Tue Aug 13 10:37:09 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:09:55
+OK
+[Tue Aug 13 10:38:21 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:11:11
+OK
+[Tue Aug 13 10:38:30 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:29:59
+OK
+[Tue Aug 13 10:39:25 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:12:23
+OK
+[Tue Aug 13 10:39:36 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:31:09
+OK
+[Tue Aug 13 10:40:49 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:13:45
+OK
+[Tue Aug 13 10:41:04 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:32:23
+OK
+[Tue Aug 13 10:42:02 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:14:57
+OK
+[Tue Aug 13 10:42:17 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:33:49
+OK
+[Tue Aug 13 10:43:05 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:16:03
+OK
+[Tue Aug 13 10:43:26 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:34:57
+OK
+[Tue Aug 13 10:44:17 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:17:11
+OK
+[Tue Aug 13 10:44:48 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:36:15
+OK
+[Tue Aug 13 10:45:25 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:18:22
+OK
+[Tue Aug 13 10:45:57 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:37:26
+OK
+[Tue Aug 13 10:46:34 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:19:31
+OK
+[Tue Aug 13 10:47:07 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:38:39
+OK
+[Tue Aug 13 10:47:45 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:20:40
+OK
+[Tue Aug 13 10:48:22 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:39:44
+OK
+[Tue Aug 13 10:48:54 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:21:49
+OK
+[Tue Aug 13 10:49:35 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:41:08
+OK
+[Tue Aug 13 10:49:58 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:22:55
+OK
+[Tue Aug 13 10:50:49 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:42:18
+OK
+[Tue Aug 13 10:51:07 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:24:05
+OK
+[Tue Aug 13 10:52:00 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:43:32
+OK
+[Tue Aug 13 10:52:12 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:25:10
+OK
+[Tue Aug 13 10:53:10 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:44:39
+OK
+[Tue Aug 13 10:53:26 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:26:21
+OK
+[Tue Aug 13 10:54:30 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:45:57
+OK
+[Tue Aug 13 10:54:33 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:27:29
+OK
+[Tue Aug 13 10:55:45 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:47:18
+OK
+[Tue Aug 13 10:55:47 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:28:41
+OK
+[Tue Aug 13 10:56:53 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:48:25
+OK
+[Tue Aug 13 10:56:55 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:29:50
+OK
+[Tue Aug 13 10:58:03 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:49:36
+OK
+[Tue Aug 13 10:58:07 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:31:02
+OK
+[Tue Aug 13 10:59:14 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:32:12
+OK
+[Tue Aug 13 10:59:23 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:50:55
+OK
+[Tue Aug 13 11:00:22 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:33:18
+OK
+[Tue Aug 13 11:00:38 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:52:10
+OK
+[Tue Aug 13 11:01:25 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:34:23
+OK
+[Tue Aug 13 11:01:43 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:53:12
+OK
+[Tue Aug 13 11:02:48 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:35:40
+OK
+[Tue Aug 13 11:03:09 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:54:33
+OK
+[Tue Aug 13 11:03:57 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:36:54
+OK
+[Tue Aug 13 11:04:22 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:55:54
+OK
+[Tue Aug 13 11:05:12 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:38:07
+OK
+[Tue Aug 13 11:05:39 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:57:12
+OK
+[Tue Aug 13 11:06:30 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:39:19
+OK
+[Tue Aug 13 11:06:49 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:58:21
+OK
+[Tue Aug 13 11:07:40 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:40:37
+OK
+[Tue Aug 13 11:08:01 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 21:59:30
+OK
+[Tue Aug 13 11:09:11 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:00:43
+OK
+[Tue Aug 13 11:09:11 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:42:07
+OK
+[Tue Aug 13 11:10:19 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:01:52
+OK
+[Tue Aug 13 11:10:19 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:43:16
+OK
+[Tue Aug 13 11:11:23 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:44:20
+OK
+[Tue Aug 13 11:11:34 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:03:02
+OK
+[Tue Aug 13 11:12:45 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:45:42
+OK
+[Tue Aug 13 11:12:45 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:04:17
+OK
+[Tue Aug 13 11:14:05 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:47:03
+OK
+[Tue Aug 13 11:14:14 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:05:25
+OK
+[Tue Aug 13 11:15:15 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:48:10
+OK
+[Tue Aug 13 11:15:33 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:07:05
+OK
+[Tue Aug 13 11:16:18 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:49:16
+OK
+[Tue Aug 13 11:16:35 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:08:08
+OK
+[Tue Aug 13 11:17:23 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:50:20
+OK
+[Tue Aug 13 11:17:40 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:09:12
+OK
+[Tue Aug 13 11:18:41 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:51:37
+OK
+[Tue Aug 13 11:19:01 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:10:26
+OK
+[Tue Aug 13 11:20:08 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:53:06
+OK
+[Tue Aug 13 11:20:09 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:11:42
+OK
+[Tue Aug 13 11:21:20 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:54:18
+OK
+[Tue Aug 13 11:21:20 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:12:51
+OK
+[Tue Aug 13 11:22:25 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:55:23
+OK
+[Tue Aug 13 11:22:38 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:14:09
+OK
+[Tue Aug 13 11:23:46 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:56:39
+OK
+[Tue Aug 13 11:23:57 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:15:24
+OK
+[Tue Aug 13 11:24:59 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:57:54
+OK
+[Tue Aug 13 11:25:17 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:16:49
+OK
+[Tue Aug 13 11:26:14 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-18:59:07
+OK
+[Tue Aug 13 11:26:36 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:18:07
+OK
+[Tue Aug 13 11:27:31 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:00:23
+OK
+[Tue Aug 13 11:27:49 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:19:21
+OK
+[Tue Aug 13 11:28:36 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:01:34
+OK
+[Tue Aug 13 11:29:05 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:20:37
+OK
+[Tue Aug 13 11:29:47 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:02:43
+OK
+[Tue Aug 13 11:30:11 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:21:43
+OK
+[Tue Aug 13 11:31:00 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:03:56
+OK
+[Tue Aug 13 11:31:23 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:22:51
+OK
+[Tue Aug 13 11:32:14 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:05:11
+OK
+[Tue Aug 13 11:32:32 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:24:03
+OK
+[Tue Aug 13 11:33:41 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:06:31
+OK
+[Tue Aug 13 11:34:01 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:25:33
+OK
+[Tue Aug 13 11:35:00 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:07:53
+OK
+[Tue Aug 13 11:35:10 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:26:42
+OK
+[Tue Aug 13 11:36:04 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:09:01
+OK
+[Tue Aug 13 11:36:15 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:27:47
+OK
+[Tue Aug 13 11:37:11 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:10:05
+OK
+[Tue Aug 13 11:37:34 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:29:07
+OK
+[Tue Aug 13 11:38:23 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:11:21
+OK
+[Tue Aug 13 11:38:49 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:30:22
+OK
+[Tue Aug 13 11:39:30 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:12:28
+OK
+[Tue Aug 13 11:39:57 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:31:29
+OK
+[Tue Aug 13 11:40:49 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:13:47
+OK
+[Tue Aug 13 11:41:04 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:32:37
+OK
+[Tue Aug 13 11:42:24 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:15:19
+OK
+[Tue Aug 13 11:42:26 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:33:50
+OK
+[Tue Aug 13 11:43:39 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:35:10
+OK
+[Tue Aug 13 11:43:39 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:16:36
+OK
+[Tue Aug 13 11:44:45 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:36:17
+OK
+[Tue Aug 13 11:44:49 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:17:44
+OK
+[Tue Aug 13 11:46:07 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:19:03
+OK
+[Tue Aug 13 11:46:08 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:37:40
+OK
+[Tue Aug 13 11:47:22 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:20:20
+OK
+[Tue Aug 13 11:47:29 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:38:58
+OK
+[Tue Aug 13 11:48:25 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:21:23
+OK
+[Tue Aug 13 11:48:47 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:40:19
+OK
+[Tue Aug 13 11:49:33 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:22:31
+OK
+[Tue Aug 13 11:50:01 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:41:33
+OK
+[Tue Aug 13 11:50:45 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:23:42
+OK
+[Tue Aug 13 11:51:09 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:42:42
+OK
+[Tue Aug 13 11:51:59 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:24:57
+OK
+[Tue Aug 13 11:52:17 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:43:48
+OK
+[Tue Aug 13 11:53:04 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:26:02
+OK
+[Tue Aug 13 11:53:24 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:44:56
+OK
+[Tue Aug 13 11:54:16 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:27:13
+OK
+[Tue Aug 13 11:54:40 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:46:12
+OK
+[Tue Aug 13 11:55:25 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:28:23
+OK
+[Tue Aug 13 11:55:51 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:47:24
+OK
+[Tue Aug 13 11:56:33 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:29:30
+OK
+[Tue Aug 13 11:57:06 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:48:38
+OK
+[Tue Aug 13 11:57:39 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:30:37
+OK
+[Tue Aug 13 11:58:14 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:49:46
+OK
+[Tue Aug 13 11:58:48 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:31:45
+OK
+[Tue Aug 13 11:59:23 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:50:51
+OK
+[Tue Aug 13 12:00:05 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:33:02
+OK
+[Tue Aug 13 12:00:51 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:52:19
+OK
+[Tue Aug 13 12:01:30 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:34:20
+OK
+[Tue Aug 13 12:02:21 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:53:38
+OK
+[Tue Aug 13 12:03:02 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:35:59
+OK
+[Tue Aug 13 12:03:47 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:55:01
+OK
+[Tue Aug 13 12:04:15 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:37:12
+OK
+[Tue Aug 13 12:05:03 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:56:34
+OK
+[Tue Aug 13 12:05:34 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:38:32
+OK
+[Tue Aug 13 12:06:20 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:57:49
+OK
+[Tue Aug 13 12:06:46 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:39:42
+OK
+[Tue Aug 13 12:07:42 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 22:59:13
+OK
+[Tue Aug 13 12:07:50 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:40:48
+OK
+[Tue Aug 13 12:08:55 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:41:52
+OK
+[Tue Aug 13 12:08:57 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:00:24
+OK
+[Tue Aug 13 12:10:10 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:01:42
+OK
+[Tue Aug 13 12:10:11 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:43:07
+OK
+[Tue Aug 13 12:11:21 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:02:53
+OK
+[Tue Aug 13 12:11:29 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:44:23
+OK
+[Tue Aug 13 12:12:36 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:45:29
+OK
+[Tue Aug 13 12:12:41 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:04:06
+OK
+[Tue Aug 13 12:13:45 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:46:42
+OK
+[Tue Aug 13 12:13:54 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:05:26
+OK
+[Tue Aug 13 12:14:55 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:47:53
+OK
+[Tue Aug 13 12:15:33 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:07:00
+OK
+[Tue Aug 13 12:16:09 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:49:04
+OK
+[Tue Aug 13 12:16:50 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:08:20
+OK
+[Tue Aug 13 12:17:31 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:50:28
+OK
+[Tue Aug 13 12:17:56 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:09:29
+OK
+[Tue Aug 13 12:18:46 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:51:43
+OK
+[Tue Aug 13 12:19:08 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:10:40
+OK
+[Tue Aug 13 12:19:59 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:52:55
+OK
+[Tue Aug 13 12:20:16 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:11:49
+OK
+[Tue Aug 13 12:21:10 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:54:06
+OK
+[Tue Aug 13 12:21:21 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:12:54
+OK
+[Tue Aug 13 12:22:27 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:14:00
+OK
+[Tue Aug 13 12:22:33 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:55:30
+OK
+[Tue Aug 13 12:23:43 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:15:15
+OK
+[Tue Aug 13 12:23:47 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:56:41
+OK
+[Tue Aug 13 12:24:56 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:16:28
+OK
+[Tue Aug 13 12:24:58 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:57:55
+OK
+[Tue Aug 13 12:26:09 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-19:59:06
+OK
+[Tue Aug 13 12:26:49 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:18:20
+OK
+[Tue Aug 13 12:27:48 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:00:43
+OK
+[Tue Aug 13 12:28:05 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:19:36
+OK
+[Tue Aug 13 12:29:03 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:01:55
+OK
+[Tue Aug 13 12:29:18 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:20:48
+OK
+[Tue Aug 13 12:30:20 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:03:14
+OK
+[Tue Aug 13 12:30:34 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:22:02
+OK
+[Tue Aug 13 12:31:30 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:04:26
+OK
+[Tue Aug 13 12:31:48 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:23:16
+OK
+[Tue Aug 13 12:32:42 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:05:36
+OK
+[Tue Aug 13 12:33:03 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:24:36
+OK
+[Tue Aug 13 12:33:46 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:06:43
+OK
+[Tue Aug 13 12:34:10 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:25:42
+OK
+[Tue Aug 13 12:34:50 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:07:47
+OK
+[Tue Aug 13 12:35:27 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:26:52
+OK
+[Tue Aug 13 12:36:20 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:09:17
+OK
+[Tue Aug 13 12:36:48 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:28:20
+OK
+[Tue Aug 13 12:37:27 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:10:24
+OK
+[Tue Aug 13 12:38:02 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:29:34
+OK
+[Tue Aug 13 12:38:38 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:11:35
+OK
+[Tue Aug 13 12:39:18 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:30:50
+OK
+[Tue Aug 13 12:39:46 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:12:44
+OK
+[Tue Aug 13 12:40:30 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:31:57
+OK
+[Tue Aug 13 12:41:04 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:14:02
+OK
+[Tue Aug 13 12:41:39 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:33:10
+OK
+[Tue Aug 13 12:42:10 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:15:08
+OK
+[Tue Aug 13 12:42:54 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:34:23
+OK
+[Tue Aug 13 12:43:32 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:16:24
+OK
+[Tue Aug 13 12:44:11 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:35:43
+OK
+[Tue Aug 13 12:45:15 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:18:13
+OK
+[Tue Aug 13 12:45:19 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:36:51
+OK
+[Tue Aug 13 12:46:25 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:19:23
+OK
+[Tue Aug 13 12:46:36 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:38:03
+OK
+[Tue Aug 13 12:47:46 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:20:43
+OK
+[Tue Aug 13 12:47:51 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:39:23
+OK
+[Tue Aug 13 12:48:54 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:21:52
+OK
+[Tue Aug 13 12:49:07 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:40:37
+OK
+[Tue Aug 13 12:50:11 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:23:08
+OK
+[Tue Aug 13 12:50:18 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:41:51
+OK
+[Tue Aug 13 12:51:26 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:24:23
+OK
+[Tue Aug 13 12:51:40 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:43:13
+OK
+[Tue Aug 13 12:52:47 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:25:40
+OK
+[Tue Aug 13 12:53:02 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:44:33
+OK
+[Tue Aug 13 12:53:58 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:26:54
+OK
+[Tue Aug 13 12:54:09 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:45:41
+OK
+[Tue Aug 13 12:55:22 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:46:53
+OK
+[Tue Aug 13 12:56:15 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:29:12
+OK
+[Tue Aug 13 12:56:27 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:47:59
+OK
+[Tue Aug 13 12:57:22 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:30:20
+OK
+[Tue Aug 13 12:57:35 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:49:06
+OK
+[Tue Aug 13 12:58:42 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:31:39
+OK
+[Tue Aug 13 12:58:43 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:50:15
+OK
+[Tue Aug 13 12:59:50 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:51:23
+OK
+[Tue Aug 13 12:59:50 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:32:48
+OK
+[Tue Aug 13 13:00:59 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:52:28
+OK
+[Tue Aug 13 13:01:00 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:33:58
+OK
+[Tue Aug 13 13:02:05 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:35:03
+OK
+[Tue Aug 13 13:02:08 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:53:41
+OK
+[Tue Aug 13 13:03:18 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:54:50
+OK
+[Tue Aug 13 13:03:25 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:36:19
+OK
+[Tue Aug 13 13:04:38 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:56:02
+OK
+[Tue Aug 13 13:04:48 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:37:33
+OK
+[Tue Aug 13 13:05:52 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:57:25
+OK
+[Tue Aug 13 13:06:05 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:39:00
+OK
+[Tue Aug 13 13:07:24 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:40:21
+OK
+[Tue Aug 13 13:07:25 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 23:58:33
+OK
+[Tue Aug 13 13:08:38 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 1-00:00:10
+OK
+[Tue Aug 13 13:08:42 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:41:32
+OK
+[Tue Aug 13 13:09:53 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 1-00:01:24
+OK
+[Tue Aug 13 13:09:54 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:42:50
+OK
+[Tue Aug 13 13:11:08 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 1-00:02:37
+OK
+[Tue Aug 13 13:11:10 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:43:58
+OK
+[Tue Aug 13 13:12:24 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:45:20
+OK
+[Tue Aug 13 13:12:29 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 1-00:03:54
+OK
+[Tue Aug 13 13:13:40 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:46:33
+OK
+[Tue Aug 13 13:13:41 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 1-00:05:13
+OK
+[Tue Aug 13 13:14:47 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:47:43
+OK
+[Tue Aug 13 13:14:54 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 1-00:06:24
+OK
+[Tue Aug 13 13:16:02 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:48:57
+OK
+[Tue Aug 13 13:16:03 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 1-00:07:36
+OK
+[Tue Aug 13 13:17:15 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:50:11
+OK
+[Tue Aug 13 13:17:34 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 1-00:09:04
+OK
+[Tue Aug 13 13:18:25 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:51:22
+OK
+[Tue Aug 13 13:18:42 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 1-00:10:10
+OK
+[Tue Aug 13 13:19:34 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:52:30
+OK
+[Tue Aug 13 13:20:05 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 1-00:11:38
+OK
+[Tue Aug 13 13:20:43 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:53:41
+OK
+[Tue Aug 13 13:21:15 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 1-00:12:47
+OK
+[Tue Aug 13 13:22:07 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:55:01
+OK
+[Tue Aug 13 13:22:35 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 1-00:14:03
+OK
+[Tue Aug 13 13:23:14 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:56:12
+OK
+[Tue Aug 13 13:23:58 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 1-00:15:25
+OK
+[Tue Aug 13 13:24:28 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:57:18
+OK
+[Tue Aug 13 13:25:21 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 1-00:16:54
+OK
+[Tue Aug 13 13:25:34 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:58:32
+OK
+[Tue Aug 13 13:26:30 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 1-00:18:00
+OK
+[Tue Aug 13 13:26:44 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-20:59:41
+OK
+[Tue Aug 13 13:27:32 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 1-00:19:04
+OK
+[Tue Aug 13 13:27:54 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:00:50
+OK
+[Tue Aug 13 13:28:48 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 1-00:20:13
+OK
+[Tue Aug 13 13:28:58 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:01:56
+OK
+[Tue Aug 13 13:30:02 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 1-00:21:30
+OK
+[Tue Aug 13 13:30:08 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:03:05
+OK
+[Tue Aug 13 13:31:17 UTC 2024] Job = 9398, State = RUNNING, Elapsed = 1-00:22:49
+OK
+[Tue Aug 13 13:31:27 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:04:22
+OK
+[Tue Aug 13 13:32:25 UTC 2024] Job = 9398, State = CANCELLED+, Elapsed = 1-00:23:21
+[Tue Aug 13 13:32:35 UTC 2024] Job = 9398, State = CANCELLED+, Elapsed = 1-00:23:21
+[Tue Aug 13 13:32:36 UTC 2024] Started backfill job: 9949
+[Tue Aug 13 13:32:37 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:05:33
+OK
+[Tue Aug 13 13:33:48 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 13:33:50 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:06:47
+OK
+[Tue Aug 13 13:34:55 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:07:53
+OK
+[Tue Aug 13 13:35:01 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 13:36:03 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:09:01
+OK
+[Tue Aug 13 13:36:08 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 13:37:15 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:10:13
+OK
+[Tue Aug 13 13:37:27 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 13:38:26 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:11:22
+OK
+[Tue Aug 13 13:38:46 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 13:39:30 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:12:28
+OK
+[Tue Aug 13 13:40:02 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 13:40:45 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:13:40
+OK
+[Tue Aug 13 13:41:18 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 13:42:02 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:15:00
+OK
+[Tue Aug 13 13:42:37 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 13:43:07 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:16:03
+OK
+[Tue Aug 13 13:44:00 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 13:44:19 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:17:15
+OK
+[Tue Aug 13 13:45:16 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 13:45:29 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:18:26
+OK
+[Tue Aug 13 13:46:28 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 13:46:51 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:19:48
+OK
+[Tue Aug 13 13:47:40 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 13:48:05 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:21:00
+OK
+[Tue Aug 13 13:48:46 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 13:49:13 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:22:07
+OK
+[Tue Aug 13 13:49:56 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 13:50:34 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:23:32
+OK
+[Tue Aug 13 13:51:14 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 13:51:41 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:24:39
+OK
+[Tue Aug 13 13:52:39 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 13:52:52 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:25:48
+OK
+[Tue Aug 13 13:53:49 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 13:54:04 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:26:58
+OK
+[Tue Aug 13 13:55:09 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 13:55:17 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:28:11
+OK
+[Tue Aug 13 13:56:21 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 13:56:29 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:29:24
+OK
+[Tue Aug 13 13:57:40 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:30:38
+OK
+[Tue Aug 13 13:57:41 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 13:58:55 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 13:59:00 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:31:54
+OK
+[Tue Aug 13 14:00:22 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:33:13
+OK
+[Tue Aug 13 14:00:27 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:01:35 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:34:33
+OK
+[Tue Aug 13 14:01:37 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:02:51 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:35:47
+OK
+[Tue Aug 13 14:02:53 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:04:12 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:04:20 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:37:16
+OK
+[Tue Aug 13 14:05:30 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:05:36 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:38:33
+OK
