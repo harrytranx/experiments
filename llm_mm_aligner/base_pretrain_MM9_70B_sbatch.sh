@@ -1,12 +1,14 @@
 #!/bin/bash
 # THIS SCRIPT REQUIRE THE FOLLOWING ENVVAR TO BE SET
 # ALIGNER_PARENT_DIR=/fsx_0/user/tranx
-# CONDA_ENV=aligner_v7
 # JSON_CONFIG
+# ALIGNER_PARENT_DIR=/fsx_0/user/tranx
+# MM9_CONF_DIR="/fsx_0/user/tranx/experiments/llm_mm_aligner/stage1_mm9"
+# JSON_CONFIG=$MM9_CONF_DIR/fbl_pretrain_MM9_70B_Llama31_336px_2nodes.json
 
 #SBATCH --job-name=mh19_336
-#SBATCH --nodes=32
-#SBATCH --ntasks=32
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
 #SBATCH --gpus-per-task=8
 #SBATCH --cpus-per-task=192
 #SBATCH --mem=0
@@ -17,6 +19,9 @@
 #SBATCH --qos=ar-ai-hipri
 #SBATCH --wait-all-nodes=1
 #SBATCH --exclusive
+
+JSON_CONFIG=$1
+ALIGNER_PARENT_DIR=$2
 
 # Activate conda environment
 CONDA_ENV=aligner_v7
@@ -52,15 +57,10 @@ export LD_LIBRARY_PATH=/opt/aws-ofi-nccl/lib/:$LD_LIBRARY_PATH
 export CUDA_DEVICE_MAX_CONNECTIONS=1
 
 # launcher
-# ALIGNER_PARENT_DIR=/fsx_0/user/tranx
 ALIGNER_DEP_DIR=$ALIGNER_PARENT_DIR/llm_mm_aligner/replicated
 CONDA_PYTHON_PKGS=${CONDA_PREFIX}/python-packages
 head_node_ip=$(srun --nodes=1 --ntasks=1 hostname --ip-address)
 echo Node IP: $head_node_ip
-
-MM9_CONF_DIR="/fsx_0/user/tranx/experiments/llm_mm_aligner/stage1_mm9"
-
-JSON_CONFIG=$MM9_CONF_DIR/fbl_pretrain_MM9_70B_Llama31_336px_2nodes.json
 
 echo "Using config from: $JSON_CONFIG"
 

@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../llm_mm_aligner"
+		}
+	],
+	"settings": {}
+}

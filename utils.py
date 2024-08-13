@@ -23,6 +23,7 @@ def get_local_time(zone='America/New_York'):
     """
 
     timestamp = datetime.now(pytz.timezone(zone))
+    timestamp = timestamp.strftime('%Y-%m-%d %H:%M:%S')
 
     return timestamp
 

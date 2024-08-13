@@ -1,0 +1,18 @@
+#!/bin/sh
+
+JSON_CONFIG=$1
+CHECKPOINT_WATCH_PATH=$2
+BENCHMARK_NAME=$3
+CHECKPOINT_START=$4
+CHECKPOINT_END=$5
+CHECKPOINT_INTERVAL=$6
+
+echo "Running eval sweep for benchmark: ${BENCHMARK_NAME}"
+
+for CHECKPOINT_ID in $(seq $CHECKPOINT_START $CHECKPOINT_INTERVAL $CHECKPOINT_END)
+do
+    echo "----"
+    echo "sbatch_eval.sh ${JSON_CONFIG} ${CHECKPOINT_WATCH_PATH} ${BENCHMARK_NAME} ${CHECKPOINT_ID}"
+#     sbatch /data/home/ahmadyan/eval_31/sbatch_eval.sh ${JSON_CONFIG} ${CHECKPOINT_WATCH_PATH} ${BENCHMARK_NAME} ${CHECKPOINT_ID}
+done
+echo "DONE"
