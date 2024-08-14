@@ -1,0 +1,278 @@
+{
+    "scheduler_type": "mast_grand_teton",
+    "hpc_job_oncall": "sg_scene_ai",
+    "num_gpus": 8,
+    "num_nodes": 32,
+    "trainer_args": {
+      "gradient_checkpointing_perception_tokenizer": true,
+      "model_name_or_path": "/fsx_0/checkpoints/llama3/mh19",
+      "tokenizer_path": "/fsx_0/checkpoints/llama3/mh19",
+      "modality_tokenizer_name": "/fsx_0/checkpoints/clip/MetaCLIP-BigG-336-0712",
+      "checkpoints_perception_tokenizer": "/fsx_0/checkpoints/tranx/MM9-Pretrain-70B/MH19_336px_128nodes_bz32_resume/checkpoint-17500/perception_tokenizer.pt",
+      "use_metaformers": true,
+      "block_sparse": true,
+      "use_te": true,
+      "model_parallel_size": 8,
+      "max_parallel_model_loading": 8,
+      "freeze_perception": true,
+      "freeze_tokenizer": false,
+      "freeze_lm": true,
+      "use_face_detector": false,
+      "task_type": "instruction_tune",
+      "instr_prompt": "video_stage2_qa",
+      "video_modality_prefix": "mix",
+      "hive_batch_size": 16,
+      "onbox_num_python_transform_workers": 4,
+      "onbox_dpp_server_num_worker_threads": 4,
+      "onbox_dpp_server_worker_buffer_size": 16,
+      "onbox_dpp_client_num_prefetch_threads": 4,
+      "onbox_dpp_client_prefetch_capacity": 16,
+      "use_hive_dataset": false,
+      "wd_data_path": "/fsx_1/datasets_30days/sg_mmllm_stage2_compliant_cap_qa_exp29_compliant_kosher",
+      "wd_chunk_size": 1000,
+      "use_mdl": true,
+      "dataset_name": "RecipeMIDataset",
+      "add_bos_token": false,
+      "add_eos_token": false,
+      "instruction_model_type": "TikTokv5ChatFormat",
+      "lm_mh_tokenizer_version": "tiktoken_v5",
+      "output_dir": "/fsx_0/checkpoints/tranx/MM9-Stage2-70B/MH19_336px_32nodes",
+      "vision_hidden_state_layer": -2,
+      "do_train": null,
+      "logging_steps": 10,
+      "max_seq_len": 512,
+      "overwrite_output_dir": null,
+      "num_train_epochs": 1,
+      "logging_first_step": null,
+      "per_device_train_batch_size": 32,
+      "per_device_eval_batch_size": 4,
+      "gradient_accumulation_steps": 2,
+      "dataloader_pin_memory": false,
+      "learning_rate": 0.00008,
+      "adam_beta1": 0.9,
+      "adam_beta2": 0.95,
+      "weight_decay": 0.1,
+      "warmup_steps": 100,
+      "lr_scheduler_type": "cosine",
+      "cosine_decay_to": 0.01,
+      "remove_unused_columns": false,
+      "log_level": "info",
+      "log_level_replica": "info",
+      "run_name": "$name",
+      "half_precision_backend": "auto",
+      "optim": "adamw_torch",
+      "report_to": "tensorboard",
+      "modality": "image",
+      "enable_modality_aggregator": false,
+      "treat_frames_as_images": true,
+      "sampling_fps": 1,
+      "max_video_duration": 30,
+      "video_max_dimension": 672,
+      "tokenizer_type": "PerceiverV3",
+      "perceiver_dim_override": 4096,
+      "perceiver_num_heads": 32,
+      "perceiver_num_kv_heads": 8,
+      "n_prefix_embs": 33,
+      "perceiver_num_latents": 32,
+      "perceiver_collapse_chunks": true,
+      "perceiver_enable_query_aware": false,
+      "perceiver_add_output_norm": true,
+      "perception_tokenizer_num_layers": 22,
+      "perception_tokenizer_attention_dropout_p": 0,
+      "perception_tokenizer_hidden_dropout_p": 0,
+      "bf16": true,
+      "save_strategy": "steps",
+      "save_steps": 120,
+      "evaluation_strategy": "no",
+      "eval_steps": 250,
+      "metric_for_best_model": "eval_loss",
+      "greater_is_better": false,
+      "seed": 2024,
+      "custom_FSDP": null,
+      "pad_to_full_batch": true,
+      "max_tokens_in_batch_row": 32000,
+      "max_tokens_in_batch": 32000
+    },
+    "fsdp_config": {
+      "fsdp_transformer_layer_cls_to_wrap": [
+        "EncoderLayer",
+        "MMTokenizer",
+        "PerceptionTokenizer",
+        "MetaFormersBlock",
+        "CLIPVisionModelWithProjection"
+      ],
+      "forward_prefetch": false,
+      "backward_prefetch": "backward_pre",
+      "limit_all_gathers": true,
+      "fsdp": [
+        "offload",
+        "full_shard",
+        "auto_wrap"
+      ]
+    },
+    "datarecipe": {
+      "table": {
+        "name": "sg_mmllm_image_video_mix_v3",
+        "namespace": "arvr",
+        "partitions": {
+          "ds": "2024-08-11"
+        },
+        "filters": [],
+        "schema": {
+          "manifold_path": "str",
+          "manifold_list": "list[str]",
+          "everstore_handle": "str",
+          "oil_handle": "str",
+          "instruction": "str",
+          "question": "str",
+          "response": "str",
+          "conversation": "str",
+          "instr_prompt": "str",
+          "modality_type": "str"
+        },
+        "enrichment_configs": [
+          {
+            "name": "everstore",
+            "lookup_value": "everstore_handle",
+            "output_column": "everstore_image",
+            "guard": "NOT(everstore_handle is NULL)"
+          },
+          {
+            "name": "oil",
+            "lookup_value": "oil_handle",
+            "output_column": "oil_image",
+            "guard": "NOT (oil_handle is NULL)"
+          },
+          {
+            "name": "manifold",
+            "lookup_value": "manifold_path",
+            "output_column": "manifold_image",
+            "guard": "NOT (manifold_path is NULL)"
+          },
+          {
+            "name": "manifold",
+            "lookup_value": "manifold_list",
+            "output_column": "manifold_image_list",
+            "guard": "NOT (manifold_list is NULL)"
+          }
+        ],
+        "retention_days": 90
+      },
+      "sources": [
+        {
+          "name": "sg_mmllm_stage2_compliant_cap_qa_exp29_compliant_kosher",
+          "partitions": {
+            "ds": "2024-07-15"
+          },
+          "columns_map": {
+            "everstore_handle": "everstore_handle",
+            "image_manifold_path": "manifold_path",
+            "instruction": "instruction",
+            "question": "question",
+            "response": "response"
+          },
+          "filters": [
+            "RAND() <= 0.3",
+            "NOT (response is null or TRIM(response) = '')"
+          ],
+          "extra_columns_with_str_values": {
+            "instr_prompt": "multi_task",
+            "modality_type": "image"
+          }
+        },
+        {
+          "name": "sg_mmllm_mi_mix_v10_small_nofb",
+          "partitions": {
+            "ds": "2024-07-14"
+          },
+          "columns_map": {
+            "video_manifold_path": "manifold_path",
+            "everstore_handle": "everstore_handle",
+            "oil_handle": "oil_handle",
+            "text": "response"
+          },
+          "filters": [
+            "NOT (text is null or TRIM(text) = '')"
+          ],
+          "extra_columns_with_str_values": {
+            "instr_prompt": "video_stage2_captioning",
+            "modality_type": "video"
+          }
+        },
+        {
+          "name": "sg_mmllm_super_long_context_sft",
+          "partitions": {
+            "ds": "2024-08-08"
+          },
+          "columns_map": {
+            "image_manifold_path": "manifold_list",
+            "instruction": "instruction",
+            "question": "question",
+            "response": "response"
+          },
+          "filters": [
+            "NOT (response is null or TRIM(response) = '')"
+          ],
+          "extra_columns_with_str_values": {
+            "instr_prompt": "image_long_context",
+            "modality_type": "image"
+          }
+        },
+        {
+          "name": "sg_mmllm_super_long_context_sft_image_retrival_1_20",
+          "partitions": {
+            "ds": "2024-08-08"
+          },
+          "columns_map": {
+            "image_manifold_path": "manifold_list",
+            "instruction": "instruction",
+            "question": "question",
+            "response": "response"
+          },
+          "filters": [
+            "NOT (response is null or TRIM(response) = '')"
+          ],
+          "extra_columns_with_str_values": {
+            "instr_prompt": "image_long_context",
+            "modality_type": "image"
+          }
+        },
+        {
+          "name": "sg_mmllm_super_long_context_sft_image_order_0_20",
+          "partitions": {
+            "ds": "2024-08-08"
+          },
+          "columns_map": {
+            "image_manifold_path": "manifold_list",
+            "instruction": "instruction",
+            "question": "question",
+            "response": "response"
+          },
+          "filters": [
+            "NOT (response is null or TRIM(response) = '')"
+          ],
+          "extra_columns_with_str_values": {
+            "instr_prompt": "image_long_context",
+            "modality_type": "image"
+          }
+        },
+        {
+          "name": "mi_multiturn_qa_small_v3",
+          "partitions": {
+            "ds": "2024-08-10"
+          },
+          "columns_map": {
+            "image_paths": "manifold_list",
+            "conversation": "conversation"
+          },
+          "extra_columns_with_str_values": {
+            "instr_prompt": "image_long_context_multiturn",
+            "modality_type": "image"
+          },
+          "filters": [
+            "NOT (conversation is null or TRIM(conversation) = '')"
+          ]
+        }
+      ]
+    }
+  }
