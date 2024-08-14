@@ -8,6 +8,32 @@ import os
 import utils
 
 
+def run_sbatch_job(sbatch_base_script, sbatch_overwrite, positional_env_vars):
+    """
+    sbatch_base = "/fsx_0/user/tranx/experiments/eval/sbash_eval.sh"
+    sbatch_overwrite = {
+        "job-name": "eval",
+    }
+
+    positional_env_vars = [1, 2, 3, 4]
+    """
+
+    sbatch_vars_string = []
+    for k, v in sbatch_overwrite.items():
+        sbatch_vars_string.append(f"--{k}={v}")
+    sbatch_vars_string = ' '.join(sbatch_vars_string)
+
+    positional_env_string = " ".join([str(x) for x in positional_env_vars])
+
+    cmd = f"sbatch --parsable {sbatch_vars_string} {sbatch_base_script} {positional_env_string}"
+    print(cmd)
+
+    job_id = utils.get_bash_output(cmd, print_output=False)
+    job_id = int(job_id)
+
+    return job_id
+
+
 class SlurmClient():
     def __init__(self):
         self.host_prefix = "h100-st-p548xlarge"  # FIX ME, move this to config file

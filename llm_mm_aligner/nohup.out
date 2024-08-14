@@ -15027,3 +15027,210 @@ OK
 OK
 [Tue Aug 13 14:05:36 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:38:33
 OK
+[Tue Aug 13 14:06:40 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:06:48 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:39:43
+OK
+[Tue Aug 13 14:08:07 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:08:10 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:41:04
+OK
+[Tue Aug 13 14:09:18 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:09:34 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:42:20
+OK
+[Tue Aug 13 14:10:30 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:10:38 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:43:35
+OK
+[Tue Aug 13 14:11:48 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:11:49 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:44:46
+OK
+[Tue Aug 13 14:12:58 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:45:55
+OK
+[Tue Aug 13 14:13:06 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:14:13 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:47:07
+OK
+[Tue Aug 13 14:14:25 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:15:26 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:48:20
+OK
+[Tue Aug 13 14:15:29 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:16:40 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:49:38
+OK
+[Tue Aug 13 14:16:40 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:17:44 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:17:46 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:50:43
+OK
+[Tue Aug 13 14:18:49 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:19:11 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:51:49
+OK
+[Tue Aug 13 14:20:00 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:20:21 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:53:18
+OK
+[Tue Aug 13 14:21:23 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:21:37 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:54:34
+OK
+[Tue Aug 13 14:22:43 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:22:45 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:55:41
+OK
+[Tue Aug 13 14:23:51 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:23:57 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:56:51
+OK
+[Tue Aug 13 14:25:08 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:25:12 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:58:10
+OK
+[Tue Aug 13 14:26:23 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:26:26 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-21:59:23
+OK
+[Tue Aug 13 14:27:32 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:27:42 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:00:39
+OK
+[Tue Aug 13 14:28:46 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:01:43
+OK
+[Tue Aug 13 14:28:48 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:30:07 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:03:02
+OK
+[Tue Aug 13 14:30:11 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:31:18 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:04:13
+OK
+[Tue Aug 13 14:31:21 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:32:29 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:32:33 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:05:26
+OK
+[Tue Aug 13 14:33:44 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:33:56 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:06:52
+OK
+[Tue Aug 13 14:34:52 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+sacct: error: slurm_persist_conn_open_without_init: failed to open persistent connection to host:slurmdbd:6819: Connection refused
+sacct: error: Sending PersistInit msg: Connection refused
+sacct: error: Problem talking to the database: Connection refused
+[Tue Aug 13 14:35:07 UTC 2024] Job = 9375, State = , Elapsed = 1-22:08:03
+OK
+[Tue Aug 13 14:35:59 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:36:12 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:09:08
+OK
+[Tue Aug 13 14:37:16 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:37:23 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:10:20
+OK
+[Tue Aug 13 14:38:30 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:38:38 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:11:32
+OK
+[Tue Aug 13 14:39:43 UTC 2024] Job = 9949, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:39:44 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:12:40
+OK
+[Tue Aug 13 14:41:01 UTC 2024] Job = 9949, State = CANCELLED+, Elapsed = 00:00:00
+[Tue Aug 13 14:41:04 UTC 2024] Job = 9949, State = CANCELLED+, Elapsed = 00:00:00
+[Tue Aug 13 14:41:11 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:14:05
+OK
+[Tue Aug 13 14:41:10 UTC 2024] Started backfill job: 9952
+[Tue Aug 13 14:42:27 UTC 2024] Job = 9952, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:42:31 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:15:22
+OK
+[Tue Aug 13 14:43:42 UTC 2024] Job = 9952, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:43:46 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:16:40
+OK
+[Tue Aug 13 14:44:51 UTC 2024] Job = 9952, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:44:55 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:17:53
+OK
+[Tue Aug 13 14:45:58 UTC 2024] Job = 9952, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:46:00 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:18:57
+OK
+[Tue Aug 13 14:47:10 UTC 2024] Job = 9952, State = CANCELLED+, Elapsed = 00:00:00
+[Tue Aug 13 14:47:14 UTC 2024] Job = 9952, State = CANCELLED+, Elapsed = 00:00:00
+[Tue Aug 13 14:47:17 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:20:10
+OK
+[Tue Aug 13 14:47:19 UTC 2024] Started backfill job: 9973
+[Tue Aug 13 14:48:25 UTC 2024] Job = 9973, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:48:30 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:21:23
+OK
+[Tue Aug 13 14:49:29 UTC 2024] Job = 9973, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:49:38 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:22:34
+OK
+[Tue Aug 13 14:50:44 UTC 2024] Job = 9973, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:50:46 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:23:42
+OK
+[Tue Aug 13 14:51:56 UTC 2024] Job = 9973, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:52:20 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:25:17
+OK
+[Tue Aug 13 14:53:27 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:26:23
+OK
+[Tue Aug 13 14:53:36 UTC 2024] Job = 9973, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:54:43 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:27:41
+OK
+[Tue Aug 13 14:54:51 UTC 2024] Job = 9973, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:55:56 UTC 2024] Job = 9973, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:55:58 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:28:55
+OK
+[Tue Aug 13 14:57:08 UTC 2024] Job = 9973, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:57:12 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:30:07
+OK
+[Tue Aug 13 14:58:14 UTC 2024] Job = 9973, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:58:23 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:31:19
+OK
+[Tue Aug 13 14:59:25 UTC 2024] Job = 9973, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 14:59:33 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:32:24
+OK
+[Tue Aug 13 15:00:32 UTC 2024] Job = 9973, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 15:01:05 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:33:56
+OK
+[Tue Aug 13 15:01:55 UTC 2024] Job = 9973, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 15:02:13 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:35:10
+OK
+[Tue Aug 13 15:03:07 UTC 2024] Job = 9973, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 15:03:21 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:36:19
+OK
+[Tue Aug 13 15:04:21 UTC 2024] Job = 9973, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 15:04:59 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:37:57
+OK
+[Tue Aug 13 15:05:31 UTC 2024] Job = 9973, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 15:06:16 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:39:12
+OK
+[Tue Aug 13 15:06:40 UTC 2024] Job = 9973, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 15:07:46 UTC 2024] Job = 9973, State = PENDING, Elapsed = 00:00:00
+OK
+[Tue Aug 13 15:07:49 UTC 2024] Job = 9375, State = RUNNING, Elapsed = 1-22:40:45
+OK

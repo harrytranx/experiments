@@ -1,9 +1,75 @@
 import os
 import re
 import pandas as pd
+import json
+from typing import Optional, List
 
-ALL_BENCHMARKS = ["mmmu_v2", "mmmu_v1", "docvqa", "mathvista", "ai2d", "chartqa", "vqa", "textvqa",
-                  "infographics_w_ocr", "infographics", "mmbench"]
+import utils
+from slurm import run_sbatch_job
+
+ALL_BENCHMARKS = [
+    "mmmu",
+    "docvqa",
+    "mathvista",
+    "ai2d",
+    "chartqa",
+    "vqa",
+    "textvqa",
+    "infographics_w_ocr",
+    "infographics",
+    "mmbench"
+]
+
+
+def run_eval_plan(
+    eval_base_sbatch: str,
+    eval_plan: str,
+    eval_config_dir: str,
+    checkpoint_dir: str,
+    checkpoints: list[int],
+    benchmarks: Optional[List[str]] = None
+):
+
+    job_dict = {}
+
+    job_dict_json = f'job_dict_{eval_plan}.json'
+    assert not os.path.exists(job_dict_json)
+
+    if benchmarks is None:
+        benchmarks = ALL_BENCHMARKS
+
+    for benchmark in benchmarks:
+        job_dict[benchmark] = {}
+
+        for chk in checkpoints:
+            params = {
+                "eval_plan": eval_plan,
+                "json_config": f"{eval_config_dir}/eval_{benchmark}.json",
+                "checkpoint_dir": checkpoint_dir,
+                "benchmark_name": benchmark,
+                "checkpoint_id": str(chk)
+            }
+
+            assert os.path.exists(params["json_config"])
+            assert os.path.exists(
+                f"{params['checkpoint_dir']}/checkpoint-{chk}")
+
+            job_id = run_sbatch_job(
+                sbatch_base_script=eval_base_sbatch,
+                sbatch_overwrite={
+                    "job-name": f"eval_{benchmark}"
+                },
+                positional_env_vars=list(params.values())
+            )
+
+            job_dict[benchmark][chk] = int(job_id)
+
+    with open(job_dict_json, 'w') as f:
+        json.dump(job_dict, f, indent=4)
+
+    print(f"job_dict saved to {job_dict_json}")
+
+    return job_dict
 
 
 def extract_values(filename):
