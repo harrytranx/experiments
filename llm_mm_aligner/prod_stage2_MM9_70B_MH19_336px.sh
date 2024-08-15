@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=stage2
-#SBATCH --nodes=64
-#SBATCH --ntasks=64
+#SBATCH --nodes=128
+#SBATCH --ntasks=128
 #SBATCH --gpus-per-task=8
 #SBATCH --cpus-per-task=192
 #SBATCH --mem=0
