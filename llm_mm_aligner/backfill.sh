@@ -1,11 +1,14 @@
 #!/bin/bash
-# Usage: nohup ./backfill.sh [JOB_ID] [LAUNCH SCRIPT]
-# Example: nohup ./backfill.sh 9322 fbcode_pretrain_MM9_70B_sbatch.sh &
+# Usage: nohup ./backfill.sh [LAUNCH SCRIPT] [JOB_ID] &
+# Example: nohup ./backfill.sh fbcode_pretrain_MM9_70B_sbatch.sh 9322  &
+
+# To stop:
 # ps aux | grep "backfill.sh"
 # kill <PID>
 
 # nohup ./backfill.sh prod_pretrain_MM9_70B_Llama3.1_336px.sh 9299 &
 # nohup ./backfill.sh prod_pretrain_MM9_70B_MH19_336px.sh 8351 &
+# nohup ./backfill.sh prod_stage2_MM9_70B_MH19_336px.sh 10530 &
 
 SCRIPT=$1
 JOB_ID=$2

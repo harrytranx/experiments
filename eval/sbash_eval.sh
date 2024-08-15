@@ -32,7 +32,7 @@ echo "CHECKPOINT_ID: ${CHECKPOINT_ID}"
 # Activate conda environment
 CONDA_ENV=aligner_v7
 eval "$(conda shell.bash hook)"
-conda activate $CONDA_ENV 
+# conda activate $CONDA_ENV 
 conda activate /opt/hpcaas/.mounts/fs-036153e63d56f4dc2/home/ahmadyan/.conda/envs/aligner_v7 # work with ibatch
 # conda activate /data/home/ahmadyan/.conda/envs/aligner_v7
 echo Using conda environment: $CONDA_DEFAULT_ENV

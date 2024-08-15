@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "../llm_mm_aligner"
+		},
+		{
+			"path": "../eval"
 		}
 	],
 	"settings": {}
