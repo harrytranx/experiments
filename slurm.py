@@ -34,6 +34,10 @@ def run_sbatch_job(sbatch_base_script, sbatch_overwrite, positional_env_vars):
     return job_id
 
 
+def get_log_file(job_id: int):
+    return f"/fsx_0/user/tranx/slurm_logs/output_{job_id}.txt"
+
+
 class SlurmClient():
     def __init__(self):
         self.host_prefix = "h100-st-p548xlarge"  # FIX ME, move this to config file

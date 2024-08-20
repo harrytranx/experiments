@@ -5,7 +5,7 @@ import json
 from typing import Optional, List
 
 import utils
-from slurm import run_sbatch_job
+from slurm import run_sbatch_job, get_log_file
 
 ALL_BENCHMARKS = [
     "mmmu",
@@ -20,6 +20,26 @@ ALL_BENCHMARKS = [
     "mmbench"
 ]
 
+REPORT_BENCHMARKS = {
+    'mmmu/mllm_eval_accuracy': 'mmmu_v2',
+    'mmmu/accuracy': 'mmmu_v1',
+    'docvqa/anls_total_score': 'docvqa',
+    'mathvista/accuracy': 'mathvista',
+    'ai2d/accuracy': 'ai2d',
+    'chartqa/accuracy': 'chartqa',
+    'vqa/accuracy': 'vqa',
+    'textvqa/accuracy': 'textvqa',
+    'infographics_w_ocr/anls_total_score': 'infographics_w_ocr',
+    'infographics/anls_total_score': 'infographics',
+    'mmbench/overall': 'mmbench'
+}
+
+
+def get_report_benchmarks(all_benchmark_df: pd.DataFrame) -> pd.DataFrame:
+    df = all_benchmark_df[list(REPORT_BENCHMARKS.keys())]
+    df = df.rename(columns=REPORT_BENCHMARKS)
+    return df
+
 
 def run_eval_plan(
     eval_base_sbatch: str,
@@ -27,13 +47,18 @@ def run_eval_plan(
     eval_config_dir: str,
     checkpoint_dir: str,
     checkpoints: list[int],
-    benchmarks: Optional[List[str]] = None
+    benchmarks: Optional[List[str]] = None,
+    rerun_if_exists: bool = False
 ):
 
     job_dict = {}
 
-    job_dict_json = f'job_dict_{eval_plan}.json'
-    assert not os.path.exists(job_dict_json)
+    # job_dict_json = f'job_dict_{eval_plan}.json'
+    # assert not os.path.exists(job_dict_json)
+
+    job_dict_json = f'eval/logs/job_dict_{eval_plan}.json'
+    if os.path.exists(job_dict_json) and not rerun_if_exists:
+        raise RuntimeError(f"Found existing job_dict: {job_dict_json}")
 
     if benchmarks is None:
         benchmarks = ALL_BENCHMARKS
@@ -100,18 +125,19 @@ def extract_values(filename):
     return extracted_values
 
 
-def get_eval_scores(job_dict, output_csv=None):
+def get_eval_scores(job_dict, output_csv=None) -> pd.DataFrame:
     results = {}
     for b in job_dict:
         results[b] = {}
         for chk in job_dict[b]:
             job_id = job_dict[b][chk]
-            log = f"/fsx_0/user/tranx/output/slurm_logs/output_{job_id}.txt"
+            # log = f"/fsx_0/user/tranx/output/slurm_logs/output_{job_id}.txt"
             # print(log)
+            log = get_log_file(int(job_id))
 
             res = extract_values(log)
             if res:
-                print(f"Got result for {b} - {chk}")
+                print(f"Got result for {b} - {chk}: {res}")
                 results[b][chk] = res
 
     scores = {
@@ -142,6 +168,8 @@ def get_eval_scores(job_dict, output_csv=None):
                 component, val = x[0], x[1]
                 if component in component_scores:
                     df.loc[chk, component] = round(val, 4)
+
+    df = get_report_benchmarks(df)
 
     if output_csv is not None:
         df.to_csv(output_csv, index=False)
