@@ -12,7 +12,9 @@
 
 SCRIPT=$1
 JOB_ID=$2
-LOG_FILE="loop_backfill_${SCRIPT}_${JOB_ID}.log"
+
+script_file=$(basename $SCRIPT)
+LOG_FILE="loop_backfill_${script_file}_${JOB_ID}.log"
 
 echo "[$(date)] Starting loop to backfill job $JOB_ID using script: $SCRIPT" | tee -a $LOG_FILE
 echo "Log file: $LOG_FILE"

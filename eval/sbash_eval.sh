@@ -5,8 +5,8 @@
 #SBATCH --gpus-per-task=8
 #SBATCH --cpus-per-task=192
 #SBATCH --mem=0
-#SBATCH --output=/fsx_0/user/tranx/output/slurm_logs/output_%j.txt
-#SBATCH --error=/fsx_0/user/tranx/output/slurm_logs/output_%j.txt
+#SBATCH --output=/fsx_0/user/tranx/slurm_logs/output_%j.txt
+#SBATCH --error=/fsx_0/user/tranx/slurm_logs/output_%j.txt
 #SBATCH --time=24:00:00
 #SBATCH --account=ar-ai-hipri
 #SBATCH --qos=ar-ai-hipri

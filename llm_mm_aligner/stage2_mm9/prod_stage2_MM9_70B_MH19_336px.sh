@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=stage2
+#SBATCH --job-name=exp_stage2
 #SBATCH --nodes=128
 #SBATCH --ntasks=128
 #SBATCH --gpus-per-task=8
@@ -50,7 +50,8 @@ head_node_ip=$(srun --nodes=1 --ntasks=1 hostname --ip-address)
 echo Node IP: $head_node_ip
 
 MM9_CONF_DIR="/fsx_0/user/tranx/experiments/llm_mm_aligner/stage2_mm9"
-JSON_CONFIG=$MM9_CONF_DIR/stage2_MM9_70B_MH19_336px_64nodes.json
+JSON_CONFIG=$MM9_CONF_DIR/stage2_MM9_70B_MH19_336px_128nodes.json
+# JSON_CONFIG=stage2_MM9_70B_MH19_336px_128nodes.json
 
 echo "Using config from: $JSON_CONFIG"
 

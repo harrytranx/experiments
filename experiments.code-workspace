@@ -8,6 +8,15 @@
 		},
 		{
 			"path": "../eval"
+		},
+		{
+			"path": "../fbcode"
+		},
+		{
+			"path": "../fbcode_aligner"
+		},
+		{
+			"path": "../github"
 		}
 	],
 	"settings": {}
