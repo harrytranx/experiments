@@ -30,7 +30,8 @@ CHECKPOINT_ID=$5
 # echo "CHECKPOINT_ID: ${CHECKPOINT_ID}"
 
 # ALIGNER_PARENT_DIR=/fsx_0/user/tranx/rsync
-ALIGNER_PARENT_DIR=/home/ahmadyan
+# ALIGNER_PARENT_DIR=/home/ahmadyan
+ALIGNER_PARENT_DIR=/fsx_0/user/tranx/eval_adel
 # OUTPUT_DIR=/fsx_0/checkpoints/tranx/MM9-Pretrain-70B/evals/${EVAL_PLAN}
 OUTPUT_DIR=/fsx_0/checkpoints/tranx/MM9-Stage2-70B/MH19_336px_128nodes_exp/evals/${EVAL_PLAN}
 
