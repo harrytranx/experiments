@@ -11,6 +11,14 @@
 #SBATCH --account=ar-ai-hipri
 #SBATCH --qos=ar-ai-hipri
 
+# EVAL_PLAN=Llama31_336px_test
+# JSON_CONFIG=/fsx_0/user/tranx/eval/llm_mm_aligner/experiments/aws_adel/eval_31/eval_vqa.json
+# CHECKPOINT_WATCH_PATH=/fsx_0/checkpoints/tranx/MM9-Pretrain-70B/Llama31_336px_128nodes_bz32_scratch
+# BENCHMARK_NAME=vqa
+# CHECKPOINT_ID=2000
+
+# EVAL_PLAN=$1
+# ALIGNER_PARENT_DIR=/fsx_0/user/tranx/eval_adel
 ALIGNER_PARENT_DIR=$1
 JSON_CONFIG=$2
 CHECKPOINT_WATCH_PATH=$3
@@ -23,10 +31,18 @@ CHECKPOINT_ID=$5
 # echo "BENCHMARK_NAME: ${BENCHMARK_NAME}"
 # echo "CHECKPOINT_ID: ${CHECKPOINT_ID}"
 
+# ALIGNER_PARENT_DIR=/fsx_0/user/tranx/rsync
+# ALIGNER_PARENT_DIR=/home/ahmadyan
+# ALIGNER_PARENT_DIR=/fsx_0/user/tranx/eval_adel
+# OUTPUT_DIR=/fsx_0/checkpoints/tranx/MM9-Pretrain-70B/evals/${EVAL_PLAN}
+# OUTPUT_DIR=/fsx_0/checkpoints/tranx/MM9-Stage2-70B/MH19_336px_128nodes_exp/evals/${EVAL_PLAN}
+OUTPUT_DIR=${CHECKPOINT_WATCH_PATH}/evals/eval_results_checkpoint-${CHECKPOINT_ID}
+
 # Activate conda environment
 CONDA_ENV=aligner_v7
 eval "$(conda shell.bash hook)"
-conda activate /opt/hpcaas/.mounts/fs-036153e63d56f4dc2/home/ahmadyan/.conda/envs/aligner_v7 
+# conda activate $CONDA_ENV 
+conda activate /opt/hpcaas/.mounts/fs-036153e63d56f4dc2/home/ahmadyan/.conda/envs/aligner_v7 # work with ibatch
 echo Using conda environment: $CONDA_DEFAULT_ENV
 echo CONDA_PREFIX: ${CONDA_PREFIX}
 
@@ -54,6 +70,8 @@ export PIP_NO_DEPS=true
 
 export CUDA_DEVICE_MAX_CONNECTIONS=1
 
+# launcher
+# ALIGNER_PARENT_DIR=/fsx_0/user/tranx/eval
 
 ALIGNER_DEP_DIR=$ALIGNER_PARENT_DIR/llm_mm_aligner/replicated
 CONDA_PYTHON_PKGS=${CONDA_PREFIX}/python-packages
@@ -65,7 +83,7 @@ TENSORBOARD_PATH=${CHECKPOINT_WATCH_PATH}/tensorboard
 mkdir -p $TENSORBOARD_PATH
 echo "Running ${BENCHMARK_NAME} on $CHECKPOINT_PATH"
 
-OUTPUT_DIR=${CHECKPOINT_WATCH_PATH}/evals/eval_results_checkpoint-${CHECKPOINT_ID}
+# OUTPUT_DIR=/data/home/ahmadyan/tmp
 mkdir -p $OUTPUT_DIR
 USE_JSON_CONFIG=${OUTPUT_DIR}/${BENCHMARK_NAME}_${CHECKPOINT_ID}_eval_config.json
 RESULT=${OUTPUT_DIR}/${BENCHMARK_NAME}_${CHECKPOINT_ID}_eval_results.txt

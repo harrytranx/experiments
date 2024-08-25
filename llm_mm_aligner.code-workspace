@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../llm_mm_aligner"
+		},
+		{
+			"path": "../rsync"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}
