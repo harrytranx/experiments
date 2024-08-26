@@ -4,17 +4,17 @@
 # This is an example launch script for pretrain job. 
 # However, users can customize the parameters for different enviroments and workflows (e.g., pretrain, eval, sft)
 
-# JOB_NAME=s2_504
-# NUM_NODES=64
-# # REPO_LOC=/fsx_0/user/tranx/rsync
-# REPO_LOC=/fsx_0/user/tranx
-# JSON_CONFIG=/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm9_stage2/stage2_MM9_70B_MH19_504px_64nodes_exp29.json
-
-JOB_NAME=s2_i18n
-NUM_NODES=64
+JOB_NAME=s2_504
+NUM_NODES=128
 REPO_LOC=/fsx_0/user/tranx/rsync
-# JSON_CONFIG=/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm9_stage2/stage2_MM9_70B_MH19_336px_2nodes.json
-JSON_CONFIG=/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm9_stage2/stage2_MM9_70B_MH19_336px_64nodes_i18n.json
+# REPO_LOC=/fsx_0/user/tranx
+JSON_CONFIG=/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm9_stage2/stage2_MM9_70B_MH19_504px_128nodes_exp28.json
+
+# JOB_NAME=s2_i18n
+# NUM_NODES=64
+# REPO_LOC=/fsx_0/user/tranx/rsync
+# # JSON_CONFIG=/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm9_stage2/stage2_MM9_70B_MH19_336px_2nodes.json
+# JSON_CONFIG=/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm9_stage2/stage2_MM9_70B_MH19_336px_64nodes_i18n.json
 
 # ======================================
 # JOB_NAME=sample

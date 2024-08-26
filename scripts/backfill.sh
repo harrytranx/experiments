@@ -8,7 +8,7 @@
 
 # nohup ./backfill.sh prod_pretrain_MM9_70B_Llama3.1_336px.sh 9299 &
 # nohup ./backfill.sh prod_pretrain_MM9_70B_MH19_336px.sh 8351 &
-# nohup ./backfill.sh prod_stage2_MM9_70B_MH19_336px.sh 10530 &
+# nohup ./backfill.sh /fsx_0/user/tranx/llm_mm_aligner/experiments/aws_tranx/mm9_stage2/prod_stage2_MM9_70B_MH19_336px.sh 15295 &
 
 SCRIPT=$1
 JOB_ID=$2
@@ -35,5 +35,5 @@ do
         echo "[$(date)] Started backfill job: $JOB_ID" | tee -a $LOG_FILE
     fi
 
-    sleep 60
+    sleep 200 # wait a little long in case slurm auto-requeue is restarting the job already
 done
