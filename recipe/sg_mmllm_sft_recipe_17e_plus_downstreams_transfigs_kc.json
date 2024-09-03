@@ -1,0 +1,401 @@
+{
+"table": {
+    "name": "sg_mmllm_sft_recipe_17e_plus_downstreams_transfigs_kc",
+    "namespace": "arvr",
+    "partitions": {
+      "ds": "2024-07-24"
+    },
+    "filters": [],
+    "schema": {
+      "image_manifold_path": "str",
+      "everstore_handle": "str",
+      "instruction": "str",
+      "question": "str",
+      "response": "str",
+      "dynamic_prompt": "dict[str,str]"
+    },
+    "enrichment_configs": [
+      {
+        "name": "manifold",
+        "lookup_value": "image_manifold_path",
+        "output_column": "manifold_image"
+      },
+      {
+        "name": "everstore",
+        "lookup_value": "everstore_handle",
+        "output_column": "everstore_image"
+      }
+    ],
+    "retention_days": 1
+  },
+  "sources": [
+    {
+      "name": "sft_recipe_17e_kosher_subset_copy_from_sg_strict_zeroshot",
+      "partitions": {
+        "ds": "2024-07-16"
+      },
+      "columns_map": {
+        "image_manifold_path": "image_manifold_path",
+        "question": "question",
+        "response": "response",
+        "instruction": "instruction",
+        "dynamic_prompt": "dynamic_prompt"
+      },
+      "filters": [
+        "NOT (response is null or TRIM(response) = '')",
+        "NOT (response like '%Fedora%' OR response like '%fedora%')"
+      ]
+    },
+    {
+      "name": "mmllm_sft_textcaps_and_dense_caps_json_format_random_v2_from_17e",
+      "partitions": {
+        "ds": "2024-07-21"
+      },
+      "columns_map": {
+        "image_manifold_path": "image_manifold_path",
+        "question": "question",
+        "response": "response",
+        "instruction": "instruction",
+        "dynamic_prompt": "dynamic_prompt"
+      },
+      "filters": [
+        "NOT (response is null or TRIM(response) = '')",
+        "NOT (response like '%Fedora%' OR response like '%fedora%')"
+      ]
+    },
+    {
+      "name": "mmllm_sft_sndc_caption_filtered_ner098",
+      "partitions": {
+        "ds": "2024-07-15"
+      },
+      "columns_map": {
+        "image_manifold_path": "image_manifold_path",
+        "cleaned_caption": "response",
+        "instruction": "instruction",
+        "dynamic_prompt": "dynamic_prompt"
+      },
+      "filters": [
+        "NOT (cleaned_caption is null or TRIM(cleaned_caption) = '')",
+        "NOT (cleaned_caption like '%Fedora%' OR cleaned_caption like '%fedora')"
+      ]
+    },
+    {
+      "name": "mmllm_sft_sndc_caption_filtered_ner098",
+      "partitions": {
+        "ds": "2024-07-15"
+      },
+      "columns_map": {
+        "image_manifold_path": "image_manifold_path",
+        "cleaned_json_captions": "response",
+        "json_instruction": "instruction",
+        "dynamic_prompt": "dynamic_prompt"
+      },
+      "filters": [
+        "NOT (cleaned_json_captions is null or TRIM(cleaned_json_captions) = '')",
+        "NOT (cleaned_json_captions like '%Fedora%' OR cleaned_json_captions like '%fedora')"
+      ]
+    },
+    {
+      "name": "mmllm_sft_human_live_traffic_sft_2sent40words_name_filtered_ds",
+      "partitions": {
+        "ds": "2024-07-21"
+      },
+      "columns_map": {
+        "everstore_handle": "everstore_handle",
+        "instruction": "instruction",
+        "response": "response",
+        "question": "question",
+        "dynamic_prompt": "dynamic_prompt"
+      },
+      "filters": [
+        "NOT (response is null or TRIM(response) = '')",
+        "NOT (response like '%Fedora%' OR response like '%fedora%')"
+      ]
+    },
+    {
+      "name": "mmllm_sft_human_live_traffic_sft_2sent40words_name_filtered_ds",
+      "partitions": {
+        "ds": "2024-07-21"
+      },
+      "columns_map": {
+        "everstore_handle": "everstore_handle",
+        "instruction": "instruction",
+        "response": "response",
+        "question": "question",
+        "dynamic_prompt": "dynamic_prompt"
+      },
+      "filters": [
+        "NOT (response is null or TRIM(response) = '')",
+        "NOT (response like '%Fedora%' OR response like '%fedora%')"
+      ]
+    },
+    {
+      "name": "mmllm_sft_human_public_sft_2sent40words_name_filtered_ds",
+      "partitions": {
+        "ds": "2024-07-21"
+      },
+      "columns_map": {
+        "image": "image_manifold_path",
+        "instruction": "instruction",
+        "response": "response",
+        "question": "question",
+        "dynamic_prompt": "dynamic_prompt"
+      },
+      "filters": [
+        "NOT (response is null or TRIM(response) = '')",
+        "NOT (response like '%Fedora%' OR response like '%fedora%')"
+      ]
+    },
+    {
+      "name": "mmllm_sft_human_public_sft_2sent40words_name_filtered_ds",
+      "partitions": {
+        "ds": "2024-07-21"
+      },
+      "columns_map": {
+        "image": "image_manifold_path",
+        "instruction": "instruction",
+        "response": "response",
+        "question": "question",
+        "dynamic_prompt": "dynamic_prompt"
+      },
+      "filters": [
+        "NOT (response is null or TRIM(response) = '')",
+        "NOT (response like '%Fedora%' OR response like '%fedora%')"
+      ]
+    },
+    {
+      "name": "mmllm_sft_human_march_nohedge_name_filtered_ds",
+      "partitions": {
+        "ds": "2024-07-21"
+      },
+      "columns_map": {
+        "image_manifold_path": "image_manifold_path",
+        "everstore_handle": "everstore_handle",
+        "instruction": "instruction",
+        "question": "question",
+        "response": "response",
+        "dynamic_prompt": "dynamic_prompt"
+      },
+      "filters": [
+        "NOT (response is null or TRIM(response) = '')",
+        "NOT (response like '%Fedora%' OR response like '%fedora%')"
+      ]
+    },
+    {
+      "name": "mmllm_sft_human_march_nohedge_name_filtered_ds",
+      "partitions": {
+        "ds": "2024-07-21"
+      },
+      "columns_map": {
+        "image_manifold_path": "image_manifold_path",
+        "everstore_handle": "everstore_handle",
+        "instruction": "instruction",
+        "question": "question",
+        "response": "response",
+        "dynamic_prompt": "dynamic_prompt"
+      },
+      "filters": [
+        "NOT (response is null or TRIM(response) = '')",
+        "NOT (response like '%Fedora%' OR response like '%fedora%')"
+      ]
+    },
+    {
+      "name": "mmllm_sft_human_april_diverse_name_filtered_ds",
+      "partitions": {
+        "ds": "2024-07-21"
+      },
+      "columns_map": {
+        "image_manifold_path": "image_manifold_path",
+        "everstore_handle": "everstore_handle",
+        "question": "question",
+        "response": "response",
+        "instruction": "instruction",
+        "dynamic_prompt": "dynamic_prompt"
+      },
+      "filters": [
+        "NOT (response is null or TRIM(response) = '')",
+        "NOT (response like '%Fedora%' OR response like '%fedora%')"
+      ]
+    },
+    {
+      "name": "mmllm_sft_human_april_diverse_name_filtered_ds",
+      "partitions": {
+        "ds": "2024-07-21"
+      },
+      "columns_map": {
+        "image_manifold_path": "image_manifold_path",
+        "everstore_handle": "everstore_handle",
+        "question": "question",
+        "response": "response",
+        "instruction": "instruction",
+        "dynamic_prompt": "dynamic_prompt"
+      },
+      "filters": [
+        "NOT (response is null or TRIM(response) = '')",
+        "NOT (response like '%Fedora%' OR response like '%fedora%')"
+      ]
+    },
+    {
+      "name": "mmllm_sft_human_april_synth_diverse_names_filtered_ds",
+      "partitions": {
+        "ds": "2024-07-24"
+      },
+      "columns_map": {
+        "image_manifold_path": "image_manifold_path",
+        "everstore_handle": "everstore_handle",
+        "question": "question",
+        "response": "response",
+        "instruction": "instruction",
+        "dynamic_prompt": "dynamic_prompt"
+      },
+      "filters": [
+        "NOT (response is null or TRIM(response) = '')",
+        "NOT (response like '%Fedora%' OR response like '%fedora%')"
+      ]
+    },
+    {
+      "name": "mmllm_sft_human_april_long_dpo_pii_filtered_ds",
+      "partitions": {
+        "ds": "2024-07-24"
+      },
+      "columns_map": {
+        "image_manifold_path": "image_manifold_path",
+        "everstore_handle": "everstore_handle",
+        "question": "question",
+        "response": "response",
+        "instruction": "instruction",
+        "dynamic_prompt": "dynamic_prompt"
+      },
+      "filters": [
+        "NOT (response is null or TRIM(response) = '')",
+        "NOT (response like '%Fedora%' OR response like '%fedora%')"
+      ]
+    },
+    {
+      "name": "kg_entity_with_wikitext_instruction_question_answer_pair_various_format_length_sft_data_pii_filtered_ds",
+      "partitions": {
+        "ds": "2024-07-22"
+      },
+      "columns_map": {
+        "entity_image_handles": "everstore_handle",
+        "instruction": "instruction",
+        "question": "question",
+        "answer": "response"
+      },
+      "filters": [
+        "NOT (answer is null or TRIM(answer) = '')",
+        "NOT (answer like '%Fedora%' OR answer like '%fedora%')"
+      ]
+    },
+    {
+      "name": "sg_mmllm_figs_to_english_sft_pii_filtered_ds",
+      "partitions": {
+        "ds": "2024-07-22"
+      },
+      "columns_map": {
+        "manifold_path": "image_manifold_path",
+        "everstore_handle": "everstore_handle",
+        "question": "question",
+        "response": "response"
+      },
+      "filters": [
+        "NOT (response is null or TRIM(response) = '')",
+        "NOT (response like '%Fedora%' OR response like '%fedora%')"
+      ]
+    },
+    {
+      "name": "mmllm_reminders_image_caption_name_filtered_ds",
+      "partitions": {
+        "ds": "2024-07-21"
+      },
+      "columns_map": {
+        "image_manifold_path": "image_manifold_path",
+        "question": "question",
+        "response": "response",
+        "instruction": "instruction"
+      },
+      "filters": [
+        "NOT (response is null or TRIM(response) = '')",
+        "NOT (response like '%Fedora%' OR response like '%fedora%')"
+      ]
+    },
+    {
+      "name": "copy_text_7_16_2024_name_filtered_ds",
+      "partitions": {
+        "ds": "2024-07-21"
+      },
+      "columns_map": {
+        "image_manifold_path": "image_manifold_path",
+        "question": "question",
+        "response": "response"
+      },
+      "filters": [
+        "NOT (response is null or TRIM(response) = '')",
+        "NOT (response like '%Fedora%' OR response like '%fedora%')"
+      ]
+    },
+    {
+      "name": "mmllm_sft_share_ai_expressive_v0_pii_filtered_ds",
+      "partitions": {
+        "ds": "2024-07-22"
+      },
+      "columns_map": {
+        "everstore_handle": "everstore_handle",
+        "question": "question",
+        "response": "response"
+      },
+      "filters": [
+        "NOT (response is null or TRIM(response) = '')",
+        "NOT (response like '%Fedora%' OR response like '%fedora%')"
+      ]
+    },
+    {
+      "name": "mmllm_sft_object_not_there_200_pii_filtered_ds",
+      "partitions": {
+        "ds": "2024-07-15"
+      },
+      "columns_map": {
+        "image": "image_manifold_path",
+        "question": "question",
+        "response": "response"
+      },
+      "filters": [
+        "NOT (response is null or TRIM(response) = '')",
+        "NOT (response like '%Fedora%' OR response like '%fedora%')"
+      ]
+    },
+    {
+      "name": "positional_reasoning_samples_pii_filtered_ds",
+      "partitions": {
+        "ds": "2024-07-22"
+      },
+      "columns_map": {
+        "everstore_handle": "everstore_handle",
+        "instruction": "instruction",
+        "question": "question",
+        "response": "response"
+      },
+      "filters": [
+        "NOT (response is null or TRIM(response) = '')",
+        "NOT (response like '%Fedora%' OR response like '%fedora%')",
+        "RAND() < 0.12"
+      ]
+    },
+    {
+      "name": "mmllm_sft_translation_figs_e_figs_summary_nocap",
+      "partitions": {
+        "ds": "2024-07-23"
+      },
+      "columns_map": {
+        "image_manifold_path": "image_manifold_path",
+        "question": "question",
+        "response": "response",
+        "dynamic_prompt": "dynamic_prompt"
+      },
+      "filters": [
+        "NOT (response is null or TRIM(response) = '')",
+        "NOT (response like '%Fedora%' OR response like '%fedora%')"
+      ]
+    }
+  ]
+}

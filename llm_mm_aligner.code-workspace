@@ -1,14 +1,10 @@
 {
-	"folders": [
-		{
-			"path": "../llm_mm_aligner"
-		},
-		{
-			"path": "../rsync"
-		},
-		{
-			"path": "."
-		}
-	],
-	"settings": {}
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "path": "../rsync"
+        }
+    ]
 }
