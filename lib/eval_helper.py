@@ -131,13 +131,16 @@ def extract_values(filename):
 
 
 # def get_eval_scores(job_dict, output_csv=None) -> pd.DataFrame:
-def get_eval_scores(checkpoint_dir: str, checkpoint_id: int, output_csv=None) -> pd.DataFrame:
+def get_eval_scores(checkpoint_dir: str, checkpoint_id: int, output_csv=None, verbose: bool=False) -> pd.DataFrame:
     results = {}
     
     job_dict_file = get_eval_jobs_record(checkpoint_dir, checkpoint_id)
     with open(job_dict_file, 'r') as f:
         job_dict = json.load(f)
-    print(job_dict)
+    
+    if verbose:    
+        print(job_dict)
+    
     for b in job_dict:
         results[b] = {}
         for chk in job_dict[b]:
@@ -148,7 +151,8 @@ def get_eval_scores(checkpoint_dir: str, checkpoint_id: int, output_csv=None) ->
 
             res = extract_values(log)
             if res:
-                print(f"Got result for {b} - {chk}: {res}")
+                if verbose:
+                    print(f"Got result for {b} - {chk}: {res}")
                 results[b][chk] = res
 
     scores = {
@@ -188,16 +192,18 @@ def get_eval_scores(checkpoint_dir: str, checkpoint_id: int, output_csv=None) ->
     return df
 
 
-def get_eval_scores_all(checkpoint_dir: str) -> pd.DataFrame:
+def get_eval_scores_all(checkpoint_dir: str, verbose: bool = False) -> pd.DataFrame:
     checkpoints = get_checkpoints(checkpoint_dir)
-    print(checkpoints)
+    if verbose:
+        print(checkpoints)
     df = pd.DataFrame()
     
     for c in checkpoints:
         try:
-            df_c = get_eval_scores(checkpoint_dir, c)
-            df = pd.concat([df, df_c])     
-            print(c)   
+            df_c = get_eval_scores(checkpoint_dir, c, verbose=verbose)
+            df = pd.concat([df, df_c])   
+            if verbose:  
+                print(c)   
         except Exception:
             pass
         
@@ -240,7 +246,16 @@ def get_eval_jobs_record(checkpoint_dir: str, checkpoint_id: int):
     return f"{checkpoint_dir}/evals/eval_jobs_checkpoint-{checkpoint_id}.json"
     
     
-def run_eval_sweep(output_dir: str, eval_sbatch: str, eval_config_dir: str, aligner_parent_dir:str, print_cmd:bool = False, min_checkpoint: int=0):
+def run_eval_sweep(
+    output_dir: str, 
+    eval_sbatch: str, 
+    eval_config_dir: str, 
+    aligner_parent_dir:str, 
+    print_cmd:bool = False, 
+    min_checkpoint: int=0, 
+    benchmarks: Optional[List[str]] = None,
+    rerun_if_exists: bool = False
+):
     """
     Start eval sweep on new checkpoints
     """
@@ -266,9 +281,11 @@ def run_eval_sweep(output_dir: str, eval_sbatch: str, eval_config_dir: str, alig
                 eval_config_dir=eval_config_dir,
                 checkpoint_dir=output_dir,
                 checkpoints=[c],
+                benchmarks=benchmarks,
                 # save_eval_jobs=f"{output_dir}/evals/eval_jobs_checkpoint-{c}.json"
                 save_eval_jobs=get_eval_jobs_record(output_dir, c),
-                print_cmd=print_cmd
+                print_cmd=print_cmd,
+                rerun_if_exists=rerun_if_exists
             )
 
 
