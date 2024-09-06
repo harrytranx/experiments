@@ -143,6 +143,14 @@ class SlurmClient():
 
         return jobs
     
+    
+    def get_job_info(self, job_id):
+        cmd = f"sacct -a -j {job_id} --json"
+        output = utils.get_bash_output(cmd)
+        info = json.loads(output)
+        
+        return info
+    
     def get_job_launch_info(self, job_id):
         cmd = f"sacct -a -j {job_id} --json"
         output = utils.get_bash_output(cmd)

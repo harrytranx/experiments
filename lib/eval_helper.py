@@ -7,7 +7,7 @@ import glob
 import copy
 
 from lib import utils
-from lib.slurm import run_sbatch_job, get_log_file
+from lib.slurm import run_sbatch_job, get_log_file, SlurmClient
 
 ALL_BENCHMARKS = [
     "mmmu",
@@ -138,10 +138,10 @@ def extract_values(filename):
 
 
 # def get_eval_scores(job_dict, output_csv=None) -> pd.DataFrame:
-def get_eval_scores(checkpoint_dir: str, checkpoint_id: int, output_csv=None, verbose: bool=False) -> pd.DataFrame:
+def get_eval_scores(checkpoint_dir: str, checkpoint_id: int, output_csv=None, verbose: bool=False, eval_plan: Optional[str]=None)  -> pd.DataFrame:
     results = {}
     
-    job_dict_file = get_eval_jobs_record(checkpoint_dir, checkpoint_id)
+    job_dict_file = get_eval_jobs_record(checkpoint_dir, checkpoint_id, eval_plan)
     with open(job_dict_file, 'r') as f:
         job_dict = json.load(f)
     
@@ -220,6 +220,22 @@ def get_eval_scores_all(checkpoint_dir: str, verbose: bool = False, sorted_by: O
     return df
 
 
+def cancel_eval_jobs(checkpoint_dir: str, cancel_states=['PENDING'], eval_plan: Optional[str]=None):
+    sl = SlurmClient()
+    
+    checkpoints = get_checkpoints(checkpoint_dir)
+    for c in checkpoints:
+        job_dict_file = get_eval_jobs_record(checkpoint_dir, c, eval_plan)
+        job_dict = utils.read_json(job_dict_file)
+        for v in job_dict.values():
+            for _, job in v.items():
+                info = sl.get_job_info(job)
+                state = info["jobs"][0]['state']['current'][0]
+                if state in cancel_states:
+                    print(f"Cancelling job {job} in state {state}")
+                    utils.get_bash_output(f"scancel {job}")
+
+
 def get_checkpoints(output_dir: str) -> List[int]:
     """
     List all checkpoints in a given output folder
@@ -238,12 +254,15 @@ def get_checkpoints(output_dir: str) -> List[int]:
     return checkpoints
 
 
-def get_checkpoints_eval(output_dir: str) -> List[int]:
+def get_checkpoints_eval(output_dir: str, eval_plan=None) -> List[int]:
     """
     List all checkpoints with eval jobs
     """
+    if eval_plan is None:
+        eval_plan = "eval"
+        
     checkpoints = []
-    for file in glob.glob(f"{output_dir}/evals/*.json"):
+    for file in glob.glob(f"{output_dir}/{eval_plan}/*.json"):
         c = file.replace(".json", "").split("-")[-1]
         checkpoints.append(int(c))
     
@@ -252,8 +271,11 @@ def get_checkpoints_eval(output_dir: str) -> List[int]:
     return checkpoints
 
 
-def get_eval_jobs_record(checkpoint_dir: str, checkpoint_id: int):
-    return f"{checkpoint_dir}/evals/eval_jobs_checkpoint-{checkpoint_id}.json"
+def get_eval_jobs_record(checkpoint_dir: str, checkpoint_id: int, eval_plan=None):
+    if eval_plan is None:
+        eval_plan = "eval"
+        
+    return f"{checkpoint_dir}/{eval_plan}/eval_jobs_checkpoint-{checkpoint_id}.json"
     
     
 def run_eval_sweep(
@@ -264,14 +286,15 @@ def run_eval_sweep(
     print_cmd:bool = False, 
     min_checkpoint: int=0, 
     benchmarks: Optional[List[str]] = None,
-    update_if_exists: bool = False
+    update_if_exists: bool = False,
+    eval_plan: Optional[str]=None,
 ):
     """
     Start eval sweep on new checkpoints
     """
     
     checkpoints = get_checkpoints(output_dir)
-    checkpoints_eval = get_checkpoints_eval(output_dir)
+    checkpoints_eval = get_checkpoints_eval(output_dir, eval_plan)
     
     if update_if_exists:
         new_checkpoints = checkpoints 
@@ -296,8 +319,7 @@ def run_eval_sweep(
             checkpoint_dir=output_dir,
             checkpoints=[c],
             benchmarks=benchmarks,
-            # save_eval_jobs=f"{output_dir}/evals/eval_jobs_checkpoint-{c}.json"
-            save_eval_jobs=get_eval_jobs_record(output_dir, c),
+            save_eval_jobs=get_eval_jobs_record(output_dir, c, eval_plan),
             print_cmd=print_cmd,
             update_if_exists=update_if_exists
         )
