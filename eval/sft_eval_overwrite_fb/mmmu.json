@@ -1,0 +1,31 @@
+{
+  "scheduler_type": "mast_grand_teton",
+  "eval_only": true,
+  "num_gpus": 8,
+  "num_nodes": 1,
+  "eval_args": {
+    "resume_from_checkpoint": "manifold://sg_scene_ai/tree/proto/assistant.multimodal.llm_mm_aligner.fblearner.main/584764924/584764924/MH13/checkpoint-2520",
+    "num_beams": 1,
+    "model_parallel_size": 8,
+    "train_file": "manifold://sg_scene_ai/tree/llm_mm_aligner/datasets/MMMU/mmmu_validation_v3.jsonl",
+    "validation_file": "manifold://sg_scene_ai/tree/llm_mm_aligner/datasets/MMMU/mmmu_validation_v3.jsonl",
+    "max_length": 50,
+    "max_seq_len": 1024,
+    "max_new_tokens": 1024,
+    "dataloader_num_workers": 4,
+    "batch_size_generation": 2,
+    "perception_tokenizer_attention_dropout_p": 0,
+    "perception_tokenizer_hidden_dropout_p": 0,
+    "instr_prompt": "mmmu",
+    "task_type": "instruction_tune",
+    "generation_task": "MMMUGenerationTask",
+    "add_bos_token": false,
+    "add_eos_token": false,
+    "eval_only": true,
+    "stopping_token_ids": "",
+    "repetition_penalty": 1.05,
+    "tb_logdir": "manifold://sg_scene_ai/tree/proto/assistant.multimodal.llm_mm_aligner.fblearner.main/584764924/584764924/117093599685848194",
+    "eval_ckpt": 2520,
+    "eval_type": "eval_mmmu"
+  }
+}

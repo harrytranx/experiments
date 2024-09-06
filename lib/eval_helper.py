@@ -53,14 +53,21 @@ def run_eval_plan(
     save_eval_jobs: str,
     benchmarks: Optional[List[str]] = None,
     rerun_if_exists: bool = False,
+    update_if_exists: bool = False,
     print_cmd: bool = False,
     print_job_dict: bool = False
 ):
 
     job_dict = {}
 
-    if os.path.exists(save_eval_jobs) and not rerun_if_exists:
-        raise RuntimeError(f"Found existing eval_jobs at: {save_eval_jobs}")
+    # if os.path.exists(save_eval_jobs) and not rerun_if_exists:
+    #     raise RuntimeError(f"Found existing eval_jobs at: {save_eval_jobs}")
+    
+    if os.path.exists(save_eval_jobs):
+        if update_if_exists:
+            job_dict = utils.read_json(save_eval_jobs) 
+        else:
+            raise RuntimeError(f"Found existing eval_jobs at: {save_eval_jobs} and update_if_exists=False")
 
     if benchmarks is None:
         benchmarks = ALL_BENCHMARKS
@@ -192,7 +199,7 @@ def get_eval_scores(checkpoint_dir: str, checkpoint_id: int, output_csv=None, ve
     return df
 
 
-def get_eval_scores_all(checkpoint_dir: str, verbose: bool = False) -> pd.DataFrame:
+def get_eval_scores_all(checkpoint_dir: str, verbose: bool = False, sorted_by: Optional[str]=None) -> pd.DataFrame:
     checkpoints = get_checkpoints(checkpoint_dir)
     if verbose:
         print(checkpoints)
@@ -206,6 +213,9 @@ def get_eval_scores_all(checkpoint_dir: str, verbose: bool = False) -> pd.DataFr
                 print(c)   
         except Exception:
             pass
+        
+    if sorted_by is not None:
+        df = df.sort_values(by=[sorted_by])
         
     return df
 
@@ -254,7 +264,7 @@ def run_eval_sweep(
     print_cmd:bool = False, 
     min_checkpoint: int=0, 
     benchmarks: Optional[List[str]] = None,
-    rerun_if_exists: bool = False
+    update_if_exists: bool = False
 ):
     """
     Start eval sweep on new checkpoints
@@ -263,7 +273,11 @@ def run_eval_sweep(
     checkpoints = get_checkpoints(output_dir)
     checkpoints_eval = get_checkpoints_eval(output_dir)
     
-    new_checkpoints = [int(c) for c in checkpoints if c not in checkpoints_eval]
+    if update_if_exists:
+        new_checkpoints = checkpoints 
+    else:
+        new_checkpoints = [int(c) for c in checkpoints if c not in checkpoints_eval]
+        
     new_checkpoints = sorted(new_checkpoints)
     
     print(f"New checkpoints: {new_checkpoints}")
@@ -272,21 +286,21 @@ def run_eval_sweep(
         if c < min_checkpoint:
             continue 
         
-        if c not in checkpoints_eval:
-            print(f"Start eval for {output_dir}/checkpoint-{c}")
+        # if c not in checkpoints_eval:
+        print(f"Start eval for {output_dir}/checkpoint-{c}")
             
-            run_eval_plan(
-                eval_base_sbatch=eval_sbatch,
-                aligner_parent_dir=aligner_parent_dir,
-                eval_config_dir=eval_config_dir,
-                checkpoint_dir=output_dir,
-                checkpoints=[c],
-                benchmarks=benchmarks,
-                # save_eval_jobs=f"{output_dir}/evals/eval_jobs_checkpoint-{c}.json"
-                save_eval_jobs=get_eval_jobs_record(output_dir, c),
-                print_cmd=print_cmd,
-                rerun_if_exists=rerun_if_exists
-            )
+        run_eval_plan(
+            eval_base_sbatch=eval_sbatch,
+            aligner_parent_dir=aligner_parent_dir,
+            eval_config_dir=eval_config_dir,
+            checkpoint_dir=output_dir,
+            checkpoints=[c],
+            benchmarks=benchmarks,
+            # save_eval_jobs=f"{output_dir}/evals/eval_jobs_checkpoint-{c}.json"
+            save_eval_jobs=get_eval_jobs_record(output_dir, c),
+            print_cmd=print_cmd,
+            update_if_exists=update_if_exists
+        )
 
 
 def get_eval_config_overwrite(train_config: Dict[str, Any], eval_config: Dict[str, Any]) -> Dict[str, Any]:
@@ -316,9 +330,10 @@ def gen_eval_config(train_config, overwrite):
         "fsdp_config": copy.deepcopy(train_config["fsdp_config"])
     }
     
-    for k in overwrite["delete"]:
-        if k in eval_config["eval_args"]:
-            eval_config["eval_args"].pop(k)
+    if "delete" in overwrite:
+        for k in overwrite["delete"]:
+            if k in eval_config["eval_args"]:
+                eval_config["eval_args"].pop(k)
             
     eval_config["eval_args"].update(overwrite["update"])
     
