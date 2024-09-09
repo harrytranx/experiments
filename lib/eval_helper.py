@@ -140,7 +140,7 @@ def extract_values(filename):
 # def get_eval_scores(job_dict, output_csv=None) -> pd.DataFrame:
 def get_eval_scores(checkpoint_dir: str, checkpoint_id: int, output_csv=None, verbose: bool=False, eval_plan: Optional[str]=None)  -> pd.DataFrame:
     results = {}
-    
+    # print(f"get_eval_scores {eval_plan}/{checkpoint_id}")
     job_dict_file = get_eval_jobs_record(checkpoint_dir, checkpoint_id, eval_plan)
     with open(job_dict_file, 'r') as f:
         job_dict = json.load(f)
@@ -152,10 +152,7 @@ def get_eval_scores(checkpoint_dir: str, checkpoint_id: int, output_csv=None, ve
         results[b] = {}
         for chk in job_dict[b]:
             job_id = job_dict[b][chk]
-            # log = f"/fsx_0/user/tranx/output/slurm_logs/output_{job_id}.txt"
-            # print(log)
             log = get_log_file(int(job_id))
-
             res = extract_values(log)
             if res:
                 if verbose:
@@ -174,7 +171,68 @@ def get_eval_scores(checkpoint_dir: str, checkpoint_id: int, output_csv=None, ve
         "infographics": ["anls_total_score", "mllm_evaluation_anls_score"],
         "mmbench": ["overall"]
     }
+    component_scores = []
+    for k, v in scores.items():
+        for vi in v:
+            component_scores.append(f"{k}/{vi}")
 
+    df = pd.DataFrame(columns=component_scores)
+    
+    for b in results:
+        for chk in results[b]:
+            res = results[b][chk]
+            # print(b, chk, res)
+            for x in res:
+                component, val = x[0], x[1]
+                component = component.replace("eval_", "")
+                if component in component_scores:
+                    df.loc[chk, component] = round(val, 4)
+
+    df = get_report_benchmarks(df)
+
+    if output_csv is not None:
+        df.to_csv(output_csv, index=False)
+
+    return df
+
+def get_eval_scores_old(checkpoint_dir: str, checkpoint_id: int, output_csv=None, verbose: bool=False, eval_plan: Optional[str]=None)  -> pd.DataFrame:
+    results = {}
+    print(f"get_eval_scores {eval_plan}/{checkpoint_id}")
+    job_dict_file = get_eval_jobs_record(checkpoint_dir, checkpoint_id, eval_plan)
+    with open(job_dict_file, 'r') as f:
+        job_dict = json.load(f)
+    
+    if verbose:    
+        print(job_dict)
+    
+    for b in job_dict:
+        results[b] = {}
+        for chk in job_dict[b]:
+            job_id = job_dict[b][chk]
+            # log = f"/fsx_0/user/tranx/output/slurm_logs/output_{job_id}.txt"
+            # print(log)
+            log = get_log_file(int(job_id))
+            print(log)
+            res = extract_values(log)
+            print(res)
+            if res:
+                if verbose:
+                    print(f"Got result for {b} - {chk}: {res}")
+                results[b][chk] = res
+
+    scores = {
+        "mmmu": ["accuracy", "mllm_eval_accuracy"],
+        "docvqa": ["anls_total_score", "mllm_evaluation_anls_score"],
+        "mathvista": ["accuracy"],
+        "ai2d": ["accuracy"],
+        "chartqa": ["accuracy"],
+        "vqa": ["accuracy", "mllm_evaluation_accuracy"],
+        "textvqa": ["accuracy", "mllm_eval_accuracy"],
+        "infographics_w_ocr": ["anls_total_score", "mllm_evaluation_anls_score"],
+        "infographics": ["anls_total_score", "mllm_evaluation_anls_score"],
+        "mmbench": ["overall"]
+    }
+    print(results)
     component_scores = []
     for k, v in scores.items():
         for vi in v:
@@ -199,7 +257,7 @@ def get_eval_scores(checkpoint_dir: str, checkpoint_id: int, output_csv=None, ve
     return df
 
 
-def get_eval_scores_all(checkpoint_dir: str, verbose: bool = False, sorted_by: Optional[str]=None) -> pd.DataFrame:
+def get_eval_scores_all(checkpoint_dir: str, verbose: bool = False, sorted_by: Optional[str]=None, eval_plan=None) -> pd.DataFrame:
     checkpoints = get_checkpoints(checkpoint_dir)
     if verbose:
         print(checkpoints)
@@ -207,7 +265,7 @@ def get_eval_scores_all(checkpoint_dir: str, verbose: bool = False, sorted_by: O
     
     for c in checkpoints:
         try:
-            df_c = get_eval_scores(checkpoint_dir, c, verbose=verbose)
+            df_c = get_eval_scores(checkpoint_dir, c, verbose=verbose, eval_plan=eval_plan)
             df = pd.concat([df, df_c])   
             if verbose:  
                 print(c)   
@@ -259,7 +317,7 @@ def get_checkpoints_eval(output_dir: str, eval_plan=None) -> List[int]:
     List all checkpoints with eval jobs
     """
     if eval_plan is None:
-        eval_plan = "eval"
+        eval_plan = "evals"
         
     checkpoints = []
     for file in glob.glob(f"{output_dir}/{eval_plan}/*.json"):
@@ -273,7 +331,7 @@ def get_checkpoints_eval(output_dir: str, eval_plan=None) -> List[int]:
 
 def get_eval_jobs_record(checkpoint_dir: str, checkpoint_id: int, eval_plan=None):
     if eval_plan is None:
-        eval_plan = "eval"
+        eval_plan = "evals"
         
     return f"{checkpoint_dir}/{eval_plan}/eval_jobs_checkpoint-{checkpoint_id}.json"
     
@@ -285,6 +343,7 @@ def run_eval_sweep(
     aligner_parent_dir:str, 
     print_cmd:bool = False, 
     min_checkpoint: int=0, 
+    checkpoint_interval: Optional[int]=None,
     benchmarks: Optional[List[str]] = None,
     update_if_exists: bool = False,
     eval_plan: Optional[str]=None,
@@ -300,6 +359,9 @@ def run_eval_sweep(
         new_checkpoints = checkpoints 
     else:
         new_checkpoints = [int(c) for c in checkpoints if c not in checkpoints_eval]
+        
+    if checkpoint_interval is not None:
+        new_checkpoints = [c for c in new_checkpoints if c % checkpoint_interval == 0]
         
     new_checkpoints = sorted(new_checkpoints)
     

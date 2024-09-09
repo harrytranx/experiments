@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../rsync"
+		},
+		{
+			"path": "../adel_prod_fsdp"
+		}
+	],
+	"settings": {}
+}
