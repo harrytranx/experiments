@@ -184,7 +184,10 @@ def get_eval_scores(checkpoint_dir: str, checkpoint_id: int, output_csv=None, ve
             # print(b, chk, res)
             for x in res:
                 component, val = x[0], x[1]
-                component = component.replace("eval_", "")
+                
+                if component.startswith("eval_"):
+                    component = component[5:]
+
                 if component in component_scores:
                     df.loc[chk, component] = round(val, 4)
 
@@ -257,8 +260,11 @@ def get_eval_scores_old(checkpoint_dir: str, checkpoint_id: int, output_csv=None
     return df
 
 
-def get_eval_scores_all(checkpoint_dir: str, verbose: bool = False, sorted_by: Optional[str]=None, eval_plan=None) -> pd.DataFrame:
-    checkpoints = get_checkpoints(checkpoint_dir)
+def get_eval_scores_all(checkpoint_dir: str, checkpoints:Optional[List[int]]=None, verbose: bool = False, sorted_by: Optional[str]=None, eval_plan=None) -> pd.DataFrame:
+    
+    if checkpoints is None:
+        checkpoints = get_checkpoints(checkpoint_dir)
+        
     if verbose:
         print(checkpoints)
     df = pd.DataFrame()
@@ -278,17 +284,19 @@ def get_eval_scores_all(checkpoint_dir: str, verbose: bool = False, sorted_by: O
     return df
 
 
-def cancel_eval_jobs(checkpoint_dir: str, cancel_states=['PENDING'], eval_plan: Optional[str]=None):
+def cancel_eval_jobs(checkpoint_dir: str, cancel_states=['P', 'PENDING'], eval_plan: Optional[str]=None):
     sl = SlurmClient()
     
     checkpoints = get_checkpoints(checkpoint_dir)
     for c in checkpoints:
         job_dict_file = get_eval_jobs_record(checkpoint_dir, c, eval_plan)
         job_dict = utils.read_json(job_dict_file)
+        print(job_dict)
         for v in job_dict.values():
             for _, job in v.items():
                 info = sl.get_job_info(job)
                 state = info["jobs"][0]['state']['current'][0]
+                print(f"job {job}, state = {state}")
                 if state in cancel_states:
                     print(f"Cancelling job {job} in state {state}")
                     utils.get_bash_output(f"scancel {job}")
@@ -342,6 +350,7 @@ def run_eval_sweep(
     eval_config_dir: str, 
     aligner_parent_dir:str, 
     print_cmd:bool = False, 
+    checkpoints: Optional[List[int]] = None,
     min_checkpoint: int=0, 
     checkpoint_interval: Optional[int]=None,
     benchmarks: Optional[List[str]] = None,
@@ -352,7 +361,9 @@ def run_eval_sweep(
     Start eval sweep on new checkpoints
     """
     
-    checkpoints = get_checkpoints(output_dir)
+    if checkpoints is None:
+        checkpoints = get_checkpoints(output_dir)
+        
     checkpoints_eval = get_checkpoints_eval(output_dir, eval_plan)
     
     if update_if_exists:
