@@ -37,6 +37,87 @@ REPORT_BENCHMARKS = {
 }
 
 
+class EvalHelper():
+    def __init__(self, code_dir: str, eval_sbatch: str, eval_config_dir: str):
+        self.code_dir = code_dir
+        self.eval_sbatch = eval_sbatch 
+        self.eval_config_dir = eval_config_dir
+        
+    def run_eval_sweep(self, 
+        checkpoint_dir, 
+        eval_config_dir: Optional[str]=None, 
+        print_cmd: bool = False, 
+        checkpoints: Optional[List[int]] = None,
+        min_checkpoint: int=0, 
+        checkpoint_interval: Optional[int]=None,
+        benchmarks: Optional[List[str]] = None,
+        update_if_exists: bool = False,
+        eval_plan: Optional[str]=None
+    ):
+        if eval_config_dir is None:
+            eval_config_dir = self.eval_config_dir
+            
+        run_eval_sweep(
+            output_dir=checkpoint_dir,
+            eval_sbatch=self.eval_sbatch,
+            eval_config_dir=eval_config_dir,
+            aligner_parent_dir=self.code_dir,
+            print_cmd=print_cmd,
+            checkpoints=checkpoints,
+            min_checkpoint=min_checkpoint,
+            checkpoint_interval=checkpoint_interval,
+            benchmarks=benchmarks,
+            update_if_exists=update_if_exists,
+            eval_plan=eval_plan
+        )
+        
+    def get_scores(self, 
+        checkpoint_dir: str, 
+        checkpoints:Optional[List[int]]=None, 
+        verbose: bool = False, 
+        sorted_by: Optional[str]=None, 
+        eval_plan=None
+    ) -> pd.DataFrame:
+    
+        if checkpoints is None:
+            checkpoints = get_checkpoints(checkpoint_dir)
+            
+        if verbose:
+            print(checkpoints)
+        df = pd.DataFrame()
+        
+        for c in checkpoints:
+            try:
+                df_c = get_eval_scores(checkpoint_dir, c, verbose=verbose, eval_plan=eval_plan)
+                df = pd.concat([df, df_c])   
+                if verbose:  
+                    print(c)   
+            except Exception:
+                pass
+            
+        if sorted_by is not None:
+            df = df.sort_values(by=[sorted_by])
+            
+        return df
+    
+    def cancel_eval_jobs(self, checkpoint_dir: str, cancel_states=['P', 'PENDING'], eval_plan: Optional[str]=None):
+        sl = SlurmClient()
+        
+        checkpoints = get_checkpoints(checkpoint_dir)
+        for c in checkpoints:
+            job_dict_file = get_eval_jobs_record(checkpoint_dir, c, eval_plan)
+            job_dict = utils.read_json(job_dict_file)
+            print(job_dict)
+            for v in job_dict.values():
+                for _, job in v.items():
+                    info = sl.get_job_info(job)
+                    state = info["jobs"][0]['state']['current'][0]
+                    print(f"job {job}, state = {state}")
+                    if state in cancel_states:
+                        print(f"Cancelling job {job} in state {state}")
+                        utils.get_bash_output(f"scancel {job}")
+
+
 def get_report_benchmarks(all_benchmark_df: pd.DataFrame) -> pd.DataFrame:
     df = all_benchmark_df[list(REPORT_BENCHMARKS.keys())]
     df = df.rename(columns=REPORT_BENCHMARKS)
@@ -259,7 +340,6 @@ def get_eval_scores_old(checkpoint_dir: str, checkpoint_id: int, output_csv=None
 
     return df
 
-
 def get_eval_scores_all(checkpoint_dir: str, checkpoints:Optional[List[int]]=None, verbose: bool = False, sorted_by: Optional[str]=None, eval_plan=None) -> pd.DataFrame:
     
     if checkpoints is None:
@@ -282,7 +362,6 @@ def get_eval_scores_all(checkpoint_dir: str, checkpoints:Optional[List[int]]=Non
         df = df.sort_values(by=[sorted_by])
         
     return df
-
 
 def cancel_eval_jobs(checkpoint_dir: str, cancel_states=['P', 'PENDING'], eval_plan: Optional[str]=None):
     sl = SlurmClient()
