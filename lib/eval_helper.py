@@ -105,17 +105,20 @@ class EvalHelper():
         
         checkpoints = get_checkpoints(checkpoint_dir)
         for c in checkpoints:
-            job_dict_file = get_eval_jobs_record(checkpoint_dir, c, eval_plan)
-            job_dict = utils.read_json(job_dict_file)
-            print(job_dict)
-            for v in job_dict.values():
-                for _, job in v.items():
-                    info = sl.get_job_info(job)
-                    state = info["jobs"][0]['state']['current'][0]
-                    print(f"job {job}, state = {state}")
-                    if state in cancel_states:
-                        print(f"Cancelling job {job} in state {state}")
-                        utils.get_bash_output(f"scancel {job}")
+            try:
+                job_dict_file = get_eval_jobs_record(checkpoint_dir, c, eval_plan)
+                job_dict = utils.read_json(job_dict_file)
+                print(job_dict)
+                for v in job_dict.values():
+                    for _, job in v.items():
+                        info = sl.get_job_info(job)
+                        state = info["jobs"][0]['state']['current'][0]
+                        print(f"job {job}, state = {state}")
+                        if state in cancel_states:
+                            print(f"Cancelling job {job} in state {state}")
+                            utils.get_bash_output(f"scancel {job}")
+            except Exception:
+                pass
 
 
 def get_report_benchmarks(all_benchmark_df: pd.DataFrame) -> pd.DataFrame:

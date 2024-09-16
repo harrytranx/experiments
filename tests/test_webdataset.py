@@ -213,7 +213,10 @@ class TestWebDatasetLocal(TestCase):
 
         # instantiate train_dataset
         train_dataset = get_wb_dataset(
-            preprocessor=preprocessor, model_args=model_args, data_args=data_args, training_args=training_args
+            preprocessor=preprocessor, 
+            model_args=model_args, 
+            data_args=data_args, 
+            training_args=training_args
         )
 
         # WebDataset is also an IterableDataset
