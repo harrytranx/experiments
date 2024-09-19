@@ -133,3 +133,12 @@ sgrep() {
         -e "'loss':" \
         -i $output_file
 }
+
+sgrep_f() {
+    file=$1
+    grep -e "error" \
+    -e "out of memory" \
+    -e "permission" \
+    -e "'loss':" \
+    -i $file
+}

@@ -4,19 +4,10 @@
 			"path": "."
 		},
 		{
-			"path": "../llm_mm_aligner"
+			"path": "../rsync"
 		},
 		{
-			"path": "../eval"
-		},
-		{
-			"path": "../fbcode"
-		},
-		{
-			"path": "../fbcode_aligner"
-		},
-		{
-			"path": "../github"
+			"path": "../rsync/llm_mm_aligner/experiments/aws"
 		}
 	],
 	"settings": {}
