@@ -52,7 +52,9 @@ class EvalHelper():
         checkpoint_interval: Optional[int]=None,
         benchmarks: Optional[List[str]] = None,
         update_if_exists: bool = False,
-        eval_plan: Optional[str]=None
+        eval_plan: Optional[str]=None,
+        slurm_qos: Optional[str]=None,
+        max_num_jobs: int = 10
     ):
         if eval_config_dir is None:
             eval_config_dir = self.eval_config_dir
@@ -68,7 +70,9 @@ class EvalHelper():
             checkpoint_interval=checkpoint_interval,
             benchmarks=benchmarks,
             update_if_exists=update_if_exists,
-            eval_plan=eval_plan
+            eval_plan=eval_plan,
+            slurm_qos=slurm_qos,
+            max_num_jobs=max_num_jobs
         )
         
     def get_scores(self, 
@@ -100,7 +104,13 @@ class EvalHelper():
             
         return df
     
-    def cancel_eval_jobs(self, checkpoint_dir: str, cancel_states=['P', 'PENDING'], eval_plan: Optional[str]=None):
+    def cancel_eval_jobs(self, checkpoint_dir: str, cancel_states=['P'], eval_plan: Optional[str]=None):
+        
+        if 'P' in cancel_states:
+            cancel_states.append('PENDING')
+        if 'R' in cancel_states:
+            cancel_states.append('RUNNING')
+        
         sl = SlurmClient()
         
         checkpoints = get_checkpoints(checkpoint_dir)
@@ -139,7 +149,9 @@ def run_eval_plan(
     rerun_if_exists: bool = False,
     update_if_exists: bool = False,
     print_cmd: bool = False,
-    print_job_dict: bool = False
+    print_job_dict: bool = False,
+    eval_plan: Optional[str]=None,
+    slurm_qos: Optional[str]=None
 ):
 
     job_dict = {}
@@ -160,23 +172,44 @@ def run_eval_plan(
         job_dict[benchmark] = {}
 
         for chk in checkpoints:
-            params = {
-                "aligner_parent_dir": aligner_parent_dir,
-                "json_config": f"{eval_config_dir}/eval_{benchmark}.json",
-                "checkpoint_dir": checkpoint_dir,
-                "benchmark_name": benchmark,
-                "checkpoint_id": str(chk)
-            }
+            # positional parameter, need to match with launch_eval_sbatch.sh
+            if eval_plan is not None:
+                params = {
+                    "aligner_parent_dir": aligner_parent_dir,
+                    "json_config": f"{eval_config_dir}/eval_{benchmark}.json",
+                    "checkpoint_dir": checkpoint_dir,
+                    "benchmark_name": benchmark,
+                    "checkpoint_id": str(chk),
+                    "eval_plan": eval_plan
+                }
+            else: # master branch does not accept eval_plan yet
+                params = {
+                    "aligner_parent_dir": aligner_parent_dir,
+                    "json_config": f"{eval_config_dir}/eval_{benchmark}.json",
+                    "checkpoint_dir": checkpoint_dir,
+                    "benchmark_name": benchmark,
+                    "checkpoint_id": str(chk),
+                }
+            
 
             assert os.path.exists(params["json_config"])
             assert os.path.exists(
                 f"{params['checkpoint_dir']}/checkpoint-{chk}")
 
-            job_id = run_sbatch_job(
-                sbatch_base_script=eval_base_sbatch,
+            if slurm_qos is not None:
+                sbatch_overwrite={
+                    "job-name": f"eval_{benchmark}",
+                    "qos": slurm_qos,
+                    "account": slurm_qos
+                }
+            else:
                 sbatch_overwrite={
                     "job-name": f"eval_{benchmark}"
-                },
+                }
+                
+            job_id = run_sbatch_job(
+                sbatch_base_script=eval_base_sbatch,
+                sbatch_overwrite=sbatch_overwrite,
                 positional_env_vars=list(params.values()),
                 print_cmd=print_cmd
             )
@@ -438,6 +471,8 @@ def run_eval_sweep(
     benchmarks: Optional[List[str]] = None,
     update_if_exists: bool = False,
     eval_plan: Optional[str]=None,
+    slurm_qos: Optional[str]=None,
+    max_num_jobs: Optional[int]=10
 ):
     """
     Start eval sweep on new checkpoints
@@ -460,9 +495,20 @@ def run_eval_sweep(
     
     print(f"New checkpoints: {new_checkpoints}")
     
+    if max_num_jobs is None:
+        max_num_jobs = 10000
+        
+    launched_jobs = 0
+    
     for c in new_checkpoints:
         if c < min_checkpoint:
             continue 
+        
+        launched_jobs += 1
+        
+        if launched_jobs + len(benchmarks) > max_num_jobs:
+            print(f"Will not launch more jobs due to exceeding max_num_jobs={max_num_jobs}.")
+            break
         
         # if c not in checkpoints_eval:
         print(f"Start eval for {output_dir}/checkpoint-{c}")
@@ -476,7 +522,9 @@ def run_eval_sweep(
             benchmarks=benchmarks,
             save_eval_jobs=get_eval_jobs_record(output_dir, c, eval_plan),
             print_cmd=print_cmd,
-            update_if_exists=update_if_exists
+            update_if_exists=update_if_exists,
+            eval_plan=eval_plan,
+            slurm_qos=slurm_qos
         )
 
 

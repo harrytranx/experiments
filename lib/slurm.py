@@ -46,6 +46,36 @@ def get_log_file(job_id: int):
     return f"/fsx_0/user/tranx/slurm_logs/output_{job_id}.txt"
 
 
+class SlurmPolice():
+    def __init__(self):
+        self.client = SlurmClient() 
+    
+    def cancel(self, account, users):
+        q = self.client.get_queue()
+        
+        # filter by account
+        if account != '*':
+            if not isinstance(account, list):
+                account = [account]
+            q = q[q.ACCOUNT.isin(account)]
+        
+        # filter by users
+        if users != '*':
+            if not isinstance(users, list):
+                users = [users]
+            
+            q = q[q.USER.isin(users)]
+        
+        print(q[['JOBID', 'ST', 'ACCOUNT', 'USER', 'NODES']])
+        print("total nodes:", q.NODES.sum())
+        
+        pass_phrase = input("Please enter pass_phrase: 123")
+        if pass_phrase == "123":
+            for j in list(q.JOBID):
+                print(f"Cancelling job {j}")
+                utils.get_bash_output(f"scancel {j}")
+            
+
 class SlurmClient():
     def __init__(self):
         pass

@@ -52,14 +52,11 @@ slast() {
 
 slog() {
     if [ -n "$1" ]; then
-        job_id=$1        output_file=$(wlog $job_id)         last_job_id=$(slast)
-        output_file=$(wlog $last_job_id)    
-        while [ ! -f $output_file ]; do
-            echo "Waiting for output from: $output_file" 
-            sleep 5
-        done
-    fi 
-
+        job_id=$1
+    else 
+        job_id=$(slast)
+    fi
+    output_file=$(wlog $job_id)   
     tail -f $output_file
 }
 
@@ -119,6 +116,18 @@ which_jpt() {
     cat logs/jupyter_lab.log | grep 8921
 }
 
+# slurm_grep() {
+#     output_file=$1
+#     grep -e "error" \
+#         -e "out of memory" \
+#         -e "permission" \
+#         -e "'loss':" \
+#         -e "/perception_tokenizer.pt" \
+#         -e "Training completed" \ 
+#         -e "/checkpoint-*/perception_tokenizer.pt" \
+#         -i $output_file
+# }
+
 sgrep() {
     if [ -n "$1" ]; then
         job_id=$1
@@ -127,11 +136,15 @@ sgrep() {
     fi
     
     output_file=$(wlog $job_id) 
-    grep -e "error" \
-        -e "out of memory" \
-        -e "permission" \
-        -e "'loss':" \
-        -i $output_file
+    sgrep_f $output_file
+    # grep -e "error" \
+    #     -e "out of memory" \
+    #     -e "permission" \
+    #     -e "'loss':" \
+    #     -e "/perception_tokenizer.pt" \
+    #     -e "Training completed" \ 
+    #     -e "/checkpoint-*/perception_tokenizer.pt" \
+    #     -i $output_file
 }
 
 sgrep_f() {
@@ -140,5 +153,7 @@ sgrep_f() {
     -e "out of memory" \
     -e "permission" \
     -e "'loss':" \
+    -e "/perception_tokenizer.pt" \
+    -e "Training completed" \
     -i $file
 }
