@@ -26,16 +26,18 @@ echo "CHECKPOINT_ID: ${CHECKPOINT_ID}"
 echo "EVAL_PLAN: ${EVAL_PLAN}"
 
 # Activate conda environment
-CONDA_ENV=aligner_v7
+# CONDA_ENV=aligner_v7
+CONDA_ENV=/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822
 eval "$(conda shell.bash hook)"
-conda activate /opt/hpcaas/.mounts/fs-036153e63d56f4dc2/home/ahmadyan/.conda/envs/aligner_v7 
+# conda activate /opt/hpcaas/.mounts/fs-036153e63d56f4dc2/home/ahmadyan/.conda/envs/aligner_v7 
+source "$CONDA_ENV/bin/activate"
 echo Using conda environment: $CONDA_DEFAULT_ENV
 echo CONDA_PREFIX: ${CONDA_PREFIX}
 
-if [ "$CONDA_DEFAULT_ENV" != "$CONDA_ENV" ]; then
-  echo "Error: CONDA_DEFAULT_ENV is not set to $CONDA_ENV"
-  exit 1
-fi
+# if [ "$CONDA_DEFAULT_ENV" != "$CONDA_ENV" ]; then
+#   echo "Error: CONDA_DEFAULT_ENV is not set to $CONDA_ENV"
+#   exit 1
+# fi
 
 echo Node list: $SLURM_JOB_NODELIST
 
