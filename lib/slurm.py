@@ -33,11 +33,13 @@ def run_sbatch_job(sbatch_base_script, sbatch_overwrite, positional_env_vars, pr
     positional_env_string = " ".join([str(x) for x in positional_env_vars])
 
     cmd = f"sbatch --parsable {sbatch_vars_string} {sbatch_base_script} {positional_env_string}"
-    if print_cmd:
-        print(cmd)
 
     job_id = utils.get_bash_output(cmd, print_output=False)
     job_id = int(job_id)
+    
+    if print_cmd:
+        print(cmd)
+        print("JOB ID:", job_id)
 
     return job_id
 
@@ -50,21 +52,39 @@ class SlurmPolice():
     def __init__(self):
         self.client = SlurmClient() 
     
-    def cancel(self, account, users):
+    def cancel(
+        self, 
+        account: Optional[str]=None, 
+        users: Optional[str]=None,
+        status: Optional[str]=None,
+        name: Optional[str]=None
+    ):
+        
         q = self.client.get_queue()
         
         # filter by account
-        if account != '*':
+        if account is not None:
             if not isinstance(account, list):
                 account = [account]
             q = q[q.ACCOUNT.isin(account)]
         
         # filter by users
-        if users != '*':
+        if users is not None:
             if not isinstance(users, list):
                 users = [users]
             
             q = q[q.USER.isin(users)]
+        
+        # filter by status 
+        if status is not None:
+            if not isinstance(status, list):
+                status = [status]
+            
+            q = q[q.ST.isin(status)]
+            
+        # filter by name
+        if name is not None:
+            q = q[q.NAME.str.startswith(name)]
         
         print(q[['JOBID', 'ST', 'ACCOUNT', 'USER', 'NODES']])
         print("total nodes:", q.NODES.sum())
