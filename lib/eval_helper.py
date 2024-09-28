@@ -78,6 +78,7 @@ class EvalHelper():
     def get_scores(self, 
         checkpoint_dir: str, 
         checkpoints:Optional[List[int]]=None, 
+        min_checkpoint: Optional[int]=None,
         verbose: bool = False, 
         sorted_by: Optional[str]=None, 
         eval_plan=None
@@ -91,6 +92,8 @@ class EvalHelper():
         df = pd.DataFrame()
         
         for c in checkpoints:
+            if (min_checkpoint is not None) and (c < min_checkpoint):
+                continue
             try:
                 df_c = get_eval_scores(checkpoint_dir, c, verbose=verbose, eval_plan=eval_plan)
                 df = pd.concat([df, df_c])   
@@ -151,7 +154,8 @@ def run_eval_plan(
     print_cmd: bool = False,
     print_job_dict: bool = False,
     eval_plan: Optional[str]=None,
-    slurm_qos: Optional[str]=None
+    slurm_qos: Optional[str]=None,
+    conda_env_path: Optional[str]=None
 ):
 
     job_dict = {}
@@ -173,23 +177,38 @@ def run_eval_plan(
 
         for chk in checkpoints:
             # positional parameter, need to match with launch_eval_sbatch.sh
-            if eval_plan is not None:
-                params = {
-                    "aligner_parent_dir": aligner_parent_dir,
-                    "json_config": f"{eval_config_dir}/eval_{benchmark}.json",
-                    "checkpoint_dir": checkpoint_dir,
-                    "benchmark_name": benchmark,
-                    "checkpoint_id": str(chk),
-                    "eval_plan": eval_plan
-                }
-            else: # master branch does not accept eval_plan yet
-                params = {
-                    "aligner_parent_dir": aligner_parent_dir,
-                    "json_config": f"{eval_config_dir}/eval_{benchmark}.json",
-                    "checkpoint_dir": checkpoint_dir,
-                    "benchmark_name": benchmark,
-                    "checkpoint_id": str(chk),
-                }
+            if eval_plan is None:
+                eval_plan = "\"\""  # passing empty string "" to sbatch script
+            
+            if conda_env_path is None:
+                conda_env_path = "\"\"" # passing empty string "" to sbatch script
+                
+            params = {
+                "aligner_parent_dir": aligner_parent_dir,
+                "json_config": f"{eval_config_dir}/eval_{benchmark}.json",
+                "checkpoint_dir": checkpoint_dir,
+                "benchmark_name": benchmark,
+                "checkpoint_id": str(chk),
+                "conda_env_path": conda_env_path,
+                "eval_plan": eval_plan
+            } 
+            # if eval_plan is not None:
+            #     params = {
+            #         "aligner_parent_dir": aligner_parent_dir,
+            #         "json_config": f"{eval_config_dir}/eval_{benchmark}.json",
+            #         "checkpoint_dir": checkpoint_dir,
+            #         "benchmark_name": benchmark,
+            #         "checkpoint_id": str(chk),
+            #         "eval_plan": eval_plan
+            #     }
+            # else: # master branch does not accept eval_plan yet
+            #     params = {
+            #         "aligner_parent_dir": aligner_parent_dir,
+            #         "json_config": f"{eval_config_dir}/eval_{benchmark}.json",
+            #         "checkpoint_dir": checkpoint_dir,
+            #         "benchmark_name": benchmark,
+            #         "checkpoint_id": str(chk),
+            #     }
             
 
             assert os.path.exists(params["json_config"])
@@ -478,6 +497,9 @@ def run_eval_sweep(
     Start eval sweep on new checkpoints
     """
     
+    if benchmarks is None:
+        benchmarks = ALL_BENCHMARKS
+    
     if checkpoints is None:
         checkpoints = get_checkpoints(output_dir)
         
@@ -504,7 +526,6 @@ def run_eval_sweep(
         if c < min_checkpoint:
             continue 
         
-        launched_jobs += 1
         
         if launched_jobs + len(benchmarks) > max_num_jobs:
             print(f"Will not launch more jobs due to exceeding max_num_jobs={max_num_jobs}.")
@@ -527,6 +548,7 @@ def run_eval_sweep(
             slurm_qos=slurm_qos
         )
 
+        launched_jobs += len(benchmarks)
 
 def get_eval_config_overwrite(train_config: Dict[str, Any], eval_config: Dict[str, Any]) -> Dict[str, Any]:
     delete_keys = []
