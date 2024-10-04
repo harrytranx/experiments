@@ -155,5 +155,7 @@ sgrep_f() {
     -e "'loss':" \
     -e "/perception_tokenizer.pt" \
     -e "Training completed" \
+    -e "CANCELLED" \
+    -e "uncorrectable ECC" \
     -i $file
 }
