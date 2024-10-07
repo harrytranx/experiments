@@ -1,0 +1,14 @@
+{
+    "code_dir": "/fsx_0/user/tranx/rsync",
+    "eval_sbatch":"/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/launch_eval_sbatch.sh",
+    "eval_config_dir": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm10/stage2/eval_overwrite",
+    "scan_every_n_seconds": 300,
+    "watch_jobs": [
+        {
+            "watch_path": "/fsx_0/checkpoints/mm10/MM10-Stage2-70B/MH21_70B_336px_exp30d_docvqa_unfreeze_lr1_n128"
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm10/MM10-Stage2-70B/MH21_70B_336px_exp30d_docvqa_ocr_unfreeze_lr1_n128"
+        }
+    ]
+}

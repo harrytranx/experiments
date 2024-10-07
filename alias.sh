@@ -159,3 +159,15 @@ sgrep_f() {
     -e "uncorrectable ECC" \
     -i $file
 }
+
+shold() {
+    job_id=$1 
+    echo "Holding job $job_id into queue"
+    scontrol requeuehold $job_id 
+}
+
+srelease() {
+    job_id=$1 
+    echo "Releasing job $job_id"
+    scontrol release $job_id 
+}
