@@ -45,6 +45,10 @@ sbash() {
     srun --account=ar-ai-hipri --qos=ar-ai-hipri -N 1 -n 1 --cpus-per-task 16 --gpus-per-task=8 --job-name=dev --mem=32000 --pty /bin/bash -ls
 }
 
+sbash_midpri() {
+    srun --account=midpri --qos=midpri -N 1 -n 1 --cpus-per-task 24 --gpus-per-task=8 --job-name=dev --mem=32000 --pty /bin/bash -ls
+}
+
 slast() {
     last_job_id=$(sacct -u tranx -X --start now-3hours -o jobid | tail -n 1 | xargs)
     echo "$last_job_id"

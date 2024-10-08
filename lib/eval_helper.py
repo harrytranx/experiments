@@ -10,7 +10,9 @@ import copy
 from lib import utils
 from lib.slurm import run_sbatch_job, get_log_file, SlurmClient
 
-REPORTING_SCORE_METHOD = 1 #1 = old, 2 = new method https://fburl.com/gsheet/r5hn8r1k
+# REPORTING_SCORE_METHOD = 1 #1 = old, 2 = new method https://fburl.com/gsheet/r5hn8r1k
+# REPORT_BENCHMARK_VERSION = "v2" # v1, v2, hybrid
+# REPORT_BENCHMARK_VERSION = "hybrid"
 
 ALL_BENCHMARKS = [
     "mmmu",
@@ -52,6 +54,34 @@ READ_BENCHMARK_SCORES = {
     "mmbench": ["overall"]
 }
 
+REPORT_BENCHMARKS_V1 = {
+    'mmmu_v2': 'mmmu/mllm_eval_accuracy',
+    'mmmu_v1': 'mmmu/accuracy',
+    'docvqa': 'docvqa/anls_total_score',
+    'mathvista': 'mathvista/accuracy',
+    'ai2d': 'ai2d/accuracy',
+    'chartqa': 'chartqa/accuracy',
+    'vqa': 'vqa/accuracy',
+    'textvqa': 'textvqa/accuracy',
+    'infographics_w_ocr': 'infographics_w_ocr/anls_total_score',
+    'infographics': 'infographics/anls_total_score',
+    'mmbench': 'mmbench/overall'
+}
+
+
+REPORT_BENCHMARKS_V2 = {
+    'mmmu_v2': ['mmmu/mllm_eval_accuracy'],
+    'mmmu_v1': ['mmmu/accuracy'],
+    'docvqa': ["docvqa/anls_total_score", "docvqa/mllm_evaluation_anls_score", "docvqa/mmllm_fixed_anls_score"],
+    'mathvista': ['mathvista/accuracy'],
+    'ai2d': ['ai2d/accuracy'],
+    'chartqa': ['chartqa/accuracy'],
+    'vqa': ['vqa/accuracy', 'vqa/mllm_evaluation_accuracy'],
+    'textvqa': ['textvqa/accuracy', 'textvqa/mllm_eval_accuracy'],
+    'infographics_w_ocr': ['infographics_w_ocr/anls_total_score', 'infographics_w_ocr/mllm_evaluation_anls_score'],
+    'infographics': ['infographics/anls_total_score', 'infographics/mllm_evaluation_anls_score'],
+    'mmbench': ['mmbench/overall']
+}
 
 class EvalHelper():
     def __init__(self, code_dir: str, eval_sbatch: str, eval_config_dir: str):
@@ -97,10 +127,11 @@ class EvalHelper():
         min_checkpoint: Optional[int]=None,
         verbose: bool = False, 
         sorted_by: Optional[str]=None, 
-        eval_plan=None
+        eval_plan=None, 
+        report_version=None
     ) -> pd.DataFrame:
         
-        print(f"Using REPORTING_SCORE_METHOD={REPORTING_SCORE_METHOD}")
+        print(f"Using REPORT_BENCHMARK_VERSION={REPORT_BENCHMARK_VERSION}")
         
         if checkpoints is None:
             checkpoints = get_checkpoints(checkpoint_dir)
@@ -113,7 +144,7 @@ class EvalHelper():
             if (min_checkpoint is not None) and (c < min_checkpoint):
                 continue
             try:
-                df_c = get_eval_scores(checkpoint_dir, c, verbose=verbose, eval_plan=eval_plan)
+                df_c = get_eval_scores(checkpoint_dir, c, verbose=verbose, eval_plan=eval_plan, report_version=report_version)
                 df = pd.concat([df, df_c])   
                 if verbose:  
                     print(c)   
@@ -152,24 +183,65 @@ class EvalHelper():
                 pass
 
 
-def get_report_benchmarks(all_benchmark_df: pd.DataFrame) -> pd.DataFrame:
-    df = all_benchmark_df[list(REPORT_BENCHMARKS.keys())]
-    df = df.rename(columns=REPORT_BENCHMARKS)
-    df['textvqa'] = round(df['textvqa']/100, 4)
-    return df
+def get_report_benchmarks(all_benchmark_df: pd.DataFrame, report_version=None) -> pd.DataFrame:
+    """
+    report_version is one of ["v1", "v2", "hybrid"]
+    """
+    get_report_benchmarks_fn = {
+        "v1": get_report_benchmarks_v1,
+        "v2": get_report_benchmarks_v2,
+        "hybrid": get_report_benchmarks_hybrid
+    }
+    
+    if report_version is None:
+        report_version = "v1"
+        
+    return get_report_benchmarks_fn[report_version](all_benchmark_df)
+
+
+def get_report_benchmarks_hybrid(df):
+    df1 = get_report_benchmarks_v1(df)
+    df2 = get_report_benchmarks_v2(df)
+    
+    for col in df1.columns:
+        df1[col] = pd.to_numeric(df1[col], errors='coerce')
+        df2[col] = pd.to_numeric(df2[col], errors='coerce')
+    
+    df_report = df1.copy()
+    
+    for k in ['docvqa', 'vqa', 'textvqa', 'infographics_w_ocr', 'infographics']:
+        df_report[k] = np.round(df1[k], 4).astype(str) + ' (' + np.round(df2[k], 4).astype(str) + ' )'
+        
+    return df_report
+
+
+def get_report_benchmarks_v1(df: pd.DataFrame) -> pd.DataFrame:
+    df_report = pd.DataFrame()
+    
+    for k, v in  REPORT_BENCHMARKS_V1.items():
+        df_report[k] = df[v]
+    
+    # normalize textvqa score to be in the same scale as other benchmarks 
+    df_report['textvqa'] = round(df_report['textvqa']/100, 4)
+    
+    return df_report
+
 
 def get_report_benchmarks_v2(df: pd.DataFrame) -> pd.DataFrame:
     # df = all_benchmark_df[list(REPORT_BENCHMARKS.keys())]
     df_report = pd.DataFrame()
     
-    for k in READ_BENCHMARK_SCORES:
-        if k == "mmmu":
-            df_report["mmmu_v2"] = df["mmmu/mllm_eval_accuracy"]
-            df_report["mmmu_v1"] = df["mmmu/accuracy"]
-        else:
-            read_columns = [f"{k}/{v}" for v in READ_BENCHMARK_SCORES[k]]
-            df_k = df[read_columns]
-            df_report[k] = df_k.max(axis=1)
+    # for k in READ_BENCHMARK_SCORES:
+    #     if k == "mmmu":
+    #         df_report["mmmu_v2"] = df["mmmu/mllm_eval_accuracy"]
+    #         df_report["mmmu_v1"] = df["mmmu/accuracy"]
+    #     else:
+    #         read_columns = [f"{k}/{v}" for v in READ_BENCHMARK_SCORES[k]]
+    #         df_k = df[read_columns]
+    #         df_report[k] = df_k.max(axis=1)
+    
+    for k, v in REPORT_BENCHMARKS_V2.items():
+        df_report[k] = df[v].max(axis=1)
             
     # normalize textvqa score to be in the same scale as other benchmarks 
     df_report['textvqa'] = round(df_report['textvqa']/100, 4)
@@ -369,7 +441,7 @@ def get_eval_scores_v1(checkpoint_dir: str, checkpoint_id: int, output_csv=None,
 
     return df
 
-def get_eval_scores(checkpoint_dir: str, checkpoint_id: int, output_csv=None, verbose: bool=False, eval_plan: Optional[str]=None)  -> pd.DataFrame:
+def get_eval_scores(checkpoint_dir: str, checkpoint_id: int, report_version=None, output_csv=None, verbose: bool=False, eval_plan: Optional[str]=None)  -> pd.DataFrame:
     results = {}
     # print(f"get_eval_scores {eval_plan}/{checkpoint_id}")
     job_dict_file = get_eval_jobs_record(checkpoint_dir, checkpoint_id, eval_plan)
@@ -422,12 +494,14 @@ def get_eval_scores(checkpoint_dir: str, checkpoint_id: int, output_csv=None, ve
                 if component in component_scores:
                     df.loc[chk, component] = round(val, 4)
 
-    if REPORTING_SCORE_METHOD == 1:
-        df = get_report_benchmarks(df)
-    elif REPORTING_SCORE_METHOD == 2:
-        df = get_report_benchmarks_v2(df)
-    else:
-        raise ValueError("Unsupported REPORTING_SCORE_METHOD")
+    df = get_report_benchmarks(df, report_version=report_version)
+    # df = get
+    # if REPORTING_SCORE_METHOD == 1:
+    #     df = get_report_benchmarks(df)
+    # elif REPORTING_SCORE_METHOD == 2:
+    #     df = get_report_benchmarks_v2(df)
+    # else:
+    #     raise ValueError("Unsupported REPORTING_SCORE_METHOD")
 
     if output_csv is not None:
         df.to_csv(output_csv, index=False)
