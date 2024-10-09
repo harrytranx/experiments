@@ -95,6 +95,12 @@ plog() {
     cat $output_file | grep "Evaluating:"
 }
 
+get_log(){
+    job_id=$1
+    log_file=$(scontrol show job $job_id | grep StdOut | awk '{print $1}' | cut -d'=' -f2)
+    echo $log_file
+}
+
 wlog() {
     if [ -n "$1" ]; then
         job_id=$1
@@ -103,7 +109,8 @@ wlog() {
         job_id=$(slast)
     fi 
 
-    log_file="/fsx_0/user/tranx/slurm_logs/output_$job_id.txt"
+    # log_file="/fsx_0/user/tranx/slurm_logs/output_$job_id.txt"
+    log_file=$(get_log $job_id)
     echo "$log_file"
 }
 
