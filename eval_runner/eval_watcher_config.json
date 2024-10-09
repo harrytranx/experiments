@@ -12,6 +12,9 @@
         },
         {
             "watch_path": "/fsx_0/checkpoints/mm10/MM10-Stage2-70B/MH21_70B_336px_exp30d_docvqa_metaclip_unfreeze_lr1_n128"
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm10/MM10-Stage2-70B/MH21_70B_336px_exp30d_docvqa_plus_unfreeze_lr1_n128"
         }
     ]
 }

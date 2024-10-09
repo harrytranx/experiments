@@ -185,12 +185,7 @@ def save_plotly_to_html(fig, output_file, width='100%', height=700):
 
     print(f"Saved figure to {output_file}")
 
-def read_json(file):
-    with open(file, 'r') as f:
-        # data = json.load(f)
-        data = json.load(f, object_pairs_hook=OrderedDict)
-        
-    return data 
+
 
 def save_json(data, output_file):
     with open(output_file, 'w') as f:

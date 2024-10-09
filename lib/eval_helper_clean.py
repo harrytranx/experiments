@@ -6,13 +6,8 @@ import json
 from typing import Optional, List, Dict, Any
 import glob
 import copy
-
-from lib import utils
-from lib.slurm import run_sbatch_job, get_log_file, SlurmClient
-
-# REPORTING_SCORE_METHOD = 1 #1 = old, 2 = new method https://fburl.com/gsheet/r5hn8r1k
-# REPORT_BENCHMARK_VERSION = "v2" # v1, v2, hybrid
-# REPORT_BENCHMARK_VERSION = "hybrid"
+import subprocess
+from collections import OrderedDict
 
 ALL_BENCHMARKS = [
     "mmmu",
@@ -68,7 +63,7 @@ REPORT_BENCHMARKS_V1 = {
     'mmbench': 'mmbench/overall'
 }
 
-
+# https://fburl.com/gsheet/r5hn8r1k
 REPORT_BENCHMARKS_V2 = {
     'mmmu_v2': ['mmmu/mllm_eval_accuracy'],
     'mmmu_v1': ['mmmu/accuracy'],
@@ -82,6 +77,58 @@ REPORT_BENCHMARKS_V2 = {
     'infographics': ['infographics/anls_total_score', 'infographics/mllm_evaluation_anls_score'],
     'mmbench': ['mmbench/overall']
 }
+
+def get_log_file(job_id: int):
+    return f"/fsx_0/user/tranx/slurm_logs/output_{job_id}.txt"
+
+
+def read_json(file):
+    with open(file, 'r') as f:
+        # data = json.load(f)
+        data = json.load(f, object_pairs_hook=OrderedDict)
+        
+    return data 
+
+
+def get_bash_output(cmd: str, print_cmd: bool = False, print_output: bool = False):
+    """
+    Get output of a bash command 
+    """
+    if print_cmd:
+        print(cmd)
+
+    cmd = cmd.split(" ")
+
+    try:
+        output = subprocess.check_output(cmd).decode()
+        if print_output:
+            print(output)
+
+        return output
+    except Exception as e:
+        print(f"{e}")
+        return None
+    
+    
+def run_sbatch_job(sbatch_base_script, sbatch_overwrite, positional_env_vars, print_cmd=False):
+    sbatch_vars_string = []
+    for k, v in sbatch_overwrite.items():
+        sbatch_vars_string.append(f"--{k}={v}")
+    sbatch_vars_string = ' '.join(sbatch_vars_string)
+
+    positional_env_string = " ".join([str(x) for x in positional_env_vars])
+
+    cmd = f"sbatch --parsable {sbatch_vars_string} {sbatch_base_script} {positional_env_string}"
+
+    job_id = get_bash_output(cmd, print_output=False)
+    job_id = int(job_id)
+    
+    if print_cmd:
+        print(cmd)
+        print("JOB ID:", job_id)
+
+    return job_id
+
 
 class EvalHelper():
     def __init__(self, code_dir: str, eval_sbatch: str, eval_config_dir: str):
@@ -156,32 +203,6 @@ class EvalHelper():
             
         return df
     
-    def cancel_eval_jobs(self, checkpoint_dir: str, cancel_states=['P'], eval_plan: Optional[str]=None):
-        
-        if 'P' in cancel_states:
-            cancel_states.append('PENDING')
-        if 'R' in cancel_states:
-            cancel_states.append('RUNNING')
-        
-        sl = SlurmClient()
-        
-        checkpoints = get_checkpoints(checkpoint_dir)
-        for c in checkpoints:
-            try:
-                job_dict_file = get_eval_jobs_record(checkpoint_dir, c, eval_plan)
-                job_dict = utils.read_json(job_dict_file)
-                print(job_dict)
-                for v in job_dict.values():
-                    for _, job in v.items():
-                        info = sl.get_job_info(job)
-                        state = info["jobs"][0]['state']['current'][0]
-                        print(f"job {job}, state = {state}")
-                        if state in cancel_states:
-                            print(f"Cancelling job {job} in state {state}")
-                            utils.get_bash_output(f"scancel {job}")
-            except Exception:
-                pass
-
 
 def get_report_benchmarks(all_benchmark_df: pd.DataFrame, report_version=None) -> pd.DataFrame:
     """
@@ -272,7 +293,7 @@ def run_eval_plan(
     
     if os.path.exists(save_eval_jobs):
         if update_if_exists:
-            job_dict = utils.read_json(save_eval_jobs) 
+            job_dict = read_json(save_eval_jobs) 
         else:
             raise RuntimeError(f"Found existing eval_jobs at: {save_eval_jobs} and update_if_exists=False")
 
@@ -592,23 +613,6 @@ def get_eval_scores_all(checkpoint_dir: str, checkpoints:Optional[List[int]]=Non
         
     return df
 
-def cancel_eval_jobs(checkpoint_dir: str, cancel_states=['P', 'PENDING'], eval_plan: Optional[str]=None):
-    sl = SlurmClient()
-    
-    checkpoints = get_checkpoints(checkpoint_dir)
-    for c in checkpoints:
-        job_dict_file = get_eval_jobs_record(checkpoint_dir, c, eval_plan)
-        job_dict = utils.read_json(job_dict_file)
-        print(job_dict)
-        for v in job_dict.values():
-            for _, job in v.items():
-                info = sl.get_job_info(job)
-                state = info["jobs"][0]['state']['current'][0]
-                print(f"job {job}, state = {state}")
-                if state in cancel_states:
-                    print(f"Cancelling job {job} in state {state}")
-                    utils.get_bash_output(f"scancel {job}")
-
 
 def get_checkpoints(output_dir: str) -> List[int]:
     """
@@ -723,45 +727,3 @@ def run_eval_sweep(
         )
 
         launched_jobs += len(benchmarks)
-
-def get_eval_config_overwrite(train_config: Dict[str, Any], eval_config: Dict[str, Any]) -> Dict[str, Any]:
-    delete_keys = []
-    for k in train_config["trainer_args"]:
-        if k not in eval_config["eval_args"]:
-            delete_keys.append(k)
-
-
-    update_keys = {}
-    for k, v in eval_config["eval_args"].items():
-        if (k not in train_config["trainer_args"]) or (v != train_config["trainer_args"][k]):
-            update_keys[k] = v
-            
-    overwrite = {
-        "delete": delete_keys,
-        "update": update_keys
-    }
-    
-    return overwrite
-
-
-def gen_eval_config(train_config, overwrite):
-    
-    eval_config = {
-        "eval_args": copy.deepcopy(train_config["trainer_args"]),
-        "fsdp_config": copy.deepcopy(train_config["fsdp_config"])
-    }
-    
-    if "delete" in overwrite:
-        for k in overwrite["delete"]:
-            if k in eval_config["eval_args"]:
-                eval_config["eval_args"].pop(k)
-            
-    eval_config["eval_args"].update(overwrite["update"])
-    
-    eval_config["eval_args"].update({
-        "checkpoints_perception_tokenizer": train_config["trainer_args"]["checkpoints_perception_tokenizer"],
-        "lora_checkpoint": "CHECKPOINT_PATH",
-        "lora_tokenizer_checkpoint": "CHECKPOINT_PATH/adapter_tokenizer"
-    })
-    
-    return eval_config
