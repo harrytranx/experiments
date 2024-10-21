@@ -1,20 +1,16 @@
 {
-    "code_dir": "/fsx_0/user/tranx/rsync",
-    "eval_sbatch":"/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/launch_eval_sbatch.sh",
-    "eval_config_dir": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm10/stage2/eval_overwrite",
-    "scan_every_n_seconds": 300,
+    "wait_seconds": 1000,
+    "wandb_project": "mm10.1_stage1",
+    "read_format": "report_mmai",
+    "configs_path": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm10.1/stage1/eval_overwrite",
+    "max_jobs": 10,
     "watch_jobs": [
         {
-            "watch_path": "/fsx_0/checkpoints/mm10/MM10-Stage2-70B/MH21_70B_336px_exp30d_docvqa_unfreeze_lr1_n128"
+            "watch_path": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage1_70B/MH22final_70B_BigG_336px_R1"
         },
         {
-            "watch_path": "/fsx_0/checkpoints/mm10/MM10-Stage2-70B/MH21_70B_336px_exp30d_docvqa_ocr_unfreeze_lr1_n128"
-        },
-        {
-            "watch_path": "/fsx_0/checkpoints/mm10/MM10-Stage2-70B/MH21_70B_336px_exp30d_docvqa_metaclip_unfreeze_lr1_n128"
-        },
-        {
-            "watch_path": "/fsx_0/checkpoints/mm10/MM10-Stage2-70B/MH21_70B_336px_exp30d_docvqa_plus_unfreeze_lr1_n128"
+            "watch_path": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage1_70B/MH22final_70B_ViTH_336px_R1",
+            "start_step": 6500
         }
     ]
 }

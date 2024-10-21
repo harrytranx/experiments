@@ -193,7 +193,6 @@ class SlurmClient():
 
         return jobs
     
-    
     def get_job_info(self, job_id):
         cmd = f"sacct -a -j {job_id} --json"
         output = utils.get_bash_output(cmd)
@@ -262,7 +261,48 @@ class SlurmClient():
 
         print(output)
 
-
+    def cancel(
+        self, 
+        account: Optional[str]=None, 
+        users: Optional[str]=None,
+        status: Optional[str]=None,
+        name: Optional[str]=None
+    ):
+        q = self.get_queue()
+        
+        # filter by account
+        if account is not None:
+            if not isinstance(account, list):
+                account = [account]
+            q = q[q.ACCOUNT.isin(account)]
+        
+        # filter by users
+        if users is not None:
+            if not isinstance(users, list):
+                users = [users]
+            
+            q = q[q.USER.isin(users)]
+        
+        # filter by status 
+        if status is not None:
+            if not isinstance(status, list):
+                status = [status]
+            
+            q = q[q.ST.isin(status)]
+            
+        # filter by name
+        if name is not None:
+            q = q[q.NAME.str.startswith(name)]
+        
+        print(q[['JOBID', 'ST', 'ACCOUNT', 'USER', 'NODES']])
+        print("total nodes:", q.NODES.sum())
+        
+        pass_phrase = input("Please enter pass_phrase: 123")
+        if pass_phrase == "123":
+            for j in list(q.JOBID):
+                print(f"Cancelling job {j}")
+                utils.get_bash_output(f"scancel {j}")
+                
 class LogProcessor:
     @staticmethod
     def parse_tres_count(tres_list):

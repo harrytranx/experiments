@@ -96,15 +96,17 @@ plog() {
 }
 
 get_log(){
+    # scontrol will lose information very quickly, better use sacct
     job_id=$1
-    log_file=$(scontrol show job $job_id | grep StdOut | awk '{print $1}' | cut -d'=' -f2)
+    # log_file=$(scontrol show job $job_id | grep StdOut | awk '{print $1}' | cut -d'=' -f2)
+    log_file=$(sacct -j $job_id --format=JobID,StdOut%500 | awk 'NR==3 {print $2}')
     echo $log_file
 }
 
 wlog() {
     if [ -n "$1" ]; then
         job_id=$1
-        log_file="/fsx_0/user/tranx/slurm_logs/output_$job_id.txt"
+        # log_file="/fsx_0/user/tranx/slurm_logs/output_$job_id.txt"
     else 
         job_id=$(slast)
     fi 
@@ -182,3 +184,27 @@ srelease() {
     echo "Releasing job $job_id"
     scontrol release $job_id 
 }
+
+sutil()
+{   
+    job_id=$1
+    python /fsx_0/user/ahmadyan/utilization.py $job_id
+}
+
+
+# TMUX
+tlist() {
+    tmux list-sessions
+}
+
+tgo() {
+    name=$1
+    tmux attach -t $name
+}
+
+tnew() {
+    name=$1
+    tmux new-session -t $name
+}
+
+alias s2="PYTHONPATH=PYTHONPATH:/fsx_0/user/tranx/experiments python /fsx_0/user/tranx/experiments/lib/stool.py"

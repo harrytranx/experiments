@@ -1,11 +1,34 @@
 import subprocess
-from typing import Dict, Any, List
+from typing import Dict, Any, List, TextIO
 import pandas as pd
 from datetime import datetime
 import os
 import pytz
 import json
 from collections import OrderedDict
+import sys 
+
+CYAN = "\033[36m"
+
+def color_if_tty(
+    message: str,
+    color: str = CYAN,  # https://fburl.com/code/gvq1muh1
+    stream: TextIO | None = None,
+) -> str:
+    """Returns an ANSI-colored message if stream is a TTY.
+
+    Args:
+        message: message to optionally color.
+        color: ANSI color to use. ansicolor package to get the color code.
+        stream: stream that the message will be written to. Defaults to stderr.
+    """
+    CLEAR = "\033[0m"
+    if stream is None:
+        stream = sys.stderr
+    if hasattr(stream, "isatty") and stream.isatty():
+        return f"{color}{message}{CLEAR}"
+    return message
+
 
 
 def timestamp_to_str(timestamp: int):
@@ -184,7 +207,6 @@ def save_plotly_to_html(fig, output_file, width='100%', height=700):
         f.write(html_string)
 
     print(f"Saved figure to {output_file}")
-
 
 
 def save_json(data, output_file):
