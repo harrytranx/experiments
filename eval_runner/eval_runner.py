@@ -81,50 +81,22 @@ def main():
             job_config.update(job)
             
             print(f"Scanning for new checkpoints in {job_config['watch_path']}")
-            num_jobs = run_evals(**job_config)
-            print(f"Launched {num_jobs} jobs in {job_config['watch_path']}")
-            
-            # read results and publish to wandb
-            eval_helper.read_eval_results(
-                watch_path=job_config['watch_path'],
-                base_eval_output_dir=job_config.get('base_eval_output_dir', "evals"),
-                read_format=read_format,
-                wandb_project=wandb_project
-            )
+            try:
+                num_jobs = run_evals(**job_config)
+                print(f"Launched {num_jobs} jobs in {job_config['watch_path']}")
+                
+                # read results and publish to wandb
+                eval_helper.read_eval_results(
+                    watch_path=job_config['watch_path'],
+                    base_eval_output_dir=job_config.get('base_eval_output_dir', "evals"),
+                    read_format=read_format,
+                    wandb_project=wandb_project
+                )
+            except Exception:
+                pass
             
         time.sleep(wait_seconds)
 
-def main_old():
-    print("hello")
-    while True:
-        eval_watcher_config = utils.read_json("eval_watcher_config.json")
-        print(eval_watcher_config)
-    
-        eval_runner = eval_helper.EvalHelper(
-            code_dir=eval_watcher_config["code_dir"],
-            eval_sbatch=eval_watcher_config["eval_sbatch"],
-            eval_config_dir=eval_watcher_config["eval_config_dir"]
-        )
-    
-        for job in eval_watcher_config["watch_jobs"]:
-            ts = utils.get_local_time()
-            path = job["watch_path"]
-            print(f"[{ts}] scanning for new checkpoints in: {path}")
-            
-            benchmarks = job.get("benchmarks", None)
-            if benchmarks is None:
-                benchmarks = eval_helper.ALL_BENCHMARKS
-            assert isinstance(benchmarks, list)
-
-            eval_runner.run_eval_sweep(
-                checkpoint_dir=path,
-                benchmarks=benchmarks,
-                slurm_qos="midpri",
-                update_if_exists=False,
-                print_cmd=True
-            )
-        
-        time.sleep(eval_watcher_config["scan_every_n_seconds"]) 
         
 if __name__ == "__main__":
     main()

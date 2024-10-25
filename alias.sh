@@ -18,6 +18,12 @@ alias cd_aws="cd /fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws"
 alias jpt="jupyter-lab --ip=0.0.0.0 --port=8921 --no-browser > ~/logs/jupyter-lab.log 2>&1 &"
 alias jpt_kill="pkill -f jupyter"
 
+kill_grep() {
+    pattern=$1
+    pgrep -f $pattern | xargs sudo kill
+}
+
+
 ibatch() {
     script=$1
     # json_config=$2
@@ -42,7 +48,11 @@ ssh_node() {
 }
 
 sbash() {
-    srun --account=ar-ai-hipri --qos=ar-ai-hipri -N 1 -n 1 --cpus-per-task 16 --gpus-per-task=8 --job-name=dev --mem=32000 --pty /bin/bash -ls
+    srun --account=ar-ai-hipri --qos=ar-ai-hipri -N 1 -n 1 --cpus-per-task 24 --gpus-per-task=8 --job-name=dev --mem=32000 --pty /bin/bash -ls
+}
+
+sbash_cpu() {
+    srun --account=ar-ai-hipri --partition=cpu -N 1 -n 1 --cpus-per-task 24 --job-name=bash --mem=32000 --pty /bin/bash
 }
 
 sbash_midpri() {
@@ -120,13 +130,13 @@ sq() {
     squeue --format="%a %.18i %.9P %.8j %.8u %.2t %.10M %.6D %R"
 }
 
-start_jpt() {
-    sbatch /data/home/tranx/sbatch_jupyter_lab.sh
+jrun() {
+    sbatch /fsx_0/user/tranx/experiments/sbatch_jupyter_lab.sh
     tail -f /data/home/tranx/logs/jupyter_lab.log
 }
 
-which_jpt() {
-    cat logs/jupyter_lab.log | grep 8921
+jkernel() {
+    cat ~/logs/jupyter_lab.log | grep "h100-st-p548xlarge"
 }
 
 # slurm_grep() {
@@ -197,9 +207,13 @@ tlist() {
     tmux list-sessions
 }
 
-tgo() {
+tin() {
     name=$1
     tmux attach -t $name
+}
+
+tout() {
+    tmux detach
 }
 
 tnew() {
