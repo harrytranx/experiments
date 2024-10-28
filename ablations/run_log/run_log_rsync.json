@@ -1,0 +1,24 @@
+{
+    "jobs": [
+        {
+            "job_id": 61382,
+            "nodes": 64,
+            "config": "mm10.1/stage1/MH22final_70B_ViTH_336px_R1_recap_20241024_resume.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "overrides": null,
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "timestamp": "2024-10-28 09:53:49",
+            "note": null
+        },
+        {
+            "job_id": 61131,
+            "nodes": 64,
+            "config": "mm10.1/stage1/MH22final_70B_ViTH_336px_R1_recap_20241024_resume.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "overrides": null,
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "timestamp": "2024-10-27 22:18:40",
+            "note": "null"
+        }
+    ]
+}
