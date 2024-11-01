@@ -209,6 +209,18 @@ def save_plotly_to_html(fig, output_file, width='100%', height=700):
     print(f"Saved figure to {output_file}")
 
 
+def read_json(json_file):
+    try:
+        with open(json_file, 'r') as f:
+            data = json.load(f)
+            return data
+    except Exception as e:
+        print(e)
+        return None
+
+
 def save_json(data, output_file):
     with open(output_file, 'w') as f:
         json.dump(data, f, indent=4)
+        
+        

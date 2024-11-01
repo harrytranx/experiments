@@ -1,0 +1,176 @@
+{
+    "default": [
+        {
+            "name": "MH22final_70B_ViTHft_336px_stage2_r2a",
+            "note": "r2a",
+            "job_id": 71016,
+            "nodes": 32,
+            "timestamp": "2024-11-01 10:21:33",
+            "input_config": "mm10.1/stage2/MH22final_70B_ViTHft_336px_stage2_r2a_20241101.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": null,
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_r2a/241101_14_21_33_415065",
+            "run_config": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_r2a/241101_14_21_33_415065/config.json"
+        },
+        {
+            "name": "MH22final_70B_ViTHft_336px_stage2_pdfa",
+            "note": "pdfa + idl",
+            "job_id": 70531,
+            "nodes": 4,
+            "timestamp": "2024-10-31 20:02:58",
+            "input_config": "mm10.1/stage2/MH22final_70B_ViTHft_336px_stage2_20241030.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "wd_data_path": [
+                    "/fsx_3/dataset01/pdfa-eng-wds-converted",
+                    "/fsx_0/user/yetian12/datasets/idl-wds_v2"
+                ],
+                "output_dir": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_pdfa"
+            },
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_pdfa/241101_00_02_58_082508",
+            "run_config": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_pdfa/241101_00_02_58_082508/config.json"
+        },
+        {
+            "name": "MH22final_70B_ViTHft_336px_stage2_pdfa",
+            "note": "pdfa + idl",
+            "job_id": 70510,
+            "nodes": 4,
+            "timestamp": "2024-10-31 19:49:53",
+            "input_config": "mm10.1/stage2/MH22final_70B_ViTHft_336px_stage2_20241030.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "wd_data_path": [
+                    "/fsx_3/dataset01/pdfa-eng-wds-converted",
+                    "/fsx_0/user/yetian12/datasets/idl-wds_v2"
+                ],
+                "output_dir": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_pdfa"
+            },
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_pdfa/241031_23_49_53_055360",
+            "run_config": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_pdfa/241031_23_49_53_055360/config.json"
+        },
+        {
+            "name": "MH22final_70B_ViTHft_336px_stage2_pdfa",
+            "note": "pdfa + idl",
+            "job_id": 70506,
+            "nodes": 4,
+            "timestamp": "2024-10-31 19:45:58",
+            "input_config": "mm10.1/stage2/MH22final_70B_ViTHft_336px_stage2_20241030.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "wd_data_path": [
+                    "/fsx_3/dataset01/pdfa-eng-wds-converted",
+                    "/fsx_0/user/yetian12/datasets/idl-wds_v2"
+                ],
+                "output_dir": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_pdfa"
+            },
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_pdfa/241031_23_45_58_742233",
+            "run_config": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_pdfa/241031_23_45_58_742233/config.json"
+        },
+        {
+            "name": "MH22final_70B_ViTHft_336px_stage2_pdfa",
+            "note": "pdfa + idl",
+            "job_id": 70401,
+            "nodes": 4,
+            "timestamp": "2024-10-31 17:59:37",
+            "input_config": "mm10.1/stage2/MH22final_70B_ViTHft_336px_stage2_20241030.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "wd_data_path": [
+                    "/fsx_3/dataset01/pdfa-eng-wds-converted",
+                    "/fsx_0/user/yetian12/datasets/idl-wds_v2"
+                ],
+                "output_dir": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_pdfa"
+            },
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_pdfa/241031_21_59_37_019739",
+            "run_config": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_pdfa/241031_21_59_37_019739/config.json"
+        },
+        {
+            "name": "MH22final_70B_ViTHft_336px_stage2_pdfa",
+            "note": "Test pdfa only",
+            "job_id": 70382,
+            "nodes": 4,
+            "timestamp": "2024-10-31 17:53:35",
+            "input_config": "mm10.1/stage2/MH22final_70B_ViTHft_336px_stage2_20241030.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "wd_data_path": [
+                    "/fsx_3/dataset01/pdfa-eng-wds-converted"
+                ],
+                "output_dir": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_pdfa"
+            },
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_pdfa/241031_21_53_35_018975",
+            "run_config": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_pdfa/241031_21_53_35_018975/config.json"
+        },
+        {
+            "name": "MH22final_70B_ViTHft_336px_stage2_20241030_test1",
+            "note": "Remove pdfa",
+            "job_id": 70375,
+            "nodes": 64,
+            "timestamp": "2024-10-31 17:45:20",
+            "input_config": "mm10.1/stage2/MH22final_70B_ViTHft_336px_stage2_20241030.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": null,
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_20241030_test1/241031_21_45_20_633139",
+            "run_config": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_20241030_test1/241031_21_45_20_633139/config.json"
+        },
+        {
+            "name": "MH22final_70B_ViTHft_336px_stage2_20241030_test1",
+            "note": "test list of recipe, no multipler. original vith, no fine-tune. Update dataset",
+            "job_id": 70359,
+            "nodes": 64,
+            "timestamp": "2024-10-31 17:06:18",
+            "input_config": "mm10.1/stage2/MH22final_70B_ViTHft_336px_stage2_20241030.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": null,
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_20241030_test1/241031_21_06_18_946955",
+            "run_config": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_20241030_test1/241031_21_06_18_946955/config.json"
+        },
+        {
+            "name": "MH22final_70B_ViTHft_336px_stage2_20241030_test1",
+            "note": "test list of recipe, no multipler. original vith, no fine-tune. Update dataset",
+            "job_id": 70326,
+            "nodes": 64,
+            "timestamp": "2024-10-31 16:30:00",
+            "input_config": "mm10.1/stage2/MH22final_70B_ViTHft_336px_stage2_20241030.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": null,
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_20241030_test1/241031_20_30_00_598648",
+            "run_config": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_20241030_test1/241031_20_30_00_598648/config.json"
+        },
+        {
+            "name": "MH22final_70B_ViTHft_336px_stage2_20241030_test1",
+            "note": "test list of recipe, no multipler. original vith, no fine-tune.",
+            "job_id": 70177,
+            "nodes": 64,
+            "timestamp": "2024-10-31 14:56:56",
+            "input_config": "mm10.1/stage2/MH22final_70B_ViTHft_336px_stage2_20241030.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": null,
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_20241030_test1/241031_18_56_56_232104",
+            "run_config": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_20241030_test1/241031_18_56_56_232104/config.json"
+        },
+        {
+            "name": "MH22final_70B_ViTHft_336px_stage2_20241030_test1",
+            "note": "test list of recipe, no multipler. original vith, no fine-tune. ValueError: Number of images for row (1) does not match number of separators (2) -- <|reserved_special_token_2|> Look at the image and answer the question objectively in a concise manner.Can you read the text in this picture? 'block-level?', 'or', 'an', 'inline', 'element', '<|reserved_special_token_2|>', 'Is', 'Question'",
+            "job_id": 65911,
+            "nodes": 64,
+            "timestamp": "2024-10-30 18:11:29",
+            "input_config": "mm10.1/stage2/MH22final_70B_ViTHft_336px_stage2_20241030.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": null,
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_20241030_test1/241030_22_11_29_334746",
+            "run_config": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_20241030_test1/241030_22_11_29_334746/config.json"
+        }
+    ]
+}

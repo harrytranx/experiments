@@ -54,12 +54,13 @@ class SlurmPolice():
     
     def cancel(
         self, 
+        action: str,
         account: Optional[str]=None, 
         users: Optional[str]=None,
         status: Optional[str]=None,
-        name: Optional[str]=None
+        name: Optional[str]=None,
     ):
-        
+
         q = self.client.get_queue()
         
         # filter by account
@@ -93,7 +94,8 @@ class SlurmPolice():
         if pass_phrase == "123":
             for j in list(q.JOBID):
                 print(f"Cancelling job {j}")
-                utils.get_bash_output(f"scancel {j}")
+                # utils.get_bash_output(f"scancel {j}")
+                utils.get_bash_output(f"{action} {j}")
             
 
 class SlurmClient():

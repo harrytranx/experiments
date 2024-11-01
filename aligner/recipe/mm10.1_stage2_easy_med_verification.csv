@@ -1,0 +1,212 @@
+train_urls,iterable,instruction_tune_compatible,text,caption,instruction,question,response,image_ext,wd_path
+30104,True,True,"The image shows the cover of a book titled ""4,5-Dihydro and Disubstituted Imidazolidin Derivatives"" by Rafet Kilincarslan, with a serene ocean scene at the top featuring a bright sun and sea. The image also features a logo for Lambert Academic Publishing and a red stripe at the bottom.",,"You are my helpful, respectful and honest voice assistant. I will give you an image, question and an instruction which you'll use to answer my questions. Answer the question directly.",Write a detailed caption for this image.,"The image shows the cover of a book titled ""4,5-Dihydro and Disubstituted Imidazolidin Derivatives"" by Rafet Kilincarslan, with a serene ocean scene at the top featuring a bright sun and sea. The image also features a logo for Lambert Academic Publishing and a red stripe at the bottom.",jpeg,/fsx_1/data_curation_output/cyprien/output/wds_caption_llama11b_fair_m2c2_clip_filtered_0.37985/all/
+3000,True,True,"BB10001 Fraum: - whose fiancee Sandra- Edge leaves withithe Silver Ferns on Wednesday for the wordd netbalt championships in Birmingham, Gray, a policeman, was to join A three day course In Whangerel yesterday and the couple planned à ,brief meeting Auckland alrport.) Edge arranged leave from the Ferns training camp only to be told at the airport that Gray Would not be till today. Child stolen A boy; 4. was hradvertently stolen alorig with a car tri Auckland. Police said the Woman; who, left her son in her car ""for only, à matter of seconds had also leff, the keys in The thief got the car stuck in mud about a kilometre away. and ran off. WORLD Mine fire kills An und Itre in six ware killed and others injured at the Helona gold mine near Welkom in South Atrica's Free Staté province yesterday chas been spaled off: Sinen returning to the surface metres below the surface. Six of them, knowling that three of their coming up. rushed back through the smoke to warn them Thrpe did not return and diedi with. the three miners: they tried to warn: GE Scientre BUSINESS Call to reject code The Government, should reject. the formal takeovers code, f requiring equal treatment of minortty-shareholders; and Source: https://www.industrydocuments.ucsf.edu/docs/ffbb0193 Firefigliter work for no PROFESSIONÁL Auckland have tof- fered tó work ifor no pay. com pensate for stäff cuts, effectivé from today, that they claim willlen- dariger in duty positions five in Weltington, four in Audk land;' and twojeachi in Christchurch and Dunedin would; affectithe staffing of specialist firei vehicles neededi at. high-rise buildings; hos pitals, other própety ties withi the potentialiforibig'fires, Professional Firefightersinionsed retary Derek Best said last Mra Best jaid and Dunedin be considering soon whether they will work-for,mo pay. He the ;specialist vehicles vere dirst outs to many big fires, but the staff cuts might mem they would not arrive immediately; if at cause in callins extra staff 1800 in from home to work them. Staff lévels on normal fire trucks might also,be affécted (because fire fighters wöuld be pulled from them to work on the specialist vehicles. Fire Séryice(spokesmanwyic Hewson rejected the:claim the spe cialistivélicies werelbeeded/as first responses to fires. and, saidnit ¿oost Bank tips me rate dive in is the 197 MR GRAHAM: strong ass Mr Grahs ; thusiastic, Queen in That's By too much cies staffe But v enough SI could-no called"" of different had dif Tosters. Havin on statio insurance safety Teg point in will.be a the rest worried's FMr'B the five. the where ""th distance¹ stand petrof"", tan isnorkel and foi re Firefigi that 1",,,,,jpg,/fsx_3/dataset01/idl-wds_v2
+145,True,True,"Get Free Tasting Beer An Insiders Guide To The Worlds Greatest Drink Tasting Beer An Insiders Guide To The Worlds Greatest Drink When somebody should go to the books stores, search inauguration by shop, shelf by shelf, it is really problematic. This is why we provide the books Page 1/28",,"Answer the question using a single word or a continuous phrase from the image.
+The phrase can span multiple lines.",What is the title of the document?,Tasting Beer An Insiders Guide To The Worlds Greatest Drink,png,/fsx_0/user/qyh/data/idl_qa_filtered_tar_only/
+1800,True,True,TENDER BSGEE 2021-008 INSURANCES OF THE EUROPEAN SCHOOLS Tender Specifications – part 2: Technical specifications,,,,,png,/fsx_3/dataset01/pdfa-eng-wds-converted
+108,True,True,,,"
+Answer the question using a single word or phrase.",Who is the author of this book?,Zondervan,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_ocr_vqa
+4603,True,True,,,,,"\begin{remark} It is possible to define Weyl group $W$ for this algebra.
+Group $W$ contains the group of permutations of the coordinates in $Z_p$.
+
+It is very instructive to study the link between theory of Kac--Moody affine algebras and our theory looking on this example.
+\end{remark}",png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/sg_pdf_ocr_unicode
+4447,True,True,,,,,"becomes predominant for negative \(\lambda_{a}\), with the ratio \(R_{\gamma\gamma}(h^{0})\) almost equal to its standard value, and \(250\leq m_{H^{0}}<450\) (GeV). This feature persists even when \(t\bar{t}\) threshold is reached at \(m_{H^{0}}>350\) GeV.
+
+
+
+According to Eq. 4.1, we display the deficit of \(R_{\gamma\gamma}(h^{0})\) in the left panel of Fig. 5 as a function of \(H^{\pm}\) mass for various values of \(\lambda_{a}\) and with \(m_{H^{0}}\geq 140\) GeV. As it can be seen, a mass about \(255\) GeV and above is allowed for \(H^{\pm}\) within \(+1\sigma\) of ATLAS value for \(\lambda_{a}=-1.4\). Once \(\lambda_{a}\) increases, this lower bound decreases consistently to reach its lowest value around \(\sim\,197\) GeV, given \(\lambda_{a}>-0.5\). This situation is exactly the opposite for CMS, where only the range \(200\leq m_{H^{\pm}}\leq 250\) (GeV) is excluded for \(\lambda_{a}=1.4\). Besides, \(R_{\gamma\gamma}(h^{0})\) tends towards its standard value for \(\lambda_{a}\neq 0\), and to 1 for large \(m_{H^{\pm}}\) whatever the variation of \(\lambda_{a}\).
+
+In this scenario, the anti-correlation between \(R_{\gamma\gamma}(h^{0})\) and \(R_{\gamma\,Z}(h^{0})\) is displayed in the left panel of Fig. 5, taking into account the experimental data at \(1\sigma\). At first sight, the \(R_{\gamma\,Z}(h^{0})\) deviation is almost nul relatively to its standard value, and contrary to what has been claimed in [13], \(R_{\gamma\gamma}(h^{0})\) and \(R_{\gamma\,Z}(h^{0})\) are always anti-correlated, independently of \(\lambda_{a}\) sign.
+
+### 4.2 \(H^{0}\) SM-like invisible decays
+
+This section investigates the possible existence of a scalar state \(h^{0}\) lighter than \(H^{0}\), with \(M_{H}^{0}\approx 125\). Such a scenario has attracted attention within a plethora of theoretical frameworks dealing with new physics beyond standard model , particularly those considering enlargement of the",png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/arxiv_pages_large_1m_scanned
+13337,True,True,,,,,"additional features related to learning context, interaction times and hint usage provided by the ASSISTment 2009 [Feng et al. (2009)] and Junyi15 [Chang et al. (2015)] datasets. While that work employs most information contained in the Junyi15 dataset, it fails to utilize the prerequisite structure among topics in the curriculum, and does not evaluate the potential benefit of those features for logistic regression models. EKT [Liu et al. (2019)] uses the question text to learn exercise embeddings which are then used for downstream performance predictions. MVKM [Zhao et al. (2020)] uses a multi-view tensor factorization to model knowledge acquisition from different types of learning materials (quizzes, videos, ...). SAINT+ [Shin et al. (2021)] and MUSE [Zhang et al. (2021)] augment transformer models with interaction time features to capture short-term memorization and forgetting. Closest to the spirit of this manuscript is an early work by Feng2009:Addressing. That work integrates features related to accuracy, response time, attempt-usage and help-seeking behavior into a logistic regression model to enhance exam score predictions. However, their exam score prediction problem is inherently different from our problem of continuous performance modeling because it focuses only on the final learning outcome and does not capture user proficiency on the question and KC level. Unlike our work Feng2009:Addressing, do not evaluate features related to lecture video and reading material consumption, prerequisite structure and learning context. Their study is also limited to two small-scale datasets (\(<1000\) students) collected by the ASSISTment system.
+
+This paper offers the first systematic study of a wide variety of features extracted from alternative types of log data. It analyzes four recent large-scale datasets which capture the learning process at different levels of granularity and focus on various aspects of student behaviour. Our study identifies a set of features which can improve the accuracy of knowledge tracing techniques and we give recommendations regarding which types of user interactions should be captured in log data of future tutoring systems. Further, our feature evaluation led us to novel logistic regression models achieving a new state-of-the-art performance on all four datasets.
+
+## 3 Datasets
+
+
+
+In recent years multiple education companies released large-scale ITS datasets to promote research on novel knowledge assessment techniques. Compared to earlier sizable datasets such as Bridge to Algebra 2006 [Stamper et al. (2010)] and ASSISTment 2012 [Feng et al. (2009)] these new datasets capture an order of magnitude more student responses making them attractive for data intensive modeling approaches. Table 2 provides an overview of the four recent large-scale student log datasets, from different ITS systems, we use in this paper. Taken together, these datasets capture over 197 million lines of log data from over 789,000 students, including correct/incorrect responses to over 87 million questions. While each ITS collects the conventional timestamp for each question (item) presented to the student, the correctness of their answer, and knowledge component (KC) attributes associated with the question, they also contain additional interaction data. Going beyond pure question-solving activities multiple datasets provide information about how and when students utilize reading materials, lecture videos and hints. In addition there are various types of meta-information about the individual students (e.g. age, gender, ...) as well as the current learning context (e.g. school, topic number, ...). All four tutoring systems exhibit a modular structure in which learning activities are assigned to distinct categories (e.g. pre-test, effective learning, review, ...). Further, three of the datasets provide meta-information indicating which questions, videos, etc. are related to which KCs.
+
+Figure 2 visualizes the distribution of the number of responses per student for each dataset (i.e.",png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/arxiv_pages_large
+11637,True,True,,,,,"The limited-knowledge adversary Charlie eavesdrops and controls node v1, shown with the broken boundary. If Charlie erases the data stored on node v1, the value of the cut C(V, V̄ ), with V̄ = {x1out, x 6 in, x 6 out, x 7 in, x 7 out,DC}, between the source node s and a data collector DC accessing nodes v6, v7, v8 becomes equal to 5.",png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/arxiv_figures_large
+7752,True,True,,,"
+Answer the question using a single word.",What is the value of role?,5,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_stage2_dvqa
+4425,True,True,,,"
+Answer the question using either Yes or No.",Does Deep Sky Blue have the maximum area under the curve?,Yes,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_stage2_figureqa
+310,True,True,,,"
+Answer the question using a single word or phrase.",What color is the floor?,Black.,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_visual_genome__question_per_image
+3940,True,True,,,,,"Popes Alexander VI and Callixtus III, and King Alfonso XIII of Spain - Santa Maria in Monserrato degli Spagnoli - Rome, Italy. The Spanish National Church of Santiago and Montserrat, known as Church of Holy Mary in Monserrat of the Spaniards is a Roman Catholic titulus church and National Church in Rome of Spain, dedicated to the Virgin of Montserrat.",png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_landmarks_wiki_stage2
+1302,True,True,,,,,"Pyrostegia venusta, also commonly known as flamevine or orange trumpet vine, is a plant species of the genus Pyrostegia of the family Bignoniaceae originally native to southern Brazil, Bolivia, northeastern Argentina and Paraguay; today, it is also a widely cultivated garden species.",png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_plants_wiki_stage2
+31,True,True,,,"
+Answer the question using a single word or phrase.",What do these street lights do?,control traffic,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_okvqa
+100,True,True,,,"Answer the question using a single word or a continuous phrase from the image.
+The phase can span multiple lines.
+The phrase is less than 15 words.",How much did the world's largest cheese weigh?,"34,591 lbs (15,723 kg)",png,/fsx_0/datasets_30days/flywheel/sg_mmllm_sft_sg_data_curation_flywheel_5p5k_0909/20240909
+100,True,True,,,"Answer the question using a single word or a continuous phrase from the image.
+The phase can span multiple lines.
+The phrase is less than 15 words.",What is the next block after the loop is executed?,Increment/Decrement,png,/fsx_0/datasets_30days/flywheel/sg_mmllm_sft_sg_data_curation_flywheel_1p3k_0917
+100,True,True,,,Answer the question using a single word or a continuous phrase from the image. The phase can span multiple lines. The phrase is less than 15 words.,"What is the Total deferred revenue and deposits for June 30, 2018?",$91 million,jpg,/fsx_0/datasets_30days/flywheel/sg_mmllm_sft_data_flywheel_3k_v1_0929
+100,True,True,,,Answer the question using a single word or a continuous phrase from the image. The phrase can span multiple lines.,What number is associated with Consent of Ernst & Young LLP?,23.1,jpg,/fsx_0/datasets_30days/flywheel/sg_mmllm_sft_syn_img_flywheel_2k_rotated_0927
+100,True,True,,,Answer the question using a single word or a continuous phrase from the image. The phase can span multiple lines. The phrase is less than 15 words.,What is the total amount due on this receipt?,$19.60,jpg,/fsx_0/datasets_30days/flywheel/data_flywheel_5k_ig_no_val_7p3k_v2_1010
+100,True,True,,,,Who was the pastor of the church in May 1926?,Reverend P. W. Phillips,jpg,/fsx_0/datasets_30days/flywheel/data_flywheel_5k_ig_no_val_4p7k_rotated_1011
+6,True,True,,,,"What is the percentage of families with an average yearly income of 10-14,999?",23.1,jpg,/fsx_0/datasets_30days/data_flywheel_5k_ig_val_batch_1_1015/202401016
+6,True,True,,,,What is the code at the top right side of the page?,090741,jpg,/fsx_0/datasets_30days/data_flywheel_5k_ig_prod_batch_2_1015/202401016
+100,True,True,,,,What are the cheese options for add-ins?,"Cheddar Cheese, or Pepper Jack Cheese",jpg,/fsx_0/datasets_30days/flywheel/data_flywheel_5k_ig_val_6k7_rotated_1018/20241018
+114,True,True,,,"
+Answer with the options letter from the given choices directly.
+","Question: What state is this city in?
+A: illinois
+B: new zealand
+C: new york
+D: ohio","
+Answer: D",png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_a_okvqa_w_simple
+2334,True,True,,,"
+Provide a single-word answer.",Are there fewer small shiny cubes in front of the tiny blue cube than cyan metallic blocks?,no,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_clevr_math_train_diverse_instr
+1,True,True,,,"
+Keep it simple with a one-word or one-phrase reply","In the figure above, l || m. Which of the following must equal 180?",k + p + s,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_geos_simpl
+3,True,True,,,,,"Dynamic of Bible Study in The new fear Part %SC% Text :- 11 Tim %SC% John 3 3:16, : 1- 8 Central Truth :- Every Sincere Christian wants to have a more meaningful under to order in study Bible personal stand The Bible better Memory Verse: 11 Timothy 2:15- study God, unto approved thyself show to a workman than needeth not to be ashamed, rightly dividing the word of truth ( 1)",png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_gnhk_data
+45,True,True,,,,,days.,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_iam_data
+64,True,True,,,"
+Provide a terse response to the following question.",How many squares are there?,8,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_iconqa_data_choose_text_train_simple_resp
+37,True,True,,,"
+Please offer a concise response in the form of a single word or phrase to the question.",How many shapes are blue?,4,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_iconqa_data_fill_in_blank_train_v2_diverse_instr
+27,True,True,,,,,I hate you less than everyone else. . .,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_imgur5k_data
+611,True,True,,,"
+Provide a concise reply that consists of a solitary word or a brief phrase that directly addresses the inquiry.",Is the person in the picture an association football player?,Yes,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_kvqa_update_diverse_instr
+13,True,True,,,"
+Please directly answer the question and provide the correct option letter, e.g., A, B, C, D.
+","Question: Find O X.
+Choices:
+A:5
+B:12
+C:13
+D:26","
+Answer: A",png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_mathverse
+425,True,True,,,"
+Could you please take a moment to carefully review the options provided and select the one that you believe is the most suitable and accurate response to the question?","Question: What are the cells in this image called?
+A. Red blood cells
+B. eosinophils
+C. Basophils
+D. T lymphocytes
+","
+Answer: B.",png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_ominimed_vqa_update_diverse_instr
+3334,True,True,,,"
+Respond with a single number.",What is the difference between the Savings(% of GNI) of Hungary and Savings(% of GNI) of Rwanda in Net savings(excluding particulate emission damage) ?,-5.0809,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_plotqa_train_subset_1m_diverse_instr
+293,True,True,,,,,clef: C1  keySignature: FM  timeSignature: C  rest-quarter   / note-Bb4_quarter  note-A4_quarter  note-A4_quarter  barline  rest-quarter  note-D5_quarter  note-Eb5_half  barline  note-D5_half  note-Bb4_half  barline  note-Bb4_half  note-Bb4_quarter  note-C5_eighth  note-C5_eighth  barline  note-D5_half  note-D5_quarter  rest-quarter  barline  ,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_primus_v2
+25,True,True,,,"
+Look the Table B in the pink block. Examine the provided table, extract the essential details, and furnish a succinct response to the associated question, capitalizing on the relevant information contained within the table.",How many National Football League did win the runners-up the fourth season of the I-League.,three National Football League,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_rw_poster_8k_fixed
+20,True,True,,,"
+Please select the accurate response to the posed question.\n","Find x.
+A: 7
+B: 7 \sqrt { 2 }
+C: 7 \sqrt { 3 }
+D: 14",\nD,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_s2_intergps_diverse_instr
+21,True,True,,,"
+Answer with the options letter from the given choices directly.
+","Question: Which of these continents does the prime meridian intersect?
+A: North America
+B: Africa
+C: South America
+","
+Answer: B",png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_science_qa
+45,True,True,,,"
+Answer the question using a single word or phrase.",What is this aircraft's license plate?,PH-BEA,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_st_vqa
+77,True,True,,,"
+Please provide a brief response consisting of a single word or number.",A Technical Assistance Manager monitored his customers' wait times. How many people waited for exactly 90 minutes?,2,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_tabmwp_train_diverse_instr
+44,True,True,,,"
+Answer with the options letter from the given choices directly.
+","Question: Which part is used for excretion?
+a. Rectum
+b. Esophagus
+c. Stomach
+d. Liver","
+Answer: a",png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_tqa_w_simple
+310,True,True,,,"
+Answer the question using a single word or phrase.",What color is the floor?,Black.,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_visual_genome__question_per_image
+19,True,True,,,"
+Answer the question with one short sentence.",What is in front of the person?,A pizza.,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_vsr_qa_train
+3135,True,True,,,,,"Sir Bertram Stevens (seated, centre), Premier of New South Wales (Australia) from 1932 to 1939, and members of his cabinet",png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_wit_english_940k_0425
+7752,True,True,,,"
+Answer the question using a single word.",What is the value of role?,5,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_stage2_dvqa
+4425,True,True,,,"
+Answer the question using either Yes or No.",Does Deep Sky Blue have the maximum area under the curve?,Yes,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_stage2_figureqa
+139,True,True,,,"
+Identify the solution to the question posed in the table. Lauren Keyana Keke Palmer (born August 26, 1993) is an American actress, singer, songwriter, dancer and television personality. Palmer was born in Harvey, Illinois, and raised in Robbins, Illinois. She released her debut album, So Uncool, on September 18, 2007, through Atlantic Records. The album failed to chart on the US Billboard 200 but did chart at number 85 on the R&B chart. The album was preceded by the second single Keep It Movin'. Palmer made her acting debut in the 2004 film Barbershop 2: Back in Business and rose to prominence in 2006 for her breakthrough role in Akeelah and the Bee as well as starring in Madea's Family Reunion. Palmer has also starred in films such as The Longshots (2008), Shrink (2009) and Animal (2014). In 2012, Palmer starred in four films: Joyful Noise, Winx Club: The Secret of the Lost Kingdom, Ice Age: Continental Drift, and Virgin Mary. Besides films, Palmer has also starred in the television films Knights of the South Bronx (2005), Jump In! (2007), and Rags (2012), among others. Palmer has also had numerous television roles including the lead role in Nickelodeon sitcom True Jackson, VP. Palmer earned $20,000 per episode of True Jackson, VP, which made her the fourth-highest-paid child star on television. ",What city is the setting for the television series in which Keke Palmer plays Arletta Marion.,Philadelphia,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/s2_ott_train_with_context_and_diversified_instr
+147,True,True,,,,"What is the difference between the answers to the following questions about G and F
+Question for G: How much did the number of foreign students studying in Poland increase within five years?
+Question for F: How many goals did Silvio Romero and Rafael Santos Borr score in the 2019/2020 season?",66.3,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/sg_large_image_joint_qa
+883,True,True,,,"
+Answer the question using a single number.","According to E, What is the average CO2 emissions (% of total fuel combustion) in Turkey per year ?",32.7454,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/sg_large_image_single_qna_260k
+27,True,True,,,,,A champagne bottle is in the middle of the image. There are glasses on either side of it.,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/sg_mmllm_densely_caption_8k
+517,True,True,,,,,A man standing in the mountains looking at ice.,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/sg_mmllm_flickr30k_blur
+22,True,True,,,,Describe the scene in this picture in detail (3 to 4 sentences).,A man driving mini taxi that has no passengers is changing lanes in front of a silver vehicle. The mini taxi has several wooden poles in its cargo compartment. In the backgrounds on the sidewalk is a large group of people gathered in line. A restaurant that sells salads and sushi can be seen in the background.,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/sg_mmllm_mit_dense_captions_6k
+351,True,True,,,,,A pedestrian walk sign hangs next to a No turn on red sign.,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/sg_mmllm_textcaps_blur
+1470,True,True,,,Summarize the text in the image in 1-2 bullet points.,,"• Alice's most general strategy is to prepare a state | ψ'⟩=∑_i=1^k μ_i | φ'_i⟩ | ϕ_i⟩, which can be split into two parts | ψ'_0⟩ and | ψ'_1⟩ after Bob's measurement.
+• Bob tests the state | ψ'_1⟩ against the state | ψ̃_̃1̃⟩, which would have resulted if Alice had prepared the honest state | ψ̃⟩. The inner product between | ψ'_1⟩ and | ψ_1⟩ is maximized if | φ'_i⟩=| i⟩ for all i, and sending | ψ”⟩=∑_i=1^k μ_i | i⟩ | ϕ_i⟩ instead of | ψ'⟩ only increases Alice's success probability.",png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/sg_pdf_summarization_unicode
+27,True,True,,,,What was the density range of the calcium inserts used in the water phantom?,0 to 1.550 g/cm2.,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/sg_poster_fact_qa
+1000,True,True,,,"
+Answer the question using a single word or number.",Does the motorbike have the same size as the truck?,Yes,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/super_clevr_30k_train_update
+46,True,True,,,"Use 1 keyword or short phrase to answer the question. Then concatenate these keywords or key phrases with a special character ,"," What are some interesting facts about this organism?
+
+",Narcine entemedor,png,/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/kg_entity_with_wikitext_instruction_question_answer_pair_various_format_length_sft_data
+41,True,True,,,,We travelled to United States to try this food. What is the food called?,Wähe,jpg,/fsx_3/bucket/yetian12/open-ended-cleaned
+1648,True,True,,A variety of shower poufs in different colors are displayed on a rack.,,,,jpg,/fsx_1/datasets_30days/sg_production_data_test_n_training/training_wds/20240722_20241018/concise_captions
+1648,True,True,,"The image shows a person's hand holding a smartphone with a black screen displaying text in Spanish. The phone appears to be turned on, and the text is visible on the screen. The person is wearing a blue shirt with a ring on their finger. In the background, there is a keyboard and other computer equipment.",,,,jpg,/fsx_1/datasets_30days/sg_production_data_test_n_training/training_wds/20240722_20241018/dense_captions
+8238,True,True,,,,What type of plant is this?,It appears to be a Calathea plant.,jpg,/fsx_1/datasets_30days/sg_production_data_test_n_training/training_wds/20240722_20241018/vqa
+391,True,True,,Gardenia gummifera is a species of plant in the family Rubiaceae. It is endemic to India.,"Answer the question using a single word or a continuous phrase from the image.
+The phrase can span multiple lines.",What is the name of this plant?,Gardenia gummifera,png,/fsx_3/bucket/cyprien/data/wds_plants_wiki_qa1_p
+77,True,True,,,,"How many photos of a man is hitting a ball with a tennis racket
+Quick response, please.",Two.,png,/fsx_3/dataset01/cauldron/cocoqa
+8,True,True,,,,"what's the total amount of Goodwill impairment of Year Ended December 31 2008, Product sales of Year Ended December 31 2010, and Sales and service revenues of Year Ended December 31 2012 ?","
+Computations: ((2465.0 + 5798.0) + 6708.0)
+Answer: 14971.0.",png,/fsx_3/dataset01/cauldron/multihiertt
+34,True,True,,,,What are every one of the educational institutions?,"Arizona, Clemson, Colorado State, Connecticut, Fresno State, Oklahoma State, Penn State, Western Michigan.",png,/fsx_3/dataset01/cauldron/robut_sqa
+13,True,True,,,,What was the number of nonvested shares at expected attainment in 2019?,"669,469.",png,/fsx_3/dataset01/cauldron/tat_qa
+30,True,True,,,,Can you break down the data visualization and explain its message?,"This statistic shows the shipment share of mobile computing devices in K-12 schools in the United States in 2016 and 2017. In the fourth quarter of 2017, the Chrome OS-based Chromebook dominated the U.S. K-12 market with a market share of almost 60 percent.",png,/fsx_3/dataset01/cauldron/chart2text
+48,True,True,,,,Translate this image into TikZ code.,"\documentclass[border=2mm]{standalone}
+\usepackage{tikz}
+\usetikzlibrary{through}
+\begin{document}
+\begin{tikzpicture}
+   \draw (0,0) circle (3cm);
+   \coordinate (a) at (90:3);
+   \coordinate (b) at (-30:3);
+   \coordinate (c) at (210:3);
+   \foreach \in in {1,2,...,5}
+   {
+     \node[circle through=(a),draw] {};
+     \draw (a)--(b)--(c)--cycle;
+     \coordinate(aux) at (a);
+     \path (a)--(b) coordinate[pos=.5] (a);
+     \path (b)--(c) coordinate[pos=.5] (b);
+     \path (c)--(aux) coordinate[pos=.5] (c);
+   }
+\end{tikzpicture}
+
+\end{document}",png,/fsx_3/dataset01/cauldron/datikz
+1,True,True,,,,Identify and explain the connections between elements in this diagram.,Start is connected with Input which is then connected with C<10? which if C<=10? is F then End and if C<0? is T then Output. Output is then connected with C=C+1 which is then connected with both C<=10? and End.,png,/fsx_3/dataset01/cauldron/diagram_image_to_text
+473,True,True,,,,"What is the value of Wyoming?
+Quick response, please.","140-2,477.",png,/fsx_3/dataset01/cauldron/mapqa
+783,True,True,,,,"What is the genre of this book?
+Provide a succinct answer.",Religion & Spirituality.,png,/fsx_3/dataset01/cauldron/ocrvqa
+19648,True,True,,,,"What is the difference between the highest and the second highest HIV infected population (in %) of 1990?
+Offer a very short reply.",0.5.,png,/fsx_3/dataset01/cauldron/plotqa
+85,True,True,,,,What's the venue for the home team that scored 9.14 (68)?,Western Oval.,png,/fsx_3/dataset01/cauldron/robut_wikisql
+23,True,True,,,,"What is to the left?
+Answer briefly.",1900 Holly Hall.,png,/fsx_3/dataset01/cauldron/st_vqa
+22,True,True,,,,Provide a caption for this picture.,An advertisement for a Marvel movie next to another one.,png,/fsx_3/dataset01/cauldron/textcaps
+7,True,True,,,,"Question: Which muscle group is at the shoulders?
+Choices:
+A. deltoid.
+B. biceps femoris.
+C. gluteus maximus.
+D. brachioradialis.
+Answer with the letter.",Answer: A,png,/fsx_3/dataset01/cauldron/tqa
+10,True,True,,,,Describe the relationship between variables in this chart.,"This bar graph is titled Revenue of biotech company Genentech by product sold in the U.S. in 2008 (in million U.S. dollars). The x-axis shows biotech company using categorical scale from Avastin to Xolair while the y-axis shows Revenue in million U.S. dollars with linear scale with a minimum of 0 and a maximum of 2,500. From this graph we can see that the two biggest companies with at least double the revenue of the others, are Avastin and Rituxan, both of which have a revenue of over 2,500 million US dollars. there are also some companies with increadibly small revenues when compared to these two, with raptivas revenue at around 100 million and pulmozyne at 250 million US dollars.",png,/fsx_3/dataset01/cauldron/vistext
+180,True,True,,,,"How many of the buses are blue?
+Give a very brief answer.",0.,png,/fsx_3/dataset01/cauldron/tallyqa

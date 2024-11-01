@@ -12,6 +12,7 @@ lib_path = '/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws'
 if lib_path not in sys.path:
     sys.path.append(lib_path)
     
+from pprint import pprint
 from typing import Any
 import time 
 import json
@@ -71,15 +72,20 @@ def main():
         # global_config = config.copy()
         watch_jobs = global_config.pop("watch_jobs")
         wait_seconds = global_config.pop("wait_seconds")
-        wandb_project = global_config.pop("wandb_project")
+        # wandb_project = global_config.pop("wandb_project")
         read_format = global_config.pop("read_format")
         
-        print(wait_seconds, wandb_project)
+        # print(wait_seconds, wandb_project)
         
         for job in watch_jobs:
             job_config = global_config.copy()
-            job_config.update(job)
             
+            # update with local config
+            job_config.update(job)
+            wandb_project = job_config.pop("wandb_project")
+            
+            print("="*20)
+            pprint(job_config)
             print(f"Scanning for new checkpoints in {job_config['watch_path']}")
             try:
                 num_jobs = run_evals(**job_config)
@@ -92,8 +98,8 @@ def main():
                     read_format=read_format,
                     wandb_project=wandb_project
                 )
-            except Exception:
-                pass
+            except Exception as e:
+                print(e)
             
         time.sleep(wait_seconds)
 

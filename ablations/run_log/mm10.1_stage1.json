@@ -1,0 +1,45 @@
+{
+    "jobs": [
+        {
+            "name": "MH22final_70B_ViTH_336px_R1_recap_64nodes_fix",
+            "note": null,
+            "job_id": 61502,
+            "nodes": 2,
+            "timestamp": "2024-10-28 11:51:30",
+            "input_config": "mm10.1/stage1/MH22final_70B_ViTH_336px_R1_recap_20241024_resume.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "overrides": null,
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage1_70B/MH22final_70B_ViTH_336px_R1_recap_64nodes_fix/241028_15_51_30_758770",
+            "run_config": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage1_70B/MH22final_70B_ViTH_336px_R1_recap_64nodes_fix/241028_15_51_30_758770/config.json"
+        },
+        {
+            "name": "MH22final_70B_ViTH_336px_R1_recap_64nodes_fix",
+            "note": null,
+            "job_id": 61450,
+            "nodes": 2,
+            "input_config": "mm10.1/stage1/MH22final_70B_ViTH_336px_R1_recap_20241024_resume.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "overrides": null,
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "timestamp": "2024-10-28 11:41:51",
+            "work_dir": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage1_70B/MH22final_70B_ViTH_336px_R1_recap_64nodes_fix/241028_15_41_51_604835",
+            "run_config": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage1_70B/MH22final_70B_ViTH_336px_R1_recap_64nodes_fix/241028_15_41_51_604835/config.json"
+        }
+    ],
+    "default": [
+        {
+            "name": "MH22final_70B_ViTH_336px_idl",
+            "note": null,
+            "job_id": 68672,
+            "nodes": 32,
+            "timestamp": "2024-10-31 10:07:24",
+            "input_config": "mm10.1/stage1/MH22final_70B_ViTH_336px_idl_20241031.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": null,
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage1_70B/MH22final_70B_ViTH_336px_idl/241031_14_07_24_819119",
+            "run_config": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage1_70B/MH22final_70B_ViTH_336px_idl/241031_14_07_24_819119/config.json"
+        }
+    ]
+}

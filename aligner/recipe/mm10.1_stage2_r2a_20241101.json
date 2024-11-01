@@ -1,0 +1,143 @@
+{
+    "wds_caption_llama11b_fair_m2c2_clip_filtered_0.37985": {
+        "paths": [
+            "/fsx_1/data_curation_output/cyprien/output/wds_caption_llama11b_fair_m2c2_clip_filtered_0.37985/all/"
+        ],
+        "multipler": 1
+    },
+    "idl-wds_v2": {
+        "paths": [
+            "/fsx_3/dataset01/idl-wds_v2"
+        ],
+        "multipler": 1,
+        "rename_map": {
+            "text": "response"
+        }
+    },
+    "idl_qa_filtered_tar_only": {
+        "paths": [
+            "/fsx_0/user/qyh/data/idl_qa_filtered_tar_only/"
+        ],
+        "multipler": 10
+    },
+    "mmllm_sft_ocr_vqa": {
+        "paths": [
+            "/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_ocr_vqa"
+        ],
+        "multipler": 40
+    },
+    "sg_pdf_ocr_unicode": {
+        "paths": [
+            "/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/sg_pdf_ocr_unicode"
+        ],
+        "multipler": 1
+    },
+    "arxiv_pages_large_1m_scanned": {
+        "paths": [
+            "/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/arxiv_pages_large_1m_scanned"
+        ],
+        "multipler": 1
+    },
+    "arxiv_pages_large": {
+        "paths": [
+            "/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/arxiv_pages_large"
+        ],
+        "multipler": 1
+    },
+    "arxiv_figures_large": {
+        "paths": [
+            "/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/arxiv_figures_large"
+        ],
+        "multipler": 1
+    },
+    "mmllm_stage2_dvqa": {
+        "paths": [
+            "/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_stage2_dvqa"
+        ],
+        "multipler": 1
+    },
+    "mmllm_stage2_figureqa": {
+        "paths": [
+            "/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_stage2_figureqa"
+        ],
+        "multipler": 1
+    },
+    "mmllm_sft_visual_genome__question_per_image": {
+        "paths": [
+            "/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_visual_genome__question_per_image"
+        ],
+        "multipler": 1
+    },
+    "mmllm_landmarks_wiki_stage2": {
+        "paths": [
+            "/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_landmarks_wiki_stage2"
+        ],
+        "multipler": 1
+    },
+    "mmllm_plants_wiki_stage2": {
+        "paths": [
+            "/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_plants_wiki_stage2"
+        ],
+        "multipler": 1
+    },
+    "mmllm_sft_okvqa": {
+        "paths": [
+            "/fsx_1/datasets_30days/datarecipe_source/sg_mmllm_stage2_compliant_cap_qa_exp28_kosher_v2/20240827v4/mmllm_sft_okvqa"
+        ],
+        "multipler": 100
+    },
+    "sg_mmllm_sft_sg_data_curation_flywheel_5p5k_0909": {
+        "paths": [
+            "/fsx_0/datasets_30days/flywheel/sg_mmllm_sft_sg_data_curation_flywheel_5p5k_0909/20240909"
+        ],
+        "multipler": 100
+    },
+    "sg_mmllm_sft_sg_data_curation_flywheel_1p3k_0917": {
+        "paths": [
+            "/fsx_0/datasets_30days/flywheel/sg_mmllm_sft_sg_data_curation_flywheel_1p3k_0917"
+        ],
+        "multipler": 100
+    },
+    "sg_mmllm_sft_data_flywheel_3k_v1_0929": {
+        "paths": [
+            "/fsx_0/datasets_30days/flywheel/sg_mmllm_sft_data_flywheel_3k_v1_0929"
+        ],
+        "multipler": 100
+    },
+    "sg_mmllm_sft_syn_img_flywheel_2k_rotated_0927": {
+        "paths": [
+            "/fsx_0/datasets_30days/flywheel/sg_mmllm_sft_syn_img_flywheel_2k_rotated_0927"
+        ],
+        "multipler": 100
+    },
+    "data_flywheel_5k_ig_no_val_7p3k_v2_1010": {
+        "paths": [
+            "/fsx_0/datasets_30days/flywheel/data_flywheel_5k_ig_no_val_7p3k_v2_1010"
+        ],
+        "multipler": 100
+    },
+    "data_flywheel_5k_ig_no_val_4p7k_rotated_1011": {
+        "paths": [
+            "/fsx_0/datasets_30days/flywheel/data_flywheel_5k_ig_no_val_4p7k_rotated_1011"
+        ],
+        "multipler": 100
+    },
+    "data_flywheel_5k_ig_val_batch_1_1015": {
+        "paths": [
+            "/fsx_0/datasets_30days/data_flywheel_5k_ig_val_batch_1_1015/202401016"
+        ],
+        "multipler": 100
+    },
+    "data_flywheel_5k_ig_prod_batch_2_1015": {
+        "paths": [
+            "/fsx_0/datasets_30days/data_flywheel_5k_ig_prod_batch_2_1015/202401016"
+        ],
+        "multipler": 100
+    },
+    "data_flywheel_5k_ig_val_6k7_rotated_1018": {
+        "paths": [
+            "/fsx_0/datasets_30days/flywheel/data_flywheel_5k_ig_val_6k7_rotated_1018/20241018"
+        ],
+        "multipler": 100
+    }
+}

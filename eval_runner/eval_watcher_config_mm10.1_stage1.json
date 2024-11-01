@@ -1,0 +1,22 @@
+{
+    "wait_seconds": 600,
+    "wandb_project": "mm10.1_stage1",
+    "read_format": "report_mmai",
+    "configs_path": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm10.1/stage1/eval_overwrite",
+    "max_jobs": 10,
+    "watch_jobs": [
+        {
+            "watch_path": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage1_70B/MH22final_70B_BigG_336px_R1"
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage1_70B/MH22final_70B_ViTH_336px_R1",
+            "start_step": 1000
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage1_70B/MH22final_70B_ViTH_336px_R1_idl"
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage1_70B/MH22final_70B_ViTH_336px_R1_recap_64nodes_fix"
+        }
+    ]
+}
