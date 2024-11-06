@@ -5,7 +5,8 @@ alias ll='ls -l'
 alias scount='sinfo -h -o %D'
 
 # watch squeue
-alias swatch='watch -n 1 squeue --me'
+# alias swatch='watch -n 1 squeue --me'
+alias swatch='watch -n 1 squeue -u tranx,zhenq,ahmadyan'
 
 # get list of hosts
 alias shosts="sinfo -hN|awk '{print $1}'"
@@ -23,6 +24,29 @@ kill_grep() {
     pgrep -f $pattern | xargs sudo kill
 }
 
+kill_zombie() {
+    zombie_pids=$(ps -eo pid,stat | awk '$2 ~ /Z/ {print $1}')
+    # Check if there are any zombie processes
+    if [ -z "$zombie_pids" ]; then
+        echo "No zombie processes found."
+        exit 0
+    fi
+    echo "Found zombie processes with PIDs: $zombie_pids"
+    # Iterate over each zombie PID
+    for pid in $zombie_pids; do
+        # Get the parent process ID (PPID) of the zombie process
+        ppid=$(ps -o ppid= -p $pid)
+        # Check if PPID is valid
+        if [ -n "$ppid" ]; then
+            echo "Killing parent process with PID: $ppid"
+            # Attempt to kill the parent process
+            sudo kill -9 $ppid
+        else
+            echo "Could not find parent process for zombie PID: $pid"
+        fi
+    done
+    echo "Attempted to kill all parent processes of zombie processes."
+}
 
 ibatch() {
     script=$1
@@ -52,7 +76,8 @@ sbash() {
 }
 
 sbash_cpu() {
-    srun --account=ar-ai-hipri --partition=cpu -N 1 -n 1 --cpus-per-task 24 --job-name=bash --mem=32000 --pty /bin/bash
+    srun --account=ar-ai-hipri --partition=cpu -N 1 -n 1 --cpus-per-task 48 --job-name=bash --mem=32000 --pty /bin/bash
+    # srun --account=ar-ai-hipri --partition=cpu -N 2 -n 2 --cpus-per-task 48 --job-name=bash --mem=32000 --pty /bin/bash
 }
 
 sbash_midpri() {

@@ -1,0 +1,64 @@
+{
+    "MM9.2_Stage2_70B": [
+        {
+            "name": "LLama3.1_70B_ViTHft_336px_stage2_r2a_test",
+            "note": "small test",
+            "job_id": 77036,
+            "nodes": 32,
+            "timestamp": "2024-11-04 16:37:09",
+            "input_config": "mm9.2/stage2/Llama3.1_70B_ViTHft_336px_stage2_r2a_20241104.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "output_dir": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage2_70B/LLama3.1_70B_ViTHft_336px_stage2_r2a_test"
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage2_70B/LLama3.1_70B_ViTHft_336px_stage2_r2a_test/241104_21_37_09_421084",
+            "run_config": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage2_70B/LLama3.1_70B_ViTHft_336px_stage2_r2a_test/241104_21_37_09_421084/config.json"
+        },
+        {
+            "name": "LLama3.1_70B_ViTHft_336px_stage2_r2a_test",
+            "note": "small test",
+            "job_id": 77035,
+            "nodes": 32,
+            "timestamp": "2024-11-04 16:34:00",
+            "input_config": "mm9.2/stage2/Llama3.1_70B_ViTHft_336px_stage2_r2a_20241104.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "output_dir": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage2_70B/LLama3.1_70B_ViTHft_336px_stage2_r2a_test"
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage2_70B/LLama3.1_70B_ViTHft_336px_stage2_r2a_test/241104_21_34_00_185564",
+            "run_config": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage2_70B/LLama3.1_70B_ViTHft_336px_stage2_r2a_test/241104_21_34_00_185564/config.json"
+        },
+        {
+            "name": "LLama3.1_70B_ViTHft_336px_stage2_r2a_test",
+            "note": "small test",
+            "job_id": 77010,
+            "nodes": 8,
+            "timestamp": "2024-11-04 16:15:04",
+            "input_config": "mm9.2/stage2/Llama3.1_70B_ViTHft_336px_stage2_r2a_20241104.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "output_dir": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage2_70B/LLama3.1_70B_ViTHft_336px_stage2_r2a_test"
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage2_70B/LLama3.1_70B_ViTHft_336px_stage2_r2a_test/241104_21_15_04_157407",
+            "run_config": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage2_70B/LLama3.1_70B_ViTHft_336px_stage2_r2a_test/241104_21_15_04_157407/config.json"
+        },
+        {
+            "name": "LLama3.1_70B_ViTHft_336px_stage2_r2a_test",
+            "note": "small test",
+            "job_id": 76959,
+            "nodes": 8,
+            "timestamp": "2024-11-04 15:04:17",
+            "input_config": "mm9.2/stage2/Llama3.1_70B_ViTHft_336px_stage2_r2a_20241104.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "output_dir": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage2_70B/LLama3.1_70B_ViTHft_336px_stage2_r2a_test"
+            },
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage2_70B/LLama3.1_70B_ViTHft_336px_stage2_r2a_test/241104_20_04_17_566572",
+            "run_config": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage2_70B/LLama3.1_70B_ViTHft_336px_stage2_r2a_test/241104_20_04_17_566572/config.json"
+        }
+    ]
+}

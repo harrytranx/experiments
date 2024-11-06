@@ -1,6 +1,46 @@
 {
     "default": [
         {
+            "name": "LLama3.1_70B_ViTH_336px_R1_recap",
+            "note": "test max_tokens_in_batch",
+            "job_id": 72888,
+            "nodes": 256,
+            "timestamp": "2024-11-02 09:36:49",
+            "input_config": "mm9.2/stage1/LLama3.1_70B_ViTH_336px_R1_recap_20241031.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "checkpoints_perception_tokenizer": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage1_70B/LLama3.1_70B_ViTH_336px_R1_recap/checkpoint-600/perception_tokenizer.pt",
+                "resume_from_checkpoint": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage1_70B/LLama3.1_70B_ViTH_336px_R1_recap/checkpoint-600/",
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 1,
+                "max_tokens_in_batch_row": 32768,
+                "max_tokens_in_batch": 32768
+            },
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage1_70B/LLama3.1_70B_ViTH_336px_R1_recap/241102_13_36_49_561652",
+            "run_config": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage1_70B/LLama3.1_70B_ViTH_336px_R1_recap/241102_13_36_49_561652/config.json"
+        },
+        {
+            "name": "LLama3.1_70B_ViTH_336px_R1_recap",
+            "note": "test max_tokens_in_batch",
+            "job_id": 71667,
+            "nodes": 256,
+            "timestamp": "2024-11-01 14:59:01",
+            "input_config": "mm9.2/stage1/LLama3.1_70B_ViTH_336px_R1_recap_20241031.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "checkpoints_perception_tokenizer": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage1_70B/LLama3.1_70B_ViTH_336px_R1_recap/checkpoint-600/perception_tokenizer.pt",
+                "resume_from_checkpoint": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage1_70B/LLama3.1_70B_ViTH_336px_R1_recap/checkpoint-600/",
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 1,
+                "max_tokens_in_batch_row": 32768,
+                "max_tokens_in_batch": 32768
+            },
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage1_70B/LLama3.1_70B_ViTH_336px_R1_recap/241101_18_59_01_255823",
+            "run_config": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage1_70B/LLama3.1_70B_ViTH_336px_R1_recap/241101_18_59_01_255823/config.json"
+        },
+        {
             "name": "LLama3.1_70B_ViTH_336px_R1_recap_test",
             "note": "test max_tokens_in_batch",
             "job_id": 70618,

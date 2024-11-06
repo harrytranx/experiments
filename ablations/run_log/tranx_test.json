@@ -243,6 +243,70 @@
     "stage2_upcycling": [
         {
             "name": "70B_moe_stage2_upcycling_22x8x2",
+            "note": "Try avoid error in collator",
+            "job_id": 77033,
+            "nodes": 32,
+            "timestamp": "2024-11-04 16:30:53",
+            "input_config": "mm10.1_moe/stage2/MH22final_70B_ViTH_336px_stage2_upcycling_moe_22x8x2.json",
+            "config_base": "/fsx_0/user/tranx/moe/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 32,
+                "gradient_accumulation_steps": 4
+            },
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/tranx/moe/70B_moe_stage2_upcycling_22x8x2/241104_21_30_53_314767",
+            "run_config": "/fsx_0/checkpoints/tranx/moe/70B_moe_stage2_upcycling_22x8x2/241104_21_30_53_314767/config.json"
+        },
+        {
+            "name": "70B_moe_stage2_upcycling_22x8x2",
+            "note": "Try avoid error in collator",
+            "job_id": 75000,
+            "nodes": 32,
+            "timestamp": "2024-11-03 20:17:25",
+            "input_config": "mm10.1_moe/stage2/MH22final_70B_ViTH_336px_stage2_upcycling_moe_22x8x2.json",
+            "config_base": "/fsx_0/user/tranx/moe/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 32,
+                "gradient_accumulation_steps": 4
+            },
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/tranx/moe/70B_moe_stage2_upcycling_22x8x2/241104_01_17_25_793004",
+            "run_config": "/fsx_0/checkpoints/tranx/moe/70B_moe_stage2_upcycling_22x8x2/241104_01_17_25_793004/config.json"
+        },
+        {
+            "name": "70B_moe_stage2_upcycling_22x8x2",
+            "note": "Try avoid error in collator",
+            "job_id": 74533,
+            "nodes": 32,
+            "timestamp": "2024-11-03 12:12:53",
+            "input_config": "mm10.1_moe/stage2/MH22final_70B_ViTH_336px_stage2_upcycling_moe_22x8x2.json",
+            "config_base": "/fsx_0/user/tranx/moe/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 32,
+                "gradient_accumulation_steps": 4
+            },
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/tranx/moe/70B_moe_stage2_upcycling_22x8x2/241103_17_12_53_854919",
+            "run_config": "/fsx_0/checkpoints/tranx/moe/70B_moe_stage2_upcycling_22x8x2/241103_17_12_53_854919/config.json"
+        },
+        {
+            "name": "70B_moe_stage2_upcycling_22x8x2",
+            "note": "load on cpu",
+            "job_id": 72889,
+            "nodes": 32,
+            "timestamp": "2024-11-02 09:41:57",
+            "input_config": "mm10.1_moe/stage2/MH22final_70B_ViTH_336px_stage2_upcycling_moe_22x8x2.json",
+            "config_base": "/fsx_0/user/tranx/moe/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 32,
+                "gradient_accumulation_steps": 4
+            },
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/tranx/moe/70B_moe_stage2_upcycling_22x8x2/241102_13_41_57_586407",
+            "run_config": "/fsx_0/checkpoints/tranx/moe/70B_moe_stage2_upcycling_22x8x2/241102_13_41_57_586407/config.json"
+        },
+        {
+            "name": "70B_moe_stage2_upcycling_22x8x2",
             "note": "load on cpu",
             "job_id": 63941,
             "nodes": 32,
@@ -307,6 +371,45 @@
         }
     ],
     "default": [
+        {
+            "name": "70B_stage2_baseline",
+            "note": null,
+            "job_id": 77032,
+            "nodes": 32,
+            "timestamp": "2024-11-04 16:28:57",
+            "input_config": "mm10.1/stage2/MH22final_70B_ViTH_336px_stage2_exp30d.json",
+            "config_base": "/fsx_0/user/tranx/moe/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": null,
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/tranx/moe/70B_stage2_baseline/241104_21_28_57_019409",
+            "run_config": "/fsx_0/checkpoints/tranx/moe/70B_stage2_baseline/241104_21_28_57_019409/config.json"
+        },
+        {
+            "name": "70B_stage2_baseline",
+            "note": null,
+            "job_id": 76806,
+            "nodes": 32,
+            "timestamp": "2024-11-04 13:42:04",
+            "input_config": "mm10.1/stage2/MH22final_70B_ViTH_336px_stage2_exp30d.json",
+            "config_base": "/fsx_0/user/tranx/moe/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": null,
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/tranx/moe/70B_stage2_baseline/241104_18_42_04_052754",
+            "run_config": "/fsx_0/checkpoints/tranx/moe/70B_stage2_baseline/241104_18_42_04_052754/config.json"
+        },
+        {
+            "name": "70B_stage2_baseline",
+            "note": null,
+            "job_id": 76739,
+            "nodes": 32,
+            "timestamp": "2024-11-04 13:06:44",
+            "input_config": "mm10.1/stage2/MH22final_70B_ViTH_336px_stage2_exp30d.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": null,
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/tranx/moe/70B_stage2_baseline/241104_18_06_44_455811",
+            "run_config": "/fsx_0/checkpoints/tranx/moe/70B_stage2_baseline/241104_18_06_44_455811/config.json"
+        },
         {
             "name": "70B_stage2_baseline",
             "note": null,

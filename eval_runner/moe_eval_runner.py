@@ -8,7 +8,7 @@ ps aux | grep eval_runner
 pgrep -f "eval_runner.py" | xargs kill
 """
 import sys 
-lib_path = '/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws'
+lib_path = '/fsx_0/user/tranx/moe/llm_mm_aligner/experiments/aws'
 if lib_path not in sys.path:
     sys.path.append(lib_path)
     
@@ -66,7 +66,7 @@ def run_evals(
 def main():
     while True:
         # re-read latest config
-        with open('eval_watcher_config.json', 'r') as file:
+        with open('moe_eval_watcher_config.json', 'r') as file:
             global_config = json.load(file)
 
         # global_config = config.copy()
@@ -78,12 +78,6 @@ def main():
         # print(wait_seconds, wandb_project)
         
         for job in watch_jobs:
-            if "ignore" in job:
-                if job["ignore"]:
-                    continue 
-                else:
-                    job.pop("ignore")
-                
             job_config = global_config.copy()
             
             # update with local config

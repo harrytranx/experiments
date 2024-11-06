@@ -3,6 +3,19 @@
         {
             "name": "MH22final_70B_ViTHft_336px_stage2_r2a",
             "note": "r2a",
+            "job_id": 76751,
+            "nodes": 128,
+            "timestamp": "2024-11-04 13:08:47",
+            "input_config": "mm10.1/stage2/MH22final_70B_ViTHft_336px_stage2_r2a_20241101.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": null,
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_r2a/241104_18_08_47_495896",
+            "run_config": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage2_70B/MH22final_70B_ViTHft_336px_stage2_r2a/241104_18_08_47_495896/config.json"
+        },
+        {
+            "name": "MH22final_70B_ViTHft_336px_stage2_r2a",
+            "note": "r2a",
             "job_id": 71016,
             "nodes": 32,
             "timestamp": "2024-11-01 10:21:33",

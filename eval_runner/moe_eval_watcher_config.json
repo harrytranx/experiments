@@ -4,10 +4,10 @@
     "max_jobs": 10,
     "watch_jobs": [
         {
-            "wandb_project": "MM9.2_Stage1_70B",
-            "configs_path": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm10.1/stage1/eval_overwrite",
-            "watch_path": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage1_70B/LLama3.1_70B_ViTH_336px_R1_recap",
-            "ignore": true
+            "wandb_project": "tranx_test",
+            "configs_path": "/fsx_0/user/tranx/moe/llm_mm_aligner/experiments/aws/mm10.1_moe/stage2/eval_overwrite_moe",
+            "watch_path": "/fsx_0/checkpoints/tranx/moe/70B_moe_stage2_upcycling_22x8x2",
+            "every_steps": 100
         },
         {
             "wandb_project": "tranx_test",

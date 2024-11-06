@@ -51,6 +51,17 @@ def get_log_file(job_id: int):
 class SlurmPolice():
     def __init__(self):
         self.client = SlurmClient() 
+        self.hold_list = []
+        
+    def reset_hold_list(self):
+        self.hold_list = []
+        
+    
+    def release_all(self):
+        while self.hold_list:
+            j = self.hold_list.pop()
+            print(f"releasing {j}")
+            utils.get_bash_output(f"scontrol release {j}")
     
     def cancel(
         self, 
@@ -59,9 +70,11 @@ class SlurmPolice():
         users: Optional[str]=None,
         status: Optional[str]=None,
         name: Optional[str]=None,
+        job_id_min: Optional[int]=None
     ):
 
         q = self.client.get_queue()
+        # q.JOB_ID = q.JOB_ID.astype(int)
         
         # filter by account
         if account is not None:
@@ -86,6 +99,10 @@ class SlurmPolice():
         # filter by name
         if name is not None:
             q = q[q.NAME.str.startswith(name)]
+            
+        # # filter by job_id
+        # if job_id_min is not None:
+            
         
         print(q[['JOBID', 'ST', 'ACCOUNT', 'USER', 'NODES']])
         print("total nodes:", q.NODES.sum())
@@ -93,9 +110,14 @@ class SlurmPolice():
         pass_phrase = input("Please enter pass_phrase: 123")
         if pass_phrase == "123":
             for j in list(q.JOBID):
-                print(f"Cancelling job {j}")
-                # utils.get_bash_output(f"scancel {j}")
-                utils.get_bash_output(f"{action} {j}")
+                print(f"Triggering {action} on job {j}")
+                if action == 'cancel':
+                    utils.get_bash_output(f"scancel {j}")
+                elif action == 'hold':
+                    utils.get_bash_output(f"scontrol requeuehold {j}")
+                    self.hold_list.append(j)
+                elif action == 'release':
+                    utils.get_bash_output(f"scontrol release {j}")
             
 
 class SlurmClient():
