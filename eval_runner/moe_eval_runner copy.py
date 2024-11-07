@@ -8,8 +8,7 @@ ps aux | grep eval_runner
 pgrep -f "eval_runner.py" | xargs kill
 """
 import sys 
-# lib_path = '/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws'
-lib_path = '/fsx_0/user/tranx/aws_prod/llm_mm_aligner/experiments/aws'
+lib_path = '/fsx_0/user/tranx/moe/llm_mm_aligner/experiments/aws'
 if lib_path not in sys.path:
     sys.path.append(lib_path)
     
@@ -18,7 +17,6 @@ from typing import Any
 import time 
 import json
 import launch_evals as eval_helper
-import argparse
 
 def run_evals(
     configs_path: str,
@@ -65,12 +63,10 @@ def run_evals(
         
     return num_jobs
 
-def main(config_file: str):
+def main():
     while True:
         # re-read latest config
-        # with open('eval_watcher_config.json', 'r') as file:
-        print(f"Reading eval watcher config from: {config_file}")
-        with open(config_file, 'r') as file:
+        with open('moe_eval_watcher_config.json', 'r') as file:
             global_config = json.load(file)
 
         # global_config = config.copy()
@@ -82,12 +78,6 @@ def main(config_file: str):
         # print(wait_seconds, wandb_project)
         
         for job in watch_jobs:
-            if "ignore" in job:
-                if job["ignore"]:
-                    continue 
-                else:
-                    job.pop("ignore")
-                
             job_config = global_config.copy()
             
             # update with local config
@@ -115,7 +105,4 @@ def main(config_file: str):
 
         
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Eval Watcher Config")
-    parser.add_argument("-c", "--config", help="Path to config file", required=True)
-    args = parser.parse_args()
-    main(args.config)
+    main()

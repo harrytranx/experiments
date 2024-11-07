@@ -11,6 +11,9 @@
 		},
 		{
 			"path": "../moe"
+		},
+		{
+			"path": "../aws_prod"
 		}
 	],
 	"settings": {}

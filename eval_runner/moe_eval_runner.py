@@ -63,10 +63,12 @@ def run_evals(
         
     return num_jobs
 
-def main():
+def main(config_file: str):
     while True:
         # re-read latest config
-        with open('moe_eval_watcher_config.json', 'r') as file:
+        # with open('eval_watcher_config.json', 'r') as file:
+        print(f"Reading eval watcher config from: {config_file}")
+        with open(config_file, 'r') as file:
             global_config = json.load(file)
 
         # global_config = config.copy()
@@ -78,6 +80,12 @@ def main():
         # print(wait_seconds, wandb_project)
         
         for job in watch_jobs:
+            if "ignore" in job:
+                if job["ignore"]:
+                    continue 
+                else:
+                    job.pop("ignore")
+                
             job_config = global_config.copy()
             
             # update with local config
@@ -105,4 +113,7 @@ def main():
 
         
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description="Eval Watcher Config")
+    parser.add_argument("-c", "--config", help="Path to config file", required=True)
+    args = parser.parse_args()
+    main(args.config)
