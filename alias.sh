@@ -10,6 +10,10 @@ alias swatch='watch -n 1 squeue -u tranx,zhenq,ahmadyan'
 
 # get list of hosts
 alias shosts="sinfo -hN|awk '{print $1}'"
+sq() {
+    squeue --format="%a %.18i %.9P %.10j %.8u %.2t %.10M %.6D %R"
+}
+
 
 alias cd_work="cd /fsx_0/user/$USER"
 alias cd_exp="cd /fsx_0/user/$USER/experiments"
@@ -151,9 +155,7 @@ wlog() {
     echo "$log_file"
 }
 
-sq() {
-    squeue --format="%a %.18i %.9P %.8j %.8u %.2t %.10M %.6D %R"
-}
+
 
 jrun() {
     sbatch /fsx_0/user/tranx/experiments/sbatch_jupyter_lab.sh

@@ -70,7 +70,9 @@ class SlurmPolice():
         users: Optional[str]=None,
         status: Optional[str]=None,
         name: Optional[str]=None,
-        job_id_min: Optional[int]=None
+        job_id_min: Optional[int]=None,
+        run_seconds: Optional[int]=None,
+        max_jobs: Optional[int]=None
     ):
 
         q = self.client.get_queue()
@@ -100,6 +102,10 @@ class SlurmPolice():
         if name is not None:
             q = q[q.NAME.str.startswith(name)]
             
+        
+        if run_seconds is not None:
+            q = q[q.TIME_S <= run_seconds]
+            
         # # filter by job_id
         # if job_id_min is not None:
             
@@ -108,6 +114,8 @@ class SlurmPolice():
         print("total nodes:", q.NODES.sum())
         
         pass_phrase = input("Please enter pass_phrase: 123")
+        
+        count = 0
         if pass_phrase == "123":
             for j in list(q.JOBID):
                 print(f"Triggering {action} on job {j}")
@@ -118,6 +126,10 @@ class SlurmPolice():
                     self.hold_list.append(j)
                 elif action == 'release':
                     utils.get_bash_output(f"scontrol release {j}")
+                
+                count += 1
+                if (action in ['cancel', 'hold']) and (max_jobs is not None) and (count == max_jobs):
+                    break
             
 
 class SlurmClient():
@@ -201,6 +213,7 @@ class SlurmClient():
 
         queue = utils.bash_output_to_table(output)
         queue['NODES'] = queue['NODES'].astype(int)
+        queue['TIME_S'] = queue['TIME'].apply(lambda x: utils.get_elasped_seconds(x))
 
         return queue
 

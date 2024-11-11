@@ -1,5 +1,5 @@
 {
-    "wait_seconds": 600,
+    "wait_seconds": 1000,
     "wandb_project": "MM9.2_Stage2_70B",
     "read_format": "report_mmai",
     "configs_path": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm10.1/stage2/eval_overwrite",
@@ -7,14 +7,46 @@
     "watch_jobs": [
         {
             "watch_path": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage2_70B/Llama31_70B_ftvith_336_r14600_s2_r2a_1106",
-            "every_steps": 100
+            "every_steps": 100,
+            "ignore": true
         },
         {
             "watch_path": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage2_70B/Llama3.1_70B_ViTH_336px_exp28",
-            "every_steps": 100
+            "every_steps": 100,
+            "ignore": true
         },
         {
             "watch_path": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage2_70B/Llama3.1_70B_ViTH_336px_r2a_20241106",
+            "every_steps": 100,
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage2_70B/Llama3.1_70B_ViTH_336px_exp28_plus",
+            "every_steps": 100,
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage2_70B/Llama3.1_70B_ViTH_336px_exp28_plus_v2",
+            "every_steps": 200,
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage2_70B/Llama3.1_70B_ViTH_336px_exp28_plus_v3",
+            "configs_path": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm10.1/stage2/eval_overwrite/eval_mmmu.json",
+            "every_steps": 200,
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage2_70B/Llama3.1_70B_ViTH_336px_exp31a_plus_v4",
+            "every_steps": 200,
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage2_70B/Llama3.1_70B_ViTH_336px_exp28_plus_v2_20241111",
+            "every_steps": 100
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage2_70B/Llama3.1_70B_ViTH_336px_exp28_plus_v2_20241111_64nodes",
             "every_steps": 100
         }
     ]
