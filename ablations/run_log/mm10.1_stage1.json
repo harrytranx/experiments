@@ -29,6 +29,32 @@
     ],
     "default": [
         {
+            "name": "MH23.1_70B_ViTH_336px_R1",
+            "note": null,
+            "job_id": 94858,
+            "nodes": 64,
+            "timestamp": "2024-11-20 08:58:31",
+            "input_config": "mm10.1/stage1/MH23.1_70B_ViTH_336px_R1_20241119.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": null,
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage1_70B/MH23.1_70B_ViTH_336px_R1/241120_13_58_31_424567",
+            "run_config": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage1_70B/MH23.1_70B_ViTH_336px_R1/241120_13_58_31_424567/config.json"
+        },
+        {
+            "name": "MH23.1_70B_ViTH_336px_R1",
+            "note": null,
+            "job_id": 93576,
+            "nodes": 64,
+            "timestamp": "2024-11-19 18:15:19",
+            "input_config": "mm10.1/stage1/MH23.1_70B_ViTH_336px_R1_20241119.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": null,
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage1_70B/MH23.1_70B_ViTH_336px_R1/241119_23_15_19_520199",
+            "run_config": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage1_70B/MH23.1_70B_ViTH_336px_R1/241119_23_15_19_520199/config.json"
+        },
+        {
             "name": "MH22final_70B_ViTH_336px_idl",
             "note": null,
             "job_id": 68672,

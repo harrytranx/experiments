@@ -1,6 +1,38 @@
 {
     "8B_stage1": [
         {
+            "name": "LLama3_8B_ViTH_336px_22layers",
+            "note": "baseline",
+            "job_id": 94864,
+            "nodes": 4,
+            "timestamp": "2024-11-20 09:06:00",
+            "input_config": "mm10.1_moe/stage1/pretrain_8B_Llama3_ViTH_336px_8layers.json",
+            "config_base": "/fsx_0/user/tranx/moe/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "perception_tokenizer_num_layers": 22,
+                "output_dir": "/fsx_0/checkpoints/tranx/Aligner_Pretrain_LLama3_8B/LLama3_8B_ViTH_336px_22layers"
+            },
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/tranx/Aligner_Pretrain_LLama3_8B/LLama3_8B_ViTH_336px_22layers/241120_14_06_00_558714",
+            "run_config": "/fsx_0/checkpoints/tranx/Aligner_Pretrain_LLama3_8B/LLama3_8B_ViTH_336px_22layers/241120_14_06_00_558714/config.json"
+        },
+        {
+            "name": "LLama3_8B_ViTH_336px_22layers",
+            "note": "baseline",
+            "job_id": 92985,
+            "nodes": 4,
+            "timestamp": "2024-11-19 13:41:51",
+            "input_config": "mm10.1_moe/stage1/pretrain_8B_Llama3_ViTH_336px_8layers.json",
+            "config_base": "/fsx_0/user/tranx/moe/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "perception_tokenizer_num_layers": 22,
+                "output_dir": "/fsx_0/checkpoints/tranx/Aligner_Pretrain_LLama3_8B/LLama3_8B_ViTH_336px_22layers"
+            },
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/tranx/Aligner_Pretrain_LLama3_8B/LLama3_8B_ViTH_336px_22layers/241119_18_41_51_367408",
+            "run_config": "/fsx_0/checkpoints/tranx/Aligner_Pretrain_LLama3_8B/LLama3_8B_ViTH_336px_22layers/241119_18_41_51_367408/config.json"
+        },
+        {
             "name": "LLama3_8B_ViTH_336px_8layers",
             "note": "",
             "job_id": 64033,

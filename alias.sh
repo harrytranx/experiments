@@ -166,17 +166,6 @@ jkernel() {
     cat ~/logs/jupyter_lab.log | grep "h100-st-p548xlarge"
 }
 
-# slurm_grep() {
-#     output_file=$1
-#     grep -e "error" \
-#         -e "out of memory" \
-#         -e "permission" \
-#         -e "'loss':" \
-#         -e "/perception_tokenizer.pt" \
-#         -e "Training completed" \ 
-#         -e "/checkpoint-*/perception_tokenizer.pt" \
-#         -i $output_file
-# }
 
 sgrep() {
     if [ -n "$1" ]; then
@@ -187,14 +176,6 @@ sgrep() {
     
     output_file=$(wlog $job_id) 
     sgrep_f $output_file
-    # grep -e "error" \
-    #     -e "out of memory" \
-    #     -e "permission" \
-    #     -e "'loss':" \
-    #     -e "/perception_tokenizer.pt" \
-    #     -e "Training completed" \ 
-    #     -e "/checkpoint-*/perception_tokenizer.pt" \
-    #     -i $output_file
 }
 
 sgrep_f() {

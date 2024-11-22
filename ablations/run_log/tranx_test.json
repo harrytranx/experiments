@@ -423,5 +423,39 @@
             "work_dir": "/fsx_0/checkpoints/tranx/moe/70B_stage2_baseline/241030_21_33_34_013530",
             "run_config": "/fsx_0/checkpoints/tranx/moe/70B_stage2_baseline/241030_21_33_34_013530/config.json"
         }
+    ],
+    "stage3_upcycling": [
+        {
+            "name": "70B_moe_stage2_upcycling_22x8x2",
+            "note": "test moe on rsync code",
+            "job_id": 86365,
+            "nodes": 8,
+            "timestamp": "2024-11-12 12:07:37",
+            "input_config": "mm10.1/stage3_moe/MH22final_70B_ViTH_336px_stage3_upcycling_moe_22x8x2.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 32,
+                "gradient_accumulation_steps": 4
+            },
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/tranx/moe/70B_moe_stage2_upcycling_22x8x2/241112_17_07_37_719550",
+            "run_config": "/fsx_0/checkpoints/tranx/moe/70B_moe_stage2_upcycling_22x8x2/241112_17_07_37_719550/config.json"
+        },
+        {
+            "name": "70B_moe_stage2_upcycling_22x8x2",
+            "note": "test moe on rsync code",
+            "job_id": 86363,
+            "nodes": 8,
+            "timestamp": "2024-11-12 12:00:32",
+            "input_config": "mm10.1/stage3_moe/MH22final_70B_ViTH_336px_stage3_upcycling_moe_22x8x2.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 32,
+                "gradient_accumulation_steps": 4
+            },
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/tranx/moe/70B_moe_stage2_upcycling_22x8x2/241112_17_00_32_590235",
+            "run_config": "/fsx_0/checkpoints/tranx/moe/70B_moe_stage2_upcycling_22x8x2/241112_17_00_32_590235/config.json"
+        }
     ]
 }
