@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "../rsync/llm_mm_aligner/lib"
+		},
+		{
+			"path": "../rsync/llm_mm_aligner"
 		}
 	],
 	"settings": {}
