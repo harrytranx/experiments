@@ -1,0 +1,21 @@
+{
+    "wait_seconds": 600,
+    "wandb_project": "vev0_midtrain_8B",
+    "read_format": "report_mmai",
+    "configs_path": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/experimental/tranx/eval_overwrite_8B",
+    "max_jobs": 10,
+    "watch_jobs": [
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_gelu_warmup",
+            "every_steps": 500
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_warmup_bz32",
+            "every_steps": 500
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTH_warmup_bz32",
+            "every_steps": 500
+        }
+    ]
+}

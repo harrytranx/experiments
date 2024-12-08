@@ -11,7 +11,7 @@ alias swatch='watch -n 1 squeue -u tranx,zhenq,ahmadyan'
 # get list of hosts
 alias shosts="sinfo -hN|awk '{print $1}'"
 sq() {
-    squeue --format="%a %.18i %.9P %.10j %.8u %.2t %.10M %.6D %R"
+    squeue --format="%a %.18i %.9P %.10j %.15u %.2t %.10M %.6D %R"
 }
 
 
@@ -20,6 +20,7 @@ alias cd_exp="cd /fsx_0/user/$USER/experiments"
 alias cd_fbcode="cd /fsx_0/user/$USER/fbcode"
 alias cd_rsync="cd /fsx_0/user/tranx/rsync/llm_mm_aligner"
 alias cd_aws="cd /fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws"
+alias cd_clip="cd /fsx_0/user/tranx/github/openCLIPMeta"
 alias jpt="jupyter-lab --ip=0.0.0.0 --port=8921 --no-browser > ~/logs/jupyter-lab.log 2>&1 &"
 alias jpt_kill="pkill -f jupyter"
 
@@ -76,7 +77,7 @@ ssh_node() {
 }
 
 sbash() {
-    srun --account=ar-ai-hipri --qos=ar-ai-hipri -N 1 -n 1 --cpus-per-task 24 --gpus-per-task=8 --job-name=dev --mem=32000 --pty /bin/bash -ls
+    srun --account=midpri --qos=midpri -N 1 -n 1 --cpus-per-task 24 --gpus-per-task=8 --job-name=dev --mem=32000 --pty /bin/bash -ls
 }
 
 sbash_cpu() {
@@ -86,6 +87,10 @@ sbash_cpu() {
 
 sbash_midpri() {
     srun --account=midpri --qos=midpri -N 1 -n 1 --cpus-per-task 24 --gpus-per-task=8 --job-name=dev --mem=32000 --pty /bin/bash -ls
+}
+
+sbash_q2() {
+    srun --account=ar-ai-hipri --partition=q2 -N 1 -n 1 --cpus-per-task 24 --gpus-per-task=8 --job-name=dev --mem=32000 --pty /bin/bash -ls
 }
 
 slast() {
@@ -139,7 +144,13 @@ get_log(){
     job_id=$1
     # log_file=$(scontrol show job $job_id | grep StdOut | awk '{print $1}' | cut -d'=' -f2)
     log_file=$(sacct -j $job_id --format=JobID,StdOut%500 | awk 'NR==3 {print $2}')
-    echo $log_file
+
+    username=$(slurm_get_user $job_id)
+
+    log_file=${log_file/\%u/$username}
+    log_file=${log_file/\%j/$job_id}
+
+    echo "$log_file"
 }
 
 wlog() {
@@ -155,6 +166,11 @@ wlog() {
     echo "$log_file"
 }
 
+slurm_get_user() {
+    job_id=$1
+    user=$(squeue -j $job_id -o "%u" | awk 'NR>1 {print $0}')
+    echo "$user"
+}
 
 
 jrun() {
@@ -202,6 +218,17 @@ srelease() {
     echo "Releasing job $job_id"
     scontrol release $job_id 
 }
+
+
+sjob(){
+    # show useful information about a specific job
+    job_id=$1 
+    echo $(scontrol show job $job_id | grep -E "Command")
+    echo $(scontrol show job $job_id | grep -E "WorkDir")
+    echo $(scontrol show job $job_id | grep -E "StdErr")
+    echo $(scontrol show job $job_id | grep -E "StdOut")
+}
+
 
 sutil()
 {   

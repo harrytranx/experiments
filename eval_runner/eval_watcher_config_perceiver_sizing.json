@@ -1,0 +1,29 @@
+{
+    "wait_seconds": 600,
+    "wandb_project": "perceiver_sizing",
+    "read_format": "report_mmai",
+    "configs_path": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm10.1/stage1/eval_overwrite",
+    "max_jobs": 10,
+    "watch_jobs": [
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4",
+            "every_steps": 1000
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers18_dim4096_heads32_latents64_bz64_step4",
+            "every_steps": 1000
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers26_dim4096_heads32_latents64_bz64_step4",
+            "every_steps": 1000
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4",
+            "every_steps": 1000
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64_bz64_step8",
+            "every_steps": 1000
+        }
+    ]
+}

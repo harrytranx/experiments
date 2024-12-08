@@ -13,7 +13,7 @@ from lib import utils
 class Launcher:
     def __init__(self, 
         aligner_parent_dir: str, 
-        config_base_dir: str, 
+        config_base_dir: str 
     ):
         self.aligner_parent_dir = aligner_parent_dir
         self.launch_fn = run_job
@@ -44,7 +44,8 @@ class Launcher:
         conda_env: str = "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
         note = None,
         experiment = "default",
-        name = None
+        name = None,
+        excludes=None
     ):
         config_file = os.path.join(self.config_base_dir, config)
         config_data = utils.read_json(config_file)
@@ -64,7 +65,8 @@ class Launcher:
         overrides = [[
             ("slurm_args.qos", qos),
             ("slurm_args.account", qos),
-            ("slurm_args.nodes", nodes)
+            ("slurm_args.nodes", nodes),
+            ("slurm_args.exclude", "h100-st-p548xlarge-337")
         ]]
         
         if trainer_args is not None:

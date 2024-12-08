@@ -63,14 +63,14 @@
             "ignore": true
         },
         {
-            "watch_path": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage2_70B/Llama3.1_70B_ViTH_336px_exp28_plus_v4_20241121_64nodes",
-            "every_steps": 100
+            "watch_path": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage1_70B/MH23.1_70B_ViTH_336px_R1_no_norm",
+            "every_steps": 100,
+            "wandb_project": "mm10.1_stage1",
+            "ignore": true
         },
         {
-            "watch_path": "/fsx_0/checkpoints/mm9.2/MM9.2_SFT/MM9p2_19700_prod_recipe_v2",
-            "configs_path": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm9.2/sft/eval_overwrite_v5",
-            "every_steps": 1000,
-            "wandb_project": "MM9.2_SFT_70B",
+            "watch_path": "/fsx_0/checkpoints/mm9.2/MM9.2_Stage2_70B/Llama3.1_70B_ViTH_336px_exp28_plus_v4_20241121_64nodes",
+            "every_steps": 100,
             "ignore": true
         }
     ]

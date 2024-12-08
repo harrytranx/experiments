@@ -1,11 +1,6 @@
 """
 Usage:
-
-nohup python eval_runner.py > output.log & 
-nohup python eval_runner.py > output.log 2>&1 &
-
-ps aux | grep eval_runner
-pgrep -f "eval_runner.py" | xargs kill
+python eval_runner.py -c eval_watcher_config.json
 """
 import sys 
 # lib_path = '/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws'

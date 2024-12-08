@@ -1,0 +1,347 @@
+{
+    "perceiver_sizing": [
+        {
+            "name": "Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4",
+            "note": null,
+            "job_id": 103107,
+            "nodes": 64,
+            "timestamp": "2024-12-04 17:22:20",
+            "input_config": "experimental/tranx/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 4,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4",
+                "perception_tokenizer_num_layers": 14
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4/241204_22_22_20_550337",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4/241204_22_22_20_550337/config.json"
+        },
+        {
+            "name": "Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4",
+            "note": null,
+            "job_id": 103090,
+            "nodes": 64,
+            "timestamp": "2024-12-04 16:47:06",
+            "input_config": "experimental/tranx/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 4,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4",
+                "perception_tokenizer_num_layers": 30
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4/241204_21_47_06_919881",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4/241204_21_47_06_919881/config.json"
+        },
+        {
+            "name": "Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4",
+            "note": null,
+            "job_id": 103059,
+            "nodes": 64,
+            "timestamp": "2024-12-04 16:17:44",
+            "input_config": "experimental/tranx/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 4,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4",
+                "perception_tokenizer_num_layers": 30
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4/241204_21_17_44_698241",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4/241204_21_17_44_698241/config.json"
+        },
+        {
+            "name": "Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4",
+            "note": null,
+            "job_id": 103058,
+            "nodes": 64,
+            "timestamp": "2024-12-04 16:17:44",
+            "input_config": "experimental/tranx/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 4,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4",
+                "perception_tokenizer_num_layers": 14
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4/241204_21_17_44_596888",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4/241204_21_17_44_596888/config.json"
+        },
+        {
+            "name": "Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4",
+            "note": null,
+            "job_id": 103056,
+            "nodes": 64,
+            "timestamp": "2024-12-04 16:12:08",
+            "input_config": "experimental/tranx/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 4,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4",
+                "perception_tokenizer_num_layers": 30
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4/241204_21_12_08_295887",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4/241204_21_12_08_295887/config.json"
+        },
+        {
+            "name": "Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4",
+            "note": null,
+            "job_id": 103055,
+            "nodes": 64,
+            "timestamp": "2024-12-04 16:12:08",
+            "input_config": "experimental/tranx/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 4,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4",
+                "perception_tokenizer_num_layers": 14
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4/241204_21_12_08_195751",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4/241204_21_12_08_195751/config.json"
+        },
+        {
+            "name": "Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4",
+            "note": null,
+            "job_id": 103050,
+            "nodes": 64,
+            "timestamp": "2024-12-04 16:06:18",
+            "input_config": "experimental/tranx/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 4,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4",
+                "perception_tokenizer_num_layers": 30
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4/241204_21_06_18_899802",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4/241204_21_06_18_899802/config.json"
+        },
+        {
+            "name": "Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4",
+            "note": null,
+            "job_id": 103049,
+            "nodes": 64,
+            "timestamp": "2024-12-04 16:06:18",
+            "input_config": "experimental/tranx/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 4,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4",
+                "perception_tokenizer_num_layers": 14
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4/241204_21_06_18_796174",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4/241204_21_06_18_796174/config.json"
+        },
+        {
+            "name": "Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4",
+            "note": null,
+            "job_id": 102980,
+            "nodes": 64,
+            "timestamp": "2024-12-04 14:11:51",
+            "input_config": "experimental/tranx/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 4,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4",
+                "perception_tokenizer_num_layers": 30
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4/241204_19_11_51_698863",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4/241204_19_11_51_698863/config.json"
+        },
+        {
+            "name": "Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4",
+            "note": null,
+            "job_id": 102979,
+            "nodes": 64,
+            "timestamp": "2024-12-04 14:11:51",
+            "input_config": "experimental/tranx/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 4,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4",
+                "perception_tokenizer_num_layers": 14
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4/241204_19_11_51_605483",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4/241204_19_11_51_605483/config.json"
+        },
+        {
+            "name": "Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4",
+            "note": null,
+            "job_id": 102949,
+            "nodes": 64,
+            "timestamp": "2024-12-04 13:36:24",
+            "input_config": "experimental/tranx/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 4,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4",
+                "perception_tokenizer_num_layers": 14
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4/241204_18_36_24_540134",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4/241204_18_36_24_540134/config.json"
+        },
+        {
+            "name": "Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4",
+            "note": null,
+            "job_id": 102836,
+            "nodes": 64,
+            "timestamp": "2024-12-04 09:26:18",
+            "input_config": "experimental/tranx/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 4,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4",
+                "perception_tokenizer_num_layers": 30
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4/241204_14_26_18_196052",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4/241204_14_26_18_196052/config.json"
+        },
+        {
+            "name": "Llama3.1_70B_ViTG_layers26_dim4096_heads32_latents64_bz64_step4",
+            "note": null,
+            "job_id": 102835,
+            "nodes": 64,
+            "timestamp": "2024-12-04 09:26:18",
+            "input_config": "experimental/tranx/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 4,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers26_dim4096_heads32_latents64_bz64_step4",
+                "perception_tokenizer_num_layers": 26
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers26_dim4096_heads32_latents64_bz64_step4/241204_14_26_18_138945",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers26_dim4096_heads32_latents64_bz64_step4/241204_14_26_18_138945/config.json"
+        },
+        {
+            "name": "Llama3.1_70B_ViTG_layers18_dim4096_heads32_latents64_bz64_step4",
+            "note": null,
+            "job_id": 102834,
+            "nodes": 64,
+            "timestamp": "2024-12-04 09:26:18",
+            "input_config": "experimental/tranx/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 4,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers18_dim4096_heads32_latents64_bz64_step4",
+                "perception_tokenizer_num_layers": 18
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers18_dim4096_heads32_latents64_bz64_step4/241204_14_26_18_041404",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers18_dim4096_heads32_latents64_bz64_step4/241204_14_26_18_041404/config.json"
+        },
+        {
+            "name": "Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4",
+            "note": null,
+            "job_id": 102833,
+            "nodes": 64,
+            "timestamp": "2024-12-04 08:51:27",
+            "input_config": "experimental/tranx/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 4,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4",
+                "parallelize_perception_tokenizer": true,
+                "gradient_checkpointing_perception_tokenizer": false
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4/241204_13_51_27_497233",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4/241204_13_51_27_497233/config.json"
+        },
+        {
+            "name": "Llama3.1_70B_ViTG_layers26_dim4096_heads32_latents64_bz64_step4",
+            "note": null,
+            "job_id": 102832,
+            "nodes": 64,
+            "timestamp": "2024-12-04 08:49:35",
+            "input_config": "experimental/tranx/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 4,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers26_dim4096_heads32_latents64_bz64_step4",
+                "parallelize_perception_tokenizer": true,
+                "gradient_checkpointing_perception_tokenizer": false
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers26_dim4096_heads32_latents64_bz64_step4/241204_13_49_35_371561",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers26_dim4096_heads32_latents64_bz64_step4/241204_13_49_35_371561/config.json"
+        },
+        {
+            "name": "Llama3.1_70B_ViTG_layers18_dim4096_heads32_latents64_bz64_step4",
+            "note": null,
+            "job_id": 102831,
+            "nodes": 64,
+            "timestamp": "2024-12-04 08:49:35",
+            "input_config": "experimental/tranx/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 4,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers18_dim4096_heads32_latents64_bz64_step4",
+                "parallelize_perception_tokenizer": true,
+                "gradient_checkpointing_perception_tokenizer": false
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers18_dim4096_heads32_latents64_bz64_step4/241204_13_49_35_309440",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers18_dim4096_heads32_latents64_bz64_step4/241204_13_49_35_309440/config.json"
+        },
+        {
+            "name": "Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64_bz64_step8",
+            "note": null,
+            "job_id": 102779,
+            "nodes": 32,
+            "timestamp": "2024-12-03 23:00:07",
+            "input_config": "experimental/tranx/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 8,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64_bz64_step8"
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64_bz64_step8/241204_04_00_07_877180",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64_bz64_step8/241204_04_00_07_877180/config.json"
+        },
+        {
+            "name": "Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64_bz32_step16",
+            "note": null,
+            "job_id": 102778,
+            "nodes": 32,
+            "timestamp": "2024-12-03 23:00:07",
+            "input_config": "experimental/tranx/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 32,
+                "gradient_accumulation_steps": 16,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64_bz32_step16"
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64_bz32_step16/241204_04_00_07_804497",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64_bz32_step16/241204_04_00_07_804497/config.json"
+        }
+    ]
+}

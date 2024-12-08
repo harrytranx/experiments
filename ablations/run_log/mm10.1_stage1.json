@@ -29,6 +29,38 @@
     ],
     "default": [
         {
+            "name": "MH23.1_70B_ViTH_336px_R1_no_norm",
+            "note": null,
+            "job_id": 98653,
+            "nodes": 32,
+            "timestamp": "2024-11-26 22:26:33",
+            "input_config": "mm10.1/stage1/MH23.1_70B_ViTH_336px_R1_20241126_no_norm.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 4
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage1_70B/MH23.1_70B_ViTH_336px_R1_no_norm/241127_03_26_33_406000",
+            "run_config": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage1_70B/MH23.1_70B_ViTH_336px_R1_no_norm/241127_03_26_33_406000/config.json"
+        },
+        {
+            "name": "MH23.1_70B_ViTH_336px_R1_no_norm",
+            "note": null,
+            "job_id": 98591,
+            "nodes": 32,
+            "timestamp": "2024-11-26 17:25:21",
+            "input_config": "mm10.1/stage1/MH23.1_70B_ViTH_336px_R1_20241126_no_norm.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 4
+            },
+            "conda_env": "/fsx_0/user/ahmadyan/.conda/envs/aligner_20240822",
+            "work_dir": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage1_70B/MH23.1_70B_ViTH_336px_R1_no_norm/241126_22_25_21_681350",
+            "run_config": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage1_70B/MH23.1_70B_ViTH_336px_R1_no_norm/241126_22_25_21_681350/config.json"
+        },
+        {
             "name": "MH23.1_70B_ViTH_336px_R1",
             "note": null,
             "job_id": 94858,
