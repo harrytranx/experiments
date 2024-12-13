@@ -6,12 +6,161 @@ alias scount='sinfo -h -o %D'
 
 # watch squeue
 # alias swatch='watch -n 1 squeue --me'
-alias swatch='watch -n 1 squeue -u tranx,zhenq,ahmadyan'
+alias swatch='watch -n 1 squeue -u tranx,zhenq,ahmadyan,cyprien'
 
 # get list of hosts
 alias shosts="sinfo -hN|awk '{print $1}'"
-sq() {
+my_squeue() {
     squeue --format="%a %.18i %.9P %.10j %.15u %.2t %.10M %.6D %R"
+}
+
+sqlong() {
+    squeue --format="%a %.18i %.9P %.50j %.15u %.2t %.10M %.6D"
+}
+
+sq() {
+    local name_filter=""
+    local user_filter=""
+    local state_filter=""
+    local partition_filter="q1" # default to q1 if not provided
+    local count_flag=false
+    local action_flag=""
+    
+    # Parse arguments
+    while [[ "$#" -gt 0 ]]; do
+        case "$1" in
+            --name|-n) 
+                name_filter="$2"
+                count_flag=true
+                shift 2
+                ;;
+            --user|-u) 
+                user_filter="$2"
+                count_flag=true
+                shift 2
+                ;;
+            --state|-s) 
+                state_filter="$2"
+                count_flag=true
+                shift 2
+                ;;
+            --partition|-p) 
+                partition_filter="$2"
+                count_flag=true
+                shift 2
+                ;;
+            --count|-c) 
+                count_flag=true
+                shift
+                ;;
+            --do) 
+                action_flag="$2"
+                shift 2
+                ;;
+            -h|--help)
+                echo "Usage: sq [options]"
+                echo ""
+                echo "Options:"
+                echo "  -n, --name          Filter by job name"
+                echo "  -u, --user          Filter by user"
+                echo "  -s, --state         Filter by state (PD, R, etc.)"
+                echo "  -p, --partition     Filter by partition (q1, q2, cpu)"
+                echo "  -c, --count         Count number of nodes"
+                echo "  --do                Do action on resulting jobs (cancel, hold, release)"
+                echo "  -h, --help          Print this help message"
+                return 1
+                ;;
+            *) 
+                echo "Unknown option: $1" 
+                return 1 
+                ;;
+        esac
+    done
+
+    echo "filter based on: name=$name_filter, user=$user_filter, state=$state_filter, partition=$partition_filter"
+    echo "flags: count_flag=$count_flag"
+
+    # Filter squeue output
+    local queue_output
+    queue_output=$(my_squeue | awk -v name="$name_filter" -v user="$user_filter" -v state="$state_filter" -v partition="$partition_filter" -v count_flag="$count_flag" '
+    BEGIN {
+    }
+    NR == 1 {print; next} # Print header
+    {
+        if ((name == "" || index($4, name) == 1) &&
+            (user == "" || index($5, user) == 1) &&
+            (partition == "" || index($3, partition) == 1) &&
+            (state == "" || index($6, state) == 1)) {
+            print
+            total_nodes[$6] += $8
+            user_nodes[$5][$6] += $8
+        }
+    }
+    END {
+        if (count_flag == "true") {
+            # Print total nodes grouped by user and state
+            printf "\n%-15s %-10s %s\n", "USER", "STATE", "TOTAL NODES"
+            printf "%s\n", "-----------------------------------"
+            for (u in user_nodes) {
+                for (s in user_nodes[u]) {
+                    printf "%-15s %-10s %d\n", u, s, user_nodes[u][s]
+                }
+            }
+            # Print total nodes grouped by state
+            printf "\n%-10s %s\n", "STATE", "TOTAL NODES"
+            printf "%s\n", "----------------------"
+            for (s in total_nodes) {
+                printf "%-10s %d\n", s, total_nodes[s]
+            }
+        }
+    }')
+
+    echo "$queue_output"
+
+    # Validate action_flag if provided
+    if [ -z "$action_flag" ]; then 
+        return 1 
+    fi 
+
+    if [[ "$action_flag" != "cancel" && "$action_flag" != "hold" && "$action_flag" != "release" ]]; then
+        echo "Invalid action: $action_flag. Valid actions are [cancel, hold, release]."
+        return 1
+    fi
+
+
+
+    echo -n "Enter pass_phrase ($action_flag): "
+    read -r pass_phrase
+    if [ "$pass_phrase" != "$action_flag" ]; then
+        echo "Invalid pass_phrase"
+        return 1
+    fi
+
+    local job_ids
+    job_ids=$(echo "$queue_output" | awk 'NR > 2 && $2 ~ /^[0-9]+$/ {print $2}')
+    process_job_ids "$job_ids" $action_flag
+
+}
+
+process_job_ids() {
+    local job_ids="$1" # A space-separated list of job IDs
+    local action="$2"
+    # echo $action
+
+    while read -r jobid; do
+        if [ "$action" = "cancel" ]; then
+            echo "Cancelling jobid=$jobid"
+            scancel $jobid
+        elif [ "$action" = "hold" ]; then
+            echo "Holding jobid=$jobid"
+            shold $jobid
+        elif [ "$action" = "release" ]; then
+            echo "Releasing jobid=$jobid"
+            srelease $jobid
+        else
+            echo "Unknown action: $action for jobid=$jobid"
+        fi
+    done <<< "$job_ids"
 }
 
 
@@ -77,7 +226,7 @@ ssh_node() {
 }
 
 sbash() {
-    srun --account=midpri --qos=midpri -N 1 -n 1 --cpus-per-task 24 --gpus-per-task=8 --job-name=dev --mem=32000 --pty /bin/bash -ls
+    srun --exclusive --account=midpri --qos=midpri -N 1 -n 1 --cpus-per-task 24 --gpus-per-task=8 --job-name=dev --mem=32000 --pty /bin/bash -ls
 }
 
 sbash_cpu() {
@@ -207,16 +356,81 @@ sgrep_f() {
     -i $file
 }
 
-shold() {
+
+get_held_jobs() {
+    # Get the list of all held jobs
+    held_jobs=$(squeue -h -o "%i %t" | awk '$2 == "PD" {print $1}')
+    
+    if [ -z "$held_jobs" ]; then
+        echo "No held jobs found."
+        return 1
+    fi
+
+    echo "$held_jobs"
+    return 0
+}
+
+shold_old() {
     job_id=$1 
     echo "Holding job $job_id into queue"
     scontrol requeuehold $job_id 
 }
 
+shold() {
+    job_id=$1
+    hold_time=$2
+   
+    if [ -z "$job_id" ]; then
+        echo "Error: Please provide a job ID."
+        echo "Usage: shold <job_id>"
+        return 1
+    fi
+
+    if [ -z "$hold_time" ]; then
+        hold_time=10 # default 10 mins
+    fi
+
+    echo "Holding job $job_id into queue..."
+    scontrol requeuehold "$job_id"
+    
+    if [ $? -ne 0 ]; then
+        echo "Failed to hold job $job_id."
+        return 1
+    fi
+
+    echo "Job $job_id is held. It will be released after $hold_time minutes..."
+
+    # Schedule release 
+    hold_time_seconds=$((60 * hold_time))
+    (sleep $hold_time_seconds && scontrol release "$job_id" || echo "Failed to release job $job_id.") &
+}
+
+
 srelease() {
     job_id=$1 
     echo "Releasing job $job_id"
     scontrol release $job_id 
+}
+
+srelease_all() {
+    # Get the list of held jobs using the first function
+    held_jobs=$(get_held_jobs)
+    
+    if [ $? -ne 0 ]; then
+        echo "No jobs to release."
+        return 0
+    fi
+
+    echo "Releasing all held jobs..."
+    
+    for job_id in $held_jobs; do
+        output=$(scontrol release "$job_id" 2>&1)
+        if [ $? -eq 0 ]; then
+            echo "Job $job_id released successfully."
+        else
+            echo "Failed to release job $job_id. Error: $output"
+        fi
+    done
 }
 
 

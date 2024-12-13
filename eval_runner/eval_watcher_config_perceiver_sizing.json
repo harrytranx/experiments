@@ -7,23 +7,41 @@
     "watch_jobs": [
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers14_dim4096_heads32_latents64_bz64_step4",
-            "every_steps": 1000
+            "every_steps": 1000,
+            "ignore": true
         },
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers18_dim4096_heads32_latents64_bz64_step4",
-            "every_steps": 1000
+            "every_steps": 1000,
+            "ignore": true
         },
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers26_dim4096_heads32_latents64_bz64_step4",
-            "every_steps": 1000
+            "every_steps": 1000,
+            "ignore": true
         },
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers30_dim4096_heads32_latents64_bz64_step4",
-            "every_steps": 1000
+            "every_steps": 1000,
+            "ignore": true
         },
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64_bz64_step8",
             "every_steps": 1000
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents128_bz32_step8",                                                
+            "every_steps": 1000
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents32_bz64_step4",                                                
+            "every_steps": 1000,
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm10.1/MM10.1_Stage1_70B/LLama3.3_70B_ViTG_504px_R1",                                                
+            "every_steps": 100,
+            "start_step": 1000
         }
     ]
 }

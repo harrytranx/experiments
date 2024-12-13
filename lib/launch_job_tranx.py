@@ -229,7 +229,7 @@ def create_sbatch_script(config: dict) -> str:
 #SBATCH --wait-all-nodes={slurm_config['wait_all_nodes']}
 #SBATCH --exclusive
 #SBATCH --requeue
-#SBATCH --exclude h100-st-p548xlarge-337
+#SBATCH --exclude h100-st-p548xlarge-308
 # The set -e command causes the bash script to exit immediately if a command exits with a non-zero status (which indicates an error).
 set -eo pipefail
 

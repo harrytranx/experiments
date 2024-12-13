@@ -66,7 +66,7 @@ class Launcher:
             ("slurm_args.qos", qos),
             ("slurm_args.account", qos),
             ("slurm_args.nodes", nodes),
-            ("slurm_args.exclude", "h100-st-p548xlarge-337")
+            ("slurm_args.exclude", "h100-st-p548xlarge-308")
         ]]
         
         if trainer_args is not None:

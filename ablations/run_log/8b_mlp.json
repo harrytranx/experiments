@@ -1,0 +1,30 @@
+{
+    "8b_mlp": [
+        {
+            "name": "Llama3.1_8B_ViTG_504ft_warmup_mlp",
+            "note": null,
+            "job_id": 105918,
+            "nodes": 8,
+            "timestamp": "2024-12-11 15:24:05",
+            "input_config": "experimental/tranx/mlp_projector/Llama3.1_8B_ViTG_504ft_warmup_mlp_v2.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": null,
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/8b_mlp/Llama3.1_8B_ViTG_504ft_warmup_mlp/241211_20_24_05_313466",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/8b_mlp/Llama3.1_8B_ViTG_504ft_warmup_mlp/241211_20_24_05_313466/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_warmup_mlp",
+            "note": null,
+            "job_id": 105530,
+            "nodes": 2,
+            "timestamp": "2024-12-10 16:39:28",
+            "input_config": "experimental/tranx/mlp_projector/Llama3.1_8B_ViTG_warmup_mlp.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": null,
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/8b_mlp/Llama3.1_8B_ViTG_warmup_mlp/241210_21_39_28_714605",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/8b_mlp/Llama3.1_8B_ViTG_warmup_mlp/241210_21_39_28_714605/config.json"
+        }
+    ]
+}

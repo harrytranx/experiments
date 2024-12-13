@@ -7,15 +7,48 @@
     "watch_jobs": [
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_gelu_warmup",
-            "every_steps": 500
+            "every_steps": 500,
+            "ignore": true
         },
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_warmup_bz32",
-            "every_steps": 500
+            "every_steps": 500,
+            "ignore": true
         },
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTH_warmup_bz32",
-            "every_steps": 500
+            "every_steps": 500,
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_BigG-504-0712_warmup",
+            "every_steps": 500,
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_BigG-504-f572374596_warmup",
+            "every_steps": 500,
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_lr0.1",
+            "every_steps": 200,
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_lr1",
+            "every_steps": 200,
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_R2",
+            "every_steps": 200,
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504ft_warmup",
+            "every_steps": 500,
+            "ignore": true
         }
     ]
 }
