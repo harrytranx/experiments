@@ -32,13 +32,11 @@
         },
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_lr0.1",
-            "every_steps": 200,
-            "ignore": true
+            "every_steps": 200
         },
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_lr1",
-            "every_steps": 200,
-            "ignore": true
+            "every_steps": 200
         },
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_R2",
@@ -47,8 +45,19 @@
         },
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504ft_warmup",
-            "every_steps": 500,
-            "ignore": true
+            "every_steps": 500
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlp_2x2",
+            "every_steps": 500
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504ft_warmup_mlp_bz16",
+            "every_steps": 500
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_warmup_resume_bz16",
+            "every_steps": 500
         }
     ]
 }
