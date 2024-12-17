@@ -29,6 +29,22 @@
     ],
     "default": [
         {
+            "name": "LLama3.3_70B_ViTG_392px_R1",
+            "note": null,
+            "job_id": 110810,
+            "nodes": 32,
+            "timestamp": "2024-12-16 09:56:52",
+            "input_config": "mm10.2/stage1_70B/LLama3.3_70B_ViTG_392px_R1_20241215.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 8
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_0/checkpoints/mm10.2/MM10.2_Stage1_70B/LLama3.3_70B_ViTG_392px_R1/241216_14_56_52_768423",
+            "run_config": "/fsx_0/checkpoints/mm10.2/MM10.2_Stage1_70B/LLama3.3_70B_ViTG_392px_R1/241216_14_56_52_768423/config.json"
+        },
+        {
             "name": "LLama3.3_70B_ViTG_504px_R1",
             "note": null,
             "job_id": 105824,

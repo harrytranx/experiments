@@ -1,6 +1,26 @@
 {
     "perceiver_sizing": [
         {
+            "name": "Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents128_bz32_step8",
+            "note": null,
+            "job_id": 111527,
+            "nodes": 64,
+            "timestamp": "2024-12-16 22:00:35",
+            "input_config": "experimental/tranx/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 32,
+                "gradient_accumulation_steps": 8,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents128_bz32_step8",
+                "perception_tokenizer_num_layers": 22,
+                "perceiver_num_latents": 128,
+                "n_prefix_embs": 129
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents128_bz32_step8/241217_03_00_35_408302",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/perceiver_sizing/Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents128_bz32_step8/241217_03_00_35_408302/config.json"
+        },
+        {
             "name": "Llama3.1_70B_ViTG_layers22_dim4096_heads32_latents64_bz64_step8",
             "note": null,
             "job_id": 105808,

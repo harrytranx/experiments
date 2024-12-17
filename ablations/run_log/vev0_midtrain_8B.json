@@ -1,6 +1,473 @@
 {
     "vev0_midtrain_8B": [
         {
+            "name": "Llama3.1_8B_ViTG_504ft_midtrain_perceiver_17k5_R1",
+            "note": null,
+            "job_id": 110969,
+            "nodes": 64,
+            "timestamp": "2024-12-16 15:11:13",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_504ft_midtrain_perceiver_17k5_R1.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 8,
+                "gradient_accumulation_steps": 2,
+                "max_tokens_in_batch_row": 16384,
+                "max_tokens_in_batch": 16384
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504ft_midtrain_perceiver_17k5_R1/241216_20_11_13_124622",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504ft_midtrain_perceiver_17k5_R1/241216_20_11_13_124622/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_504noft_midtrain_perceiver_17k5_R1",
+            "note": null,
+            "job_id": 110968,
+            "nodes": 64,
+            "timestamp": "2024-12-16 15:11:08",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_504noft_midtrain_perceiver_17k5_R1.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 8,
+                "gradient_accumulation_steps": 2,
+                "max_tokens_in_batch_row": 16384,
+                "max_tokens_in_batch": 16384
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504noft_midtrain_perceiver_17k5_R1/241216_20_11_08_067295",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504noft_midtrain_perceiver_17k5_R1/241216_20_11_08_067295/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_midtrain_perceiver_17k5_R1",
+            "note": null,
+            "job_id": 110867,
+            "nodes": 64,
+            "timestamp": "2024-12-16 12:59:58",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_midtrain_perceiver_17k5_R1.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 16,
+                "max_tokens_in_batch_row": 16384,
+                "max_tokens_in_batch": 16384
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_perceiver_17k5_R1/241216_17_59_58_166648",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_perceiver_17k5_R1/241216_17_59_58_166648/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_504noft_midtrain_perceiver_17k5_R2",
+            "note": null,
+            "job_id": 110844,
+            "nodes": 64,
+            "timestamp": "2024-12-16 10:45:04",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_504noft_midtrain_perceiver_17k5_R2.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 8,
+                "gradient_accumulation_steps": 2,
+                "max_tokens_in_batch_row": 16384,
+                "max_tokens_in_batch": 16384
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504noft_midtrain_perceiver_17k5_R2/241216_15_45_04_837042",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504noft_midtrain_perceiver_17k5_R2/241216_15_45_04_837042/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_504ft_midtrain_perceiver_17k5_R2",
+            "note": null,
+            "job_id": 110843,
+            "nodes": 64,
+            "timestamp": "2024-12-16 10:45:01",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_504ft_midtrain_perceiver_17k5_R2.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 8,
+                "gradient_accumulation_steps": 2,
+                "max_tokens_in_batch_row": 16384,
+                "max_tokens_in_batch": 16384
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504ft_midtrain_perceiver_17k5_R2/241216_15_45_01_596107",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504ft_midtrain_perceiver_17k5_R2/241216_15_45_01_596107/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_504noft_midtrain_perceiver_17k5_R2",
+            "note": null,
+            "job_id": 110827,
+            "nodes": 16,
+            "timestamp": "2024-12-16 10:15:43",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_504noft_midtrain_perceiver_17k5_R2.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 8,
+                "gradient_accumulation_steps": 8,
+                "max_tokens_in_batch_row": 16384,
+                "max_tokens_in_batch": 16384
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504noft_midtrain_perceiver_17k5_R2/241216_15_15_43_930896",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504noft_midtrain_perceiver_17k5_R2/241216_15_15_43_930896/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_504ft_midtrain_perceiver_17k5_R2",
+            "note": null,
+            "job_id": 110826,
+            "nodes": 16,
+            "timestamp": "2024-12-16 10:15:40",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_504ft_midtrain_perceiver_17k5_R2.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 8,
+                "gradient_accumulation_steps": 8,
+                "max_tokens_in_batch_row": 16384,
+                "max_tokens_in_batch": 16384
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504ft_midtrain_perceiver_17k5_R2/241216_15_15_40_235357",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504ft_midtrain_perceiver_17k5_R2/241216_15_15_40_235357/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_504ft_midtrain_perceiver_17k5_R2",
+            "note": null,
+            "job_id": 110787,
+            "nodes": 16,
+            "timestamp": "2024-12-16 09:22:24",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_504ft_midtrain_perceiver_17k5_R2.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 16,
+                "gradient_accumulation_steps": 4,
+                "max_tokens_in_batch_row": 16384,
+                "max_tokens_in_batch": 16384
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504ft_midtrain_perceiver_17k5_R2/241216_14_22_24_871886",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504ft_midtrain_perceiver_17k5_R2/241216_14_22_24_871886/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_midtrain_perceiver_17k5_R2",
+            "note": null,
+            "job_id": 110786,
+            "nodes": 64,
+            "timestamp": "2024-12-16 09:22:01",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_midtrain_perceiver_17k5_R2.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 16,
+                "max_tokens_in_batch_row": 16384,
+                "max_tokens_in_batch": 16384
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_perceiver_17k5_R2/241216_14_22_01_931691",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_perceiver_17k5_R2/241216_14_22_01_931691/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_504noft_midtrain_perceiver_17k5_R2",
+            "note": null,
+            "job_id": 110785,
+            "nodes": 16,
+            "timestamp": "2024-12-16 09:21:59",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_504noft_midtrain_perceiver_17k5_R2.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 16,
+                "gradient_accumulation_steps": 4,
+                "max_tokens_in_batch_row": 16384,
+                "max_tokens_in_batch": 16384
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504noft_midtrain_perceiver_17k5_R2/241216_14_21_59_589306",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504noft_midtrain_perceiver_17k5_R2/241216_14_21_59_589306/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_504noft_midtrain_perceiver_17k5_R2",
+            "note": null,
+            "job_id": 110396,
+            "nodes": 16,
+            "timestamp": "2024-12-15 23:54:39",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_504noft_midtrain_perceiver_17k5_R2.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 16,
+                "gradient_accumulation_steps": 4,
+                "max_tokens_in_batch_row": 16384,
+                "max_tokens_in_batch": 16384
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504noft_midtrain_perceiver_17k5_R2/241216_04_54_39_626191",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504noft_midtrain_perceiver_17k5_R2/241216_04_54_39_626191/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_504ft_midtrain_perceiver_17k5_R2",
+            "note": null,
+            "job_id": 110395,
+            "nodes": 16,
+            "timestamp": "2024-12-15 23:53:23",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_504ft_midtrain_perceiver_17k5_R2.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 16,
+                "gradient_accumulation_steps": 4,
+                "max_tokens_in_batch_row": 16384,
+                "max_tokens_in_batch": 16384
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504ft_midtrain_perceiver_17k5_R2/241216_04_53_23_912337",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504ft_midtrain_perceiver_17k5_R2/241216_04_53_23_912337/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_midtrain_perceiver_17k5_R2",
+            "note": null,
+            "job_id": 110394,
+            "nodes": 64,
+            "timestamp": "2024-12-15 23:45:21",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_midtrain_perceiver_17k5_R2.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 16,
+                "max_tokens_in_batch_row": 16384,
+                "max_tokens_in_batch": 16384
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_perceiver_17k5_R2/241216_04_45_21_621928",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_perceiver_17k5_R2/241216_04_45_21_621928/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_midtrain_perceiver_17k5_R2",
+            "note": null,
+            "job_id": 110371,
+            "nodes": 64,
+            "timestamp": "2024-12-15 23:32:58",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_midtrain_perceiver_17k5_R2.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": null,
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_perceiver_17k5_R2/241216_04_32_58_284123",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_perceiver_17k5_R2/241216_04_32_58_284123/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_392_warmup_mlp_2x2_resume",
+            "note": null,
+            "job_id": 110370,
+            "nodes": 64,
+            "timestamp": "2024-12-15 23:18:36",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_392_warmup_mlp_2x2_resume.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 16,
+                "gradient_accumulation_steps": 1
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlp_2x2_resume/241216_04_18_36_128352",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlp_2x2_resume/241216_04_18_36_128352/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_392_warmup_mlp_2x2_resume",
+            "note": null,
+            "job_id": 110369,
+            "nodes": 64,
+            "timestamp": "2024-12-15 23:01:43",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_392_warmup_mlp_2x2_resume.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 16,
+                "gradient_accumulation_steps": 1
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlp_2x2_resume/241216_04_01_43_449773",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlp_2x2_resume/241216_04_01_43_449773/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_midtrain_lr1",
+            "note": null,
+            "job_id": 110214,
+            "nodes": 16,
+            "timestamp": "2024-12-15 20:03:29",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_midtrain.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "perception_lr_scale": 1,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_lr1",
+                "per_device_train_batch_size": 16,
+                "max_tokens_in_batch_row": 32000,
+                "gradient_accumulation_steps": 2
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_lr1/241216_01_03_29_566548",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_lr1/241216_01_03_29_566548/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_midtrain_lr0.1",
+            "note": null,
+            "job_id": 110213,
+            "nodes": 16,
+            "timestamp": "2024-12-15 20:03:29",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_midtrain.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "perception_lr_scale": 0.1,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_lr0.1",
+                "per_device_train_batch_size": 16,
+                "max_tokens_in_batch_row": 32000,
+                "gradient_accumulation_steps": 2
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_lr0.1/241216_01_03_29_515061",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_lr0.1/241216_01_03_29_515061/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2_bz16_no_output_norm",
+            "note": null,
+            "job_id": 110202,
+            "nodes": 64,
+            "timestamp": "2024-12-15 20:01:38",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 16,
+                "gradient_accumulation_steps": 1,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2_bz16_no_output_norm",
+                "perceiver_add_output_norm": false,
+                "enforce_uniform_emb_variance": false,
+                "max_tokens_in_batch_row": 16384,
+                "max_tokens_in_batch": 16384
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2_bz16_no_output_norm/241216_01_01_38_744779",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2_bz16_no_output_norm/241216_01_01_38_744779/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2_bz16",
+            "note": null,
+            "job_id": 109876,
+            "nodes": 64,
+            "timestamp": "2024-12-15 13:21:14",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 16,
+                "gradient_accumulation_steps": 1,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2_bz16",
+                "max_tokens_in_batch_row": 16384,
+                "max_tokens_in_batch": 16384
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2_bz16/241215_18_21_14_598237",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2_bz16/241215_18_21_14_598237/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2_bz16",
+            "note": null,
+            "job_id": 109874,
+            "nodes": 64,
+            "timestamp": "2024-12-15 13:01:20",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 16,
+                "gradient_accumulation_steps": 1,
+                "output_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2_bz16"
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2_bz16/241215_18_01_20_630738",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2_bz16/241215_18_01_20_630738/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2",
+            "note": null,
+            "job_id": 109858,
+            "nodes": 2,
+            "timestamp": "2024-12-15 12:46:06",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 16,
+                "gradient_accumulation_steps": 1
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2/241215_17_46_06_759263",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2/241215_17_46_06_759263/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2",
+            "note": null,
+            "job_id": 109857,
+            "nodes": 8,
+            "timestamp": "2024-12-15 12:45:46",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 16,
+                "gradient_accumulation_steps": 1
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2/241215_17_45_46_909263",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2/241215_17_45_46_909263/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2",
+            "note": null,
+            "job_id": 109842,
+            "nodes": 8,
+            "timestamp": "2024-12-15 12:33:30",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 16,
+                "gradient_accumulation_steps": 1
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2/241215_17_33_30_968508",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2/241215_17_33_30_968508/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2",
+            "note": null,
+            "job_id": 109840,
+            "nodes": 8,
+            "timestamp": "2024-12-15 12:27:43",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 16,
+                "gradient_accumulation_steps": 1
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2/241215_17_27_43_924779",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2/241215_17_27_43_924779/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2",
+            "note": null,
+            "job_id": 109829,
+            "nodes": 8,
+            "timestamp": "2024-12-15 12:08:05",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 16,
+                "gradient_accumulation_steps": 1
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2/241215_17_08_05_944781",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2/241215_17_08_05_944781/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2",
+            "note": null,
+            "job_id": 109828,
+            "nodes": 8,
+            "timestamp": "2024-12-15 11:58:16",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 16,
+                "gradient_accumulation_steps": 1
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2/241215_16_58_16_933679",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2/241215_16_58_16_933679/config.json"
+        },
+        {
             "name": "Llama3.1_8B_ViTG_504ft_warmup",
             "note": null,
             "job_id": 108853,

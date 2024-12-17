@@ -32,11 +32,13 @@
         },
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_lr0.1",
-            "every_steps": 200
+            "every_steps": 200,
+            "ignore": true
         },
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_lr1",
-            "every_steps": 200
+            "every_steps": 200,
+            "ignore": true
         },
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_R2",
@@ -45,19 +47,63 @@
         },
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504ft_warmup",
-            "every_steps": 500
+            "every_steps": 500,
+            "ignore": true
         },
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlp_2x2",
-            "every_steps": 500
+            "every_steps": 500,
+            "ignore": true
         },
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504ft_warmup_mlp_bz16",
-            "every_steps": 500
+            "every_steps": 500,
+            "ignore": true
         },
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_warmup_resume_bz16",
-            "every_steps": 500
+            "every_steps": 500,
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2_bz16",
+            "every_steps": 500,
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlpResampler_x2_bz16_no_output_norm",
+            "every_steps": 500,
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlp_2x2_resume",
+            "every_steps": 500,
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_perceiver_17k5_R2",
+            "every_steps": 500,
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504ft_midtrain_perceiver_17k5_R2",
+            "every_steps": 200
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504noft_midtrain_perceiver_17k5_R2",
+            "every_steps": 200
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_perceiver_17k5_R1",
+            "every_steps": 200
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504ft_midtrain_perceiver_17k5_R1",
+            "every_steps": 200
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504noft_midtrain_perceiver_17k5_R1",
+            "every_steps": 200
         }
     ]
 }
