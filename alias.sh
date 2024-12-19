@@ -6,16 +6,19 @@ alias scount='sinfo -h -o %D'
 
 # watch squeue
 # alias swatch='watch -n 1 squeue --me'
-alias swatch='watch -n 1 squeue -u tranx,zhenq,ahmadyan,cyprien'
+alias swatch='watch -n 1 squeue -u tranx,zhenq,ahmadyan,cyprien,xuanhu'
 
 # get list of hosts
 alias shosts="sinfo -hN|awk '{print $1}'"
 my_squeue() {
-    squeue --format="%a %.18i %.9P %.10j %.15u %.2t %.10M %.6D %R"
+    squeue --format="%a %.10i %.9P %.10j %.15u %.2t %.10M %.6D %R"
 }
 
 sqlong() {
-    squeue --format="%a %.18i %.9P %.50j %.15u %.2t %.10M %.6D"
+    name_length=$1
+    # squeue --format="%a %.18i %.9P %.50j %.15u %.2t %.10M %.6D"
+    # squeue --format="%a %.18i %.50j %.15u %.2t %.10M %.6D"
+    squeue --format="%.10i %.70j %.15u %.2t %.10M %.6D"
 }
 
 sq() {
@@ -53,6 +56,10 @@ sq() {
                 count_flag=true
                 shift
                 ;;
+            --long|-l) 
+                sqlong
+                return 1
+                ;;
             --do) 
                 action_flag="$2"
                 shift 2
@@ -66,6 +73,7 @@ sq() {
                 echo "  -s, --state         Filter by state (PD, R, etc.)"
                 echo "  -p, --partition     Filter by partition (q1, q2, cpu)"
                 echo "  -c, --count         Count number of nodes"
+                echo "  -l, --long          Print in format with longer job name"
                 echo "  --do                Do action on resulting jobs (cancel, hold, release)"
                 echo "  -h, --help          Print this help message"
                 return 1

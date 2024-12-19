@@ -1,0 +1,60 @@
+{
+    "wait_seconds": 600,
+    "wandb_project": "vev0_midtrain_8B",
+    "read_format": "report_mmai",
+    "base_eval_output_dir": "evals_master",
+    "configs_path": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/experimental/tranx/eval_overwrite_8B",
+    "max_jobs": 10,
+    "watch_jobs": [
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504ft_warmup_mlp_bz16",
+            "every_steps": 500,
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504ft_warmup",
+            "every_steps": 500,
+            "base_eval_output_dir": "evals_master",
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_warmup_mlp_2x2",
+            "every_steps": 500,
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_pe_midtrain_perceiver_17k5_R1",
+            "every_steps": 200
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_perceiver_17k5_R4",
+            "every_steps": 200,
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504noft_midtrain_perceiver_17k5_R4",
+            "every_steps": 500
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_midtrain_mlp_10k_R5",
+            "every_steps": 200,
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_perceiver_17k5_R5",
+            "every_steps": 200
+        },
+        {
+            "watch_path": "/fsx_3/bucket/cyprien/checkpoints/data_ablations_mm10/Llama3.1_8B_ViTG_392_stage1_base_vision_select2",
+            "every_steps": 200
+        },
+        {
+            "watch_path": "/fsx_3/bucket/cyprien/checkpoints/data_ablations_mm10/Llama3.1_8B_ViTG_392_stage1_base_vision_select3",
+            "every_steps": 200
+        },
+        {
+            "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_midtrain_perceiver_17k5_R3_vision_select3",
+            "every_steps": 200
+        }
+    ]
+}

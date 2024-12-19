@@ -1,0 +1,52 @@
+{
+    "default": [
+        {
+            "name": "MH24_70B_ViTG_392px_R1",
+            "note": null,
+            "job_id": 115903,
+            "nodes": 128,
+            "timestamp": "2024-12-19 13:31:03",
+            "input_config": "mm10.2/stage1_70B/MH24_70B_ViTG_392px_R1_20241218.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 2
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_0/checkpoints/mm10.2/MM10.2_Stage1_70B/MH24_70B_ViTG_392px_R1/241219_18_31_03_018426",
+            "run_config": "/fsx_0/checkpoints/mm10.2/MM10.2_Stage1_70B/MH24_70B_ViTG_392px_R1/241219_18_31_03_018426/config.json"
+        },
+        {
+            "name": "MH24_70B_ViTG_392px_R1",
+            "note": null,
+            "job_id": 115638,
+            "nodes": 32,
+            "timestamp": "2024-12-19 10:20:30",
+            "input_config": "mm10.2/stage1_70B/MH24_70B_ViTG_392px_R1_20241218.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 8
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_0/checkpoints/mm10.2/MM10.2_Stage1_70B/MH24_70B_ViTG_392px_R1/241219_15_20_30_014922",
+            "run_config": "/fsx_0/checkpoints/mm10.2/MM10.2_Stage1_70B/MH24_70B_ViTG_392px_R1/241219_15_20_30_014922/config.json"
+        },
+        {
+            "name": "MH24_70B_ViTG_392px_R1",
+            "note": null,
+            "job_id": 115615,
+            "nodes": 32,
+            "timestamp": "2024-12-19 10:07:51",
+            "input_config": "mm10.2/stage1_70B/MH24_70B_ViTG_392px_R1_20241218.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 64,
+                "gradient_accumulation_steps": 8
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_0/checkpoints/mm10.2/MM10.2_Stage1_70B/MH24_70B_ViTG_392px_R1/241219_15_07_51_013309",
+            "run_config": "/fsx_0/checkpoints/mm10.2/MM10.2_Stage1_70B/MH24_70B_ViTG_392px_R1/241219_15_07_51_013309/config.json"
+        }
+    ]
+}
