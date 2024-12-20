@@ -228,13 +228,19 @@ ibatch() {
     tail -f $output_file
 }
 
+
 ssh_node() {
     node_id=$1
     ssh -A "h100-st-p548xlarge-$node_id"
 }
 
 sbash() {
-    srun --exclusive --account=midpri --qos=midpri -N 1 -n 1 --cpus-per-task 24 --gpus-per-task=8 --job-name=dev --mem=32000 --pty /bin/bash -ls
+    if [ -n "$1" ]; then
+        name=$1
+    else 
+        name="dev"
+    fi
+    srun --exclusive --account=midpri --qos=midpri -N 1 -n 1 --cpus-per-task 24 --gpus-per-task=8 --job-name=$name --mem=32000 --pty /bin/bash -ls
 }
 
 sbash_cpu() {
@@ -479,3 +485,77 @@ tnew() {
 }
 
 alias s2="PYTHONPATH=PYTHONPATH:/fsx_0/user/tranx/experiments python /fsx_0/user/tranx/experiments/lib/stool.py"
+
+# AWS S3
+s3count() {
+    
+    local s3_path="$1"
+    if [[ -z "$s3_path" ]]; then
+        echo "Usage: s3count s3://ar-ai-s3-use2/dataset01/metaclip_v2_2b_090924"
+        return 1
+    fi
+
+    # Use aws s3 ls to list objects and calculate size and file count
+    local total_size file_count
+    total_size=0
+    file_count=0
+
+    # Iterate through the lines output by aws s3 ls
+    while read -r line; do
+        # Extract size from the output and add to total size
+        size=$(echo "$line" | awk '{print $3}')
+        if [[ -n "$size" && "$size" =~ ^[0-9]+$ ]]; then
+        total_size=$((total_size + size))
+        file_count=$((file_count + 1))
+        fi
+    done < <(aws s3 ls "$s3_path" --recursive)
+
+    local total_size_tb
+    total_size_tb=$(echo "scale=4; $total_size / (1024^4)" | bc)
+
+    echo "Total size: $total_size bytes ($total_size_tb TB)"
+    echo "Number of files: $file_count"
+}
+
+
+sdelete() {
+    local dir_to_delete=$1
+    local empty_dir=/tmp/empty_dir
+    # Create an empty directory under /tmp, deleting it first if it already exists
+    rm -rf "$empty_dir"
+    mkdir -p "$empty_dir"
+    # # Show the dry-run output first
+    # echo "Dry-run output:"
+
+    # Show the dry-run summary
+    echo "Dry-run summary:"
+    # rsync -nav --delete --summary "$empty_dir/" "$dir_to_delete/"
+    rsync -na --delete --stats "$empty_dir/" "$dir_to_delete/"
+
+    # rsync -na --delete "$empty_dir/" "$dir_to_delete/"
+    # Prompt user to enter phrase: delete
+    read -p "Enter 'delete' to confirm deletion: " confirmation
+    # If phrase is entered correctly, go ahead and do the delete
+    if [ "$confirmation" = "delete" ]; then
+        echo "Deleting files..."
+        rsync -av --delete "$empty_dir/" "$dir_to_delete/"
+    else
+        echo "Deletion cancelled."
+    fi
+    # Remove the temporary empty directory
+    rmdir "$empty_dir"
+}
+
+s3count_m2c2() {
+    for x in {0..99}; do
+        echo $x
+        s3count s3://ar-ai-s3-use2/dataset01/metaclip_v2_2b_090924/$x/
+    done
+}
+
+s3count_metaclip_v2() {
+    for x in {0..99}; do
+        echo $x
+        s3count s3://ar-ai-s3-use2/dataset01/metaclip_v2/shards/$x/
+    done
+}

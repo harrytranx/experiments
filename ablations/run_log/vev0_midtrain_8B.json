@@ -3,6 +3,24 @@
         {
             "name": "Llama3.1_8B_ViTG_392_midtrain_perceiver_17k5_R3_vision_select3",
             "note": null,
+            "job_id": 116375,
+            "nodes": 64,
+            "timestamp": "2024-12-19 22:56:53",
+            "input_config": "experimental/tranx/vev0/Llama3.1_8B_ViTG_392_midtrain_perceiver_17k5_R3_vision_select3.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": {
+                "per_device_train_batch_size": 16,
+                "max_steps": 10000,
+                "max_tokens_in_batch_row": 16384,
+                "max_tokens_in_batch": 16384
+            },
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_midtrain_perceiver_17k5_R3_vision_select3/241220_03_56_53_296067",
+            "run_config": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_midtrain_perceiver_17k5_R3_vision_select3/241220_03_56_53_296067/config.json"
+        },
+        {
+            "name": "Llama3.1_8B_ViTG_392_midtrain_perceiver_17k5_R3_vision_select3",
+            "note": null,
             "job_id": 115931,
             "nodes": 16,
             "timestamp": "2024-12-19 14:10:25",

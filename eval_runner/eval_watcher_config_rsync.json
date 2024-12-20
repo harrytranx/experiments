@@ -24,7 +24,8 @@
         },
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_pe_midtrain_perceiver_17k5_R1",
-            "every_steps": 200
+            "every_steps": 200,
+            "ignore": true
         },
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_perceiver_17k5_R4",
@@ -33,7 +34,8 @@
         },
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_504noft_midtrain_perceiver_17k5_R4",
-            "every_steps": 500
+            "every_steps": 500,
+            "ignore": true
         },
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_midtrain_mlp_10k_R5",
@@ -42,19 +44,29 @@
         },
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_midtrain_perceiver_17k5_R5",
-            "every_steps": 200
+            "every_steps": 200,
+            "ignore": true
         },
         {
             "watch_path": "/fsx_3/bucket/cyprien/checkpoints/data_ablations_mm10/Llama3.1_8B_ViTG_392_stage1_base_vision_select2",
-            "every_steps": 200
+            "every_steps": 400,
+            "ignore": true
         },
         {
             "watch_path": "/fsx_3/bucket/cyprien/checkpoints/data_ablations_mm10/Llama3.1_8B_ViTG_392_stage1_base_vision_select3",
-            "every_steps": 200
+            "every_steps": 400,
+            "ignore": true
         },
         {
             "watch_path": "/fsx_3/bucket/tranx/checkpoints/vev0/Llama3.1_8B_ViTG_392_midtrain_perceiver_17k5_R3_vision_select3",
-            "every_steps": 200
+            "every_steps": 400
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm10.2/MM10.2_Stage1_70B/MH24_70B_ViTG_392px_R1",
+            "every_steps": 200,
+            "start_step": 1000,
+            "wandb_project": "mm10.2_stage1",
+            "configs_path": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm10.1/stage1/eval_overwrite"
         }
     ]
 }
