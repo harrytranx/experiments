@@ -1,0 +1,104 @@
+{
+    "wait_seconds": 600,
+    "read_format": "report_mmai",
+    "base_eval_output_dir": "evals_master",
+    "max_jobs": 10,
+    "watch_jobs": [
+        {
+            "watch_path": "/fsx_0/checkpoints/mm10.2/MM10.2_Stage1_70B/MH24_70B_ViTG_392px_R1",
+            "every_steps": 200,
+            "start_step": 1000,
+            "wandb_project": "mm10.2_stage1",
+            "configs_path": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm10.1/stage1/eval_overwrite",
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm10.2/MM10.2_Stage1_70B/LLama3.1_70B_BigG_336_R2_bz48",
+            "every_steps": 200,
+            "wandb_project": "mm10.2_stage1",
+            "configs_path": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm10.1/stage1/eval_overwrite",
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm10.2/MM10.2_Stage1_70B/LLama3.1_70B_ViTG_392px_mt8400_R2_bz48",
+            "every_steps": 200,
+            "wandb_project": "mm10.2_stage1",
+            "configs_path": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm10.1/stage1/eval_overwrite",
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm10.2/MM10.2_Stage1_70B/MH24_70B_ViTG_392px_mt8400_R2_bz48",
+            "every_steps": 200,
+            "wandb_project": "mm10.2_stage1",
+            "configs_path": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm10.1/stage1/eval_overwrite",
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm10.2/MM10.2_Stage1_70B/LLama3.1_70B_ViTG_392px_mt8400_layer1_R2_bz48",
+            "every_steps": 200,
+            "wandb_project": "mm10.2_stage1",
+            "configs_path": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm10.1/stage1/eval_overwrite",
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm10.2/MM10.2_Stage1_70B/MH24_70B_ViTG_392px_mt8400_R2_layer1_bz48",
+            "every_steps": 200,
+            "wandb_project": "mm10.2_stage1",
+            "configs_path": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm10.1/stage1/eval_overwrite",
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm10.2/MM10.2_Stage1_70B/MH24_70B_ViTH_336px_R2_bz48",
+            "every_steps": 200,
+            "wandb_project": "mm10.2_stage1",
+            "configs_path": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm10.1/stage1/eval_overwrite",
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm10.2/MM10.2_Stage1_70B/MH24_70B_ViTG_392px_mt8400_R2_bz48_resume",
+            "every_steps": 200,
+            "wandb_project": "mm10.2_stage1",
+            "configs_path": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm10.1/stage1/eval_overwrite",
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm10.2/MM10.2_Stage2_70B/MH24_70B_ViTG_392px_stage2_R1_n128",
+            "every_steps": 200,
+            "wandb_project": "MM10.2_Stage2_70B",
+            "configs_path": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm10.1/stage2/eval_overwrite",
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm10.2/MM10.2_Stage2_70B/MH24_70B_ViTH_336px_unfreeze_stage2_R1_n128",
+            "every_steps": 200,
+            "wandb_project": "MM10.2_Stage2_70B",
+            "configs_path": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm10.1/stage2/eval_overwrite",
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm10.2/MM10.2_Stage2_70B/MH24_70B_ViTH_336px_stage2_R1_n128",
+            "every_steps": 200,
+            "wandb_project": "MM10.2_Stage2_70B",
+            "configs_path": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm10.1/stage2/eval_overwrite",
+            "ignore": true
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm10.2/MM10.2_Stage2_70B/MH24_70B_ViTH_336px_stage2_R2_n128",
+            "every_steps": 200,
+            "wandb_project": "MM10.2_Stage2_70B",
+            "configs_path": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm10.1/stage2/eval_overwrite"
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm10.2/MM10.2_Stage2_70B/MH24_70B_ViTG_392px_stage2_R2_n128",
+            "every_steps": 200,
+            "wandb_project": "MM10.2_Stage2_70B",
+            "configs_path": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm10.1/stage2/eval_overwrite"
+        },
+        {
+            "watch_path": "/fsx_0/checkpoints/mm10.2/MM10.2_Stage2_70B/MH24_70B_ViTH_336px_unfreeze_stage2_R2_n128",
+            "every_steps": 200,
+            "wandb_project": "MM10.2_Stage2_70B",
+            "configs_path": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws/mm10.1/stage2/eval_overwrite"
+        }
+    ]
+}

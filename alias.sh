@@ -146,6 +146,7 @@ sq() {
 
     local job_ids
     job_ids=$(echo "$queue_output" | awk 'NR > 2 && $2 ~ /^[0-9]+$/ {print $2}')
+    echo "$job_ids"
     process_job_ids "$job_ids" $action_flag
 
 }
@@ -153,7 +154,8 @@ sq() {
 process_job_ids() {
     local job_ids="$1" # A space-separated list of job IDs
     local action="$2"
-    # echo $action
+    echo $action
+    echo $job_ids
 
     while read -r jobid; do
         if [ "$action" = "cancel" ]; then
