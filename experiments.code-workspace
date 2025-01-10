@@ -11,12 +11,6 @@
 		},
 		{
 			"path": "../rsync/llm_mm_aligner"
-		},
-		{
-			"path": "../../../checkpoints/clip"
-		},
-		{
-			"path": "../aws_prod"
 		}
 	],
 	"settings": {}

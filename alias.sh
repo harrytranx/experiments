@@ -6,7 +6,8 @@ alias scount='sinfo -h -o %D'
 
 # watch squeue
 # alias swatch='watch -n 1 squeue --me'
-alias swatch='watch -n 1 squeue -u tranx,zhenq,ahmadyan,cyprien,xuanhu'
+# alias swatch='watch -n 1 squeue -u tranx,zhenq,ahmadyan,cyprien,xuanhu'
+alias swatch='watch -n 1 squeue -u tranx,zhenq,ahmadyan,cyprien'
 
 # get list of hosts
 alias shosts="sinfo -hN|awk '{print $1}'"
@@ -185,6 +186,11 @@ alias jpt_kill="pkill -f jupyter"
 
 kill_grep() {
     pattern=$1
+    pgrep -f $pattern | xargs sudo kill
+}
+
+kill_vscode(){
+    pattern="tranx/.vscode-server/bin"
     pgrep -f $pattern | xargs sudo kill
 }
 
