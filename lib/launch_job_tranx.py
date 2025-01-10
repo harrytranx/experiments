@@ -149,6 +149,17 @@ def run_job(
     with open(config_file, "r") as file:
         config = json.load(file)
 
+    # using wd_datarecipe_file to populate wd_datarecipe
+    if ("trainer_args" in config) and ("wd_datarecipe_file" in config["trainer_args"]):
+        if "wd_datarecipe" in config["trainer_args"]:  # already populated
+            raise ValueError(
+                "Cannot use both wd_datarecipe_file and wd_datarecipe in trainer_args."
+            )
+
+        with open(config["trainer_args"]["wd_datarecipe_file"], "r") as file:
+            config["trainer_args"]["wd_datarecipe"] = json.load(file)
+            
+            
     # use same run_name as slurm job name for consistency
     if name is None:
         if "trainer_args" in config:

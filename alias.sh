@@ -212,6 +212,11 @@ kill_zombie() {
     echo "Attempted to kill all parent processes of zombie processes."
 }
 
+killu() {
+    user=$1
+    sudo killall -u $user
+}
+
 ibatch() {
     script=$1
     # json_config=$2
@@ -356,10 +361,10 @@ sgrep() {
     fi
     
     output_file=$(wlog $job_id) 
-    sgrep_f $output_file
+    sgrep_f2 $output_file
 }
 
-sgrep_f() {
+sgrep_f_old() {
     file=$1
     grep -e "error" \
     -e "out of memory" \
@@ -372,6 +377,76 @@ sgrep_f() {
     -i $file
 }
 
+sgrep_f() {
+    local file=$1
+
+    if [[ ! -f $file ]]; then
+        echo "Error: File '$file' not found."
+        return 1
+    fi
+
+    # Define the list of keywords
+    local keywords=(
+        "error"
+        "out of memory"
+        "permission"
+        "'loss':"
+        # "/perception_tokenizer.pt"
+        "Training completed"
+        "CANCELLED"
+        "uncorrectable ECC"
+        # "commented out keyword"
+    )
+
+    # Build the grep arguments from the keywords array
+    local grep_args=()
+    for keyword in "${keywords[@]}"; do
+        [[ $keyword =~ ^#.*$ ]] && continue  # Skip commented-out keywords
+        grep_args+=("-e" "$keyword")
+    done
+
+    # Run the grep command
+    grep -i "${grep_args[@]}" "$file"
+}
+
+sgrep_f2() {
+local file=$1
+
+    if [[ ! -f $file ]]; then
+        echo "Error: File '$file' not found."
+        return 1
+    fi
+
+    # Define the list of include keywords
+    local include_keywords=(
+        "error"
+        "Error"
+        "out of memory"
+        "permission"
+        "'loss':"
+        "Training completed"
+        "CANCELLED"
+        "uncorrectable ECC"
+        "ValueError"
+    )
+
+    # Define the list of exclude keywords
+    local exclude_keywords=(
+        "RendezvousConnectionError"
+        "Exited with exit code 1"
+        "ChildFailedError"
+        "error_file"
+        "multiprocessing/errors/__init__.py"
+        "c10::Error"
+    )
+
+    # Build the include and exclude grep patterns
+    local include_pattern=$(printf "|%s" "${include_keywords[@]}" | cut -c2-)
+    local exclude_pattern=$(printf "|%s" "${exclude_keywords[@]}" | cut -c2-)
+
+    # Apply the include and exclude filters with color
+    grep -i -E "$include_pattern" "$file" | grep -i -v -E "$exclude_pattern" | GREP_COLOR='01;31' grep --color=always -E "$include_pattern"
+}
 
 get_held_jobs() {
     # Get the list of all held jobs
@@ -457,6 +532,18 @@ sjob(){
     echo $(scontrol show job $job_id | grep -E "WorkDir")
     echo $(scontrol show job $job_id | grep -E "StdErr")
     echo $(scontrol show job $job_id | grep -E "StdOut")
+
+    StdOut=$(scontrol show job $job_id | grep -E "StdOut")
+    output_dir=$(echo "$StdOut" | sed 's|StdOut=||; s|/[^/]*$||')
+    echo $output_dir
+}
+
+scf(){
+    # print config of a job
+    job_id=$1
+    StdOut=$(scontrol show job $job_id | grep -E "StdOut")
+    output_dir=$(echo "$StdOut" | sed 's|StdOut=||; s|/[^/]*$||')
+    cat $output_dir/config.json
 }
 
 

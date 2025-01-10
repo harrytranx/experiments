@@ -50,7 +50,7 @@ class Webdataset:
     ) -> Tuple[Union[BytesIO, str], Dict[str, Any]]:
         """
         Write to .tar file
-        """
+        """webdata
         return self.create_shard(
             json_data=self.json_data,
             image_handles=self.image_handles,

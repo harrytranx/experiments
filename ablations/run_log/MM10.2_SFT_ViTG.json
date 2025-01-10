@@ -1,0 +1,43 @@
+{
+    "default": [
+        {
+            "name": "MM10.2_SFT_ViTG_392px_vqa_v2",
+            "note": null,
+            "job_id": 133122,
+            "nodes": 64,
+            "timestamp": "2025-01-09 22:53:57",
+            "input_config": "mm10.2/sft_70B/MM10.2_SFT_ViTG_392px_vqa.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": null,
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_0/checkpoints/mm10.2/MM10.2_SFT/MM10.2_SFT_ViTG_392px_vqa_v2/250110_03_53_57_473235",
+            "run_config": "/fsx_0/checkpoints/mm10.2/MM10.2_SFT/MM10.2_SFT_ViTG_392px_vqa_v2/250110_03_53_57_473235/config.json"
+        },
+        {
+            "name": "MM10.2_SFT_ViTG_392px_vqa_v2",
+            "note": null,
+            "job_id": 133121,
+            "nodes": 64,
+            "timestamp": "2025-01-09 22:51:40",
+            "input_config": "mm10.2/sft_70B/MM10.2_SFT_ViTG_392px_vqa.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": null,
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_0/checkpoints/mm10.2/MM10.2_SFT/MM10.2_SFT_ViTG_392px_vqa_v2/250110_03_51_40_765055",
+            "run_config": "/fsx_0/checkpoints/mm10.2/MM10.2_SFT/MM10.2_SFT_ViTG_392px_vqa_v2/250110_03_51_40_765055/config.json"
+        },
+        {
+            "name": "MM10.2_SFT_ViTG_392px_vqa",
+            "note": null,
+            "job_id": 132832,
+            "nodes": 64,
+            "timestamp": "2025-01-09 14:52:57",
+            "input_config": "mm10.2/sft_70B/MM10.2_SFT_ViTG_392px_vqa.json",
+            "config_base": "/fsx_0/user/tranx/rsync/llm_mm_aligner/experiments/aws",
+            "trainer_args_overrides": null,
+            "conda_env": "/fsx_0/shared/conda/aligner_20241030",
+            "work_dir": "/fsx_0/checkpoints/mm10.2/MM10.2_SFT/MM10.2_SFT_ViTG_392px_vqa/250109_19_52_57_333048",
+            "run_config": "/fsx_0/checkpoints/mm10.2/MM10.2_SFT/MM10.2_SFT_ViTG_392px_vqa/250109_19_52_57_333048/config.json"
+        }
+    ]
+}
